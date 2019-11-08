@@ -53,7 +53,7 @@
           }
         },
         "x-requestDetails": "This API must be called with X-SecretKey, X-Authentication or X-EntityToken headers. An optional EntityKey may be included to attempt to set the resulting EntityToken to a specific entity, however the entity must be a relation of the caller, such as the master_player_account of a character. If sending X-EntityToken the account will be marked as freshly logged in and will issue a new token. If using X-Authentication or X-EntityToken the header must still be valid and cannot be expired or revoked.",
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "EntityAPIKeyOrSecretInvalid",
           "InvalidTicket",
           "SecretKeyNotFound"
@@ -89,7 +89,7 @@
           }
         },
         "x-requestDetails": "Given an entity token, validates that it hasn't exipired or been revoked and will return details of the owner.",
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "InvalidTicket"
         ]
       }
@@ -103,6 +103,7 @@
         "code": {
           "description": "Numerical HTTP code",
           "type": "number",
+          "format": "int32",
           "x-actualtype": "int32"
         },
         "status": {
@@ -116,6 +117,7 @@
         "errorCode": {
           "description": "Numerical Playfab error code",
           "type": "number",
+          "format": "int32",
           "x-actualtype": "int32"
         },
         "errorMessage": {
@@ -215,7 +217,11 @@
       }
     },
     "LoginIdentityProvider": {
-      "type": "object",
+      "type": "string",
+      "x-ms-enum": {
+        "name": "LoginIdentityProvider",
+        "modelAsString": false
+      },
       "enum": [
         "Unknown",
         "PlayFab",
@@ -422,7 +428,7 @@
       "description": "This API requires an Entity Session Token, available from the Entity GetEntityToken method."
     }
   },
-  "x-ms-docs-errors-mapping": {
+  "x-pf-docs-errors-mapping": {
     "Success": {
       "name": "Success"
     },

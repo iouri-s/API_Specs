@@ -53,7 +53,7 @@
           }
         },
         "x-requestDetails": "Cancels all tickets of which the player is a member in a given queue that are not cancelled or matched. This API is useful if you lose track of what tickets the player is a member of (if the title crashes for instance) and want to \"reset\". The Entity field is optional if the caller is a player and defaults to that player. Players may not cancel tickets for other people. The Entity field is required if the caller is a server (authenticated as the title).",
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "MatchmakingEntityInvalid",
           "MatchmakingQueueNotFound",
           "MatchmakingUnauthorized"
@@ -89,7 +89,7 @@
           }
         },
         "x-requestDetails": "Only servers and ticket members can cancel a ticket. The ticket can be in five different states when it is cancelled. 1: the ticket is waiting for members to join it, and it has not started matching. If the ticket is cancelled at this stage, it will never match. 2: the ticket is matching. If the ticket is cancelled, it will stop matching. 3: the ticket is matched. A matched ticket cannot be cancelled. 4: the ticket is already cancelled and nothing happens. 5: the ticket is waiting for a server. If the ticket is cancelled, server allocation will be stopped. A server may still be allocated due to a race condition, but that will not be reflected in the ticket. There may be race conditions between the ticket getting matched and the client making a cancellation request. The client must handle the possibility that the cancel request fails if a match is found before the cancellation request is processed. We do not allow resubmitting a cancelled ticket because players must consent to enter matchmaking again. Create a new ticket instead.",
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "MatchmakingEntityInvalid",
           "MatchmakingPlayerHasNotJoinedTicket",
           "MatchmakingQueueNotFound",
@@ -128,7 +128,7 @@
           }
         },
         "x-requestDetails": "The client specifies the creator's attributes and optionally a list of other users to match with.",
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "MatchmakingAttributeInvalid",
           "MatchmakingEntityInvalid",
           "MatchmakingNumberOfPlayersInTicketTooLarge",
@@ -170,7 +170,7 @@
           }
         },
         "x-requestDetails": "The server specifies all the members and their attributes.",
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "MatchmakingAttributeInvalid",
           "MatchmakingEntityInvalid",
           "MatchmakingMemberProfileInvalid",
@@ -213,7 +213,7 @@
           }
         },
         "x-requestDetails": "When matchmaking has successfully matched together a collection of tickets, it produces a 'match' with an Id. The match contains all of the players that were matched together, and their team assigments. Only servers and ticket members can get the match.",
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "MatchmakingEntityInvalid",
           "MatchmakingMatchNotFound",
           "MatchmakingQueueNotFound",
@@ -251,7 +251,7 @@
           }
         },
         "x-requestDetails": "The ticket includes the invited players, their attributes if they have joined, the ticket status, the match Id when applicable, etc. Only servers, the ticket creator and the invited players can get the ticket.",
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "MatchmakingEntityInvalid",
           "MatchmakingQueueNotFound",
           "MatchmakingRateLimitExceeded",
@@ -289,7 +289,7 @@
           }
         },
         "x-requestDetails": "Returns the matchmaking statistics for a queue. These include the number of players matching and the statistics related to the time to match statistics in seconds (average and percentiles). Statistics are refreshed once every 5 minutes. Servers can access all statistics no matter what the ClientStatisticsVisibility is configured to. Clients can access statistics according to the ClientStatisticsVisibility. Client requests are forbidden if all visibility fields are false.",
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "MatchmakingEntityInvalid",
           "MatchmakingQueueNotFound",
           "MatchmakingRateLimitExceeded",
@@ -326,7 +326,7 @@
           }
         },
         "x-requestDetails": "Add the player to a matchmaking ticket and specify all of its matchmaking attributes. Players can join a ticket if and only if their EntityKeys are already listed in the ticket's Members list. The matchmaking service automatically starts matching the ticket against other matchmaking tickets once all players have joined the ticket. It is not possible to join a ticket once it has started matching.",
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "MatchmakingAlreadyJoinedTicket",
           "MatchmakingAttributeInvalid",
           "MatchmakingEntityInvalid",
@@ -371,7 +371,7 @@
           }
         },
         "x-requestDetails": "If the caller is a title, the EntityKey in the request is required. If the caller is a player, then it is optional. If it is provided it must match the caller's entity.",
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "MatchmakingEntityInvalid",
           "MatchmakingQueueNotFound",
           "MatchmakingRateLimitExceeded",
@@ -413,7 +413,7 @@
           "MultiplayerServer/GetBuildAlias",
           "MultiplayerServer/UpdateBuildAlias"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "MultiplayerServerBadRequest",
           "MultiplayerServerConflict",
           "MultiplayerServerForbidden",
@@ -458,7 +458,7 @@
           "MultiplayerServer/GetBuild",
           "MultiplayerServer/ListBuildSummaries"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "MultiplayerServerBadRequest",
           "MultiplayerServerConflict",
           "MultiplayerServerForbidden",
@@ -501,7 +501,7 @@
           "MultiplayerServer/GetBuild",
           "MultiplayerServer/ListBuildSummaries"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "MultiplayerServerBadRequest",
           "MultiplayerServerConflict",
           "MultiplayerServerForbidden",
@@ -543,7 +543,7 @@
           "MultiplayerServer/DeleteRemoteUser",
           "MultiplayerServer/GetRemoteLoginEndpoint"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "MultiplayerServerBadRequest",
           "MultiplayerServerConflict",
           "MultiplayerServerForbidden",
@@ -589,7 +589,7 @@
           "MultiplayerServer/GetAssetUploadUrl",
           "MultiplayerServer/ListAssetSummaries"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "MultiplayerServerBadRequest",
           "MultiplayerServerConflict",
           "MultiplayerServerForbidden",
@@ -636,7 +636,7 @@
           "MultiplayerServer/GetBuild",
           "MultiplayerServer/ListBuildSummaries"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "MultiplayerServerConflict",
           "MultiplayerServerForbidden",
           "MultiplayerServerInternalServerError",
@@ -680,7 +680,7 @@
           "MultiplayerServer/GetBuildAlias",
           "MultiplayerServer/UpdateBuildAlias"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "MultiplayerServerConflict",
           "MultiplayerServerForbidden",
           "MultiplayerServerInternalServerError",
@@ -723,7 +723,7 @@
           "MultiplayerServer/ListCertificateSummaries",
           "MultiplayerServer/UploadCertificate"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "MultiplayerServerBadRequest",
           "MultiplayerServerConflict",
           "MultiplayerServerForbidden",
@@ -769,7 +769,7 @@
           "MultiplayerServer/CreateRemoteUser",
           "MultiplayerServer/GetRemoteLoginEndpoint"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "MultiplayerServerBadRequest",
           "MultiplayerServerConflict",
           "MultiplayerServerForbidden",
@@ -814,7 +814,7 @@
         "x-seeAlso": [
           "MultiplayerServer/GetTitleEnabledForMultiplayerServersStatus"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "CannotEnableMultiplayerServersForTitle",
           "MultiplayerServerBadRequest",
           "MultiplayerServerForbidden",
@@ -857,7 +857,7 @@
           "MultiplayerServer/ListCertificateSummaries",
           "MultiplayerServer/UploadCertificate"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "MultiplayerServerBadRequest",
           "MultiplayerServerConflict",
           "MultiplayerServerForbidden",
@@ -904,7 +904,7 @@
           "MultiplayerServer/DeleteBuild",
           "MultiplayerServer/ListBuildSummaries"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "MultiplayerServerBadRequest",
           "MultiplayerServerConflict",
           "MultiplayerServerForbidden",
@@ -948,7 +948,7 @@
           "MultiplayerServer/DeleteBuildAlias",
           "MultiplayerServer/UpdateBuildAlias"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "MultiplayerServerBadRequest",
           "MultiplayerServerConflict",
           "MultiplayerServerForbidden",
@@ -991,7 +991,7 @@
           "MultiplayerServer/CreateBuildWithCustomContainer",
           "MultiplayerServer/RolloverContainerRegistryCredentials"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "MultiplayerServerBadRequest",
           "MultiplayerServerConflict",
           "MultiplayerServerForbidden",
@@ -1036,7 +1036,7 @@
         "x-seeAlso": [
           "MultiplayerServer/RequestMultiplayerServer"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "MultiplayerServerBadRequest",
           "MultiplayerServerForbidden",
           "MultiplayerServerInternalServerError",
@@ -1078,7 +1078,7 @@
         "x-seeAlso": [
           "MultiplayerServer/CreateRemoteUser"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "MultiplayerServerBadRequest",
           "MultiplayerServerConflict",
           "MultiplayerServerForbidden",
@@ -1123,7 +1123,7 @@
         "x-seeAlso": [
           "MultiplayerServer/EnableMultiplayerServersForTitle"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "MultiplayerServerBadRequest",
           "MultiplayerServerForbidden",
           "MultiplayerServerInternalServerError",
@@ -1161,7 +1161,7 @@
           }
         },
         "x-requestDetails": "Gets the quotas for a title in relation to multiplayer servers.",
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "MultiplayerServerBadRequest",
           "MultiplayerServerForbidden",
           "MultiplayerServerInternalServerError",
@@ -1202,7 +1202,7 @@
         "x-seeAlso": [
           "MultiplayerServer/RequestMultiplayerServer"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "MultiplayerServerBadRequest",
           "MultiplayerServerForbidden",
           "MultiplayerServerInternalServerError",
@@ -1246,7 +1246,7 @@
           "MultiplayerServer/ListCertificateSummaries",
           "MultiplayerServer/UploadCertificate"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "MultiplayerServerBadRequest",
           "MultiplayerServerConflict",
           "MultiplayerServerForbidden",
@@ -1293,7 +1293,7 @@
           "MultiplayerServer/DeleteBuild",
           "MultiplayerServer/GetBuild"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "MultiplayerServerBadRequest",
           "MultiplayerServerForbidden",
           "MultiplayerServerInternalServerError",
@@ -1336,7 +1336,7 @@
           "MultiplayerServer/DeleteBuild",
           "MultiplayerServer/GetBuild"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "MultiplayerServerBadRequest",
           "MultiplayerServerForbidden",
           "MultiplayerServerInternalServerError",
@@ -1378,7 +1378,7 @@
           "MultiplayerServer/DeleteCertificate",
           "MultiplayerServer/UploadCertificate"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "MultiplayerServerBadRequest",
           "MultiplayerServerConflict",
           "MultiplayerServerForbidden",
@@ -1424,7 +1424,7 @@
           "MultiplayerServer/GetContainerRegistryCredentials",
           "MultiplayerServer/ListContainerImageTags"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "MultiplayerServerBadRequest",
           "MultiplayerServerConflict",
           "MultiplayerServerForbidden",
@@ -1469,7 +1469,7 @@
         "x-seeAlso": [
           "MultiplayerServer/ListContainerImages"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "MultiplayerServerBadRequest",
           "MultiplayerServerConflict",
           "MultiplayerServerForbidden",
@@ -1514,7 +1514,7 @@
         "x-seeAlso": [
           "MultiplayerServer/RequestMultiplayerServer"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "MultiplayerServerBadRequest",
           "MultiplayerServerForbidden",
           "MultiplayerServerInternalServerError",
@@ -1553,7 +1553,7 @@
           }
         },
         "x-requestDetails": "Returns a list of quality of service servers for party.",
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "MultiplayerServerBadRequest",
           "MultiplayerServerForbidden",
           "MultiplayerServerInternalServerError",
@@ -1590,7 +1590,7 @@
           }
         },
         "x-requestDetails": "Returns a list of quality of service servers.",
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "MultiplayerServerBadRequest",
           "MultiplayerServerForbidden",
           "MultiplayerServerInternalServerError",
@@ -1627,7 +1627,7 @@
           }
         },
         "x-requestDetails": "Returns a list of quality of service servers for a title.",
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "MultiplayerServerBadRequest",
           "MultiplayerServerForbidden",
           "MultiplayerServerInternalServerError",
@@ -1664,7 +1664,7 @@
           }
         },
         "x-requestDetails": "Returns a list of virtual machines for a title.",
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "MultiplayerServerBadRequest",
           "MultiplayerServerForbidden",
           "MultiplayerServerInternalServerError",
@@ -1706,7 +1706,7 @@
         "x-seeAlso": [
           "MultiplayerServer/GetMultiplayerServerDetails"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "APINotEnabledForGameClientAccess",
           "MultiplayerServerBadRequest",
           "MultiplayerServerForbidden",
@@ -1750,7 +1750,7 @@
         "x-seeAlso": [
           "MultiplayerServer/GetContainerRegistryCredentials"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "MultiplayerServerBadRequest",
           "MultiplayerServerConflict",
           "MultiplayerServerForbidden",
@@ -1796,7 +1796,7 @@
           "MultiplayerServer/GetMultiplayerServerDetails",
           "MultiplayerServer/RequestMultiplayerServer"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "MultiplayerServerForbidden",
           "MultiplayerServerInternalServerError",
           "MultiplayerServerNoContent",
@@ -1840,7 +1840,7 @@
           "MultiplayerServer/DeleteBuildAlias",
           "MultiplayerServer/GetBuildAlias"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "MultiplayerServerBadRequest",
           "MultiplayerServerConflict",
           "MultiplayerServerForbidden",
@@ -1884,7 +1884,7 @@
           "MultiplayerServer/GetBuild",
           "MultiplayerServer/ListBuildSummaries"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "MultiplayerServerBadRequest",
           "MultiplayerServerConflict",
           "MultiplayerServerForbidden",
@@ -1926,7 +1926,7 @@
           "MultiplayerServer/DeleteCertificate",
           "MultiplayerServer/ListCertificateSummaries"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "MultiplayerServerBadRequest",
           "MultiplayerServerConflict",
           "MultiplayerServerForbidden",
@@ -1948,6 +1948,7 @@
         "code": {
           "description": "Numerical HTTP code",
           "type": "number",
+          "format": "int32",
           "x-actualtype": "int32"
         },
         "status": {
@@ -1961,6 +1962,7 @@
         "errorCode": {
           "description": "Numerical Playfab error code",
           "type": "number",
+          "format": "int32",
           "x-actualtype": "int32"
         },
         "errorMessage": {
@@ -2012,12 +2014,19 @@
         },
         "Metadata": {
           "description": "The metadata associated with the asset.",
-          "type": "object"
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
         }
       }
     },
     "AzureRegion": {
-      "type": "object",
+      "type": "string",
+      "x-ms-enum": {
+        "name": "AzureRegion",
+        "modelAsString": false
+      },
       "enum": [
         "AustraliaEast",
         "AustraliaSoutheast",
@@ -2040,7 +2049,11 @@
       ]
     },
     "AzureVmFamily": {
-      "type": "object",
+      "type": "string",
+      "x-ms-enum": {
+        "name": "AzureVmFamily",
+        "modelAsString": false
+      },
       "enum": [
         "A",
         "Av2",
@@ -2050,7 +2063,11 @@
       ]
     },
     "AzureVmSize": {
-      "type": "object",
+      "type": "string",
+      "x-ms-enum": {
+        "name": "AzureVmSize",
+        "modelAsString": false
+      },
       "enum": [
         "Standard_D1_v2",
         "Standard_D2_v2",
@@ -2097,8 +2114,7 @@
         },
         "PageSize": {
           "description": "The page size on the response.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "SkipToken": {
           "description": "The skip token for the paged response.",
@@ -2143,8 +2159,7 @@
         },
         "MaxServers": {
           "description": "The maximum number of multiplayer servers for the region.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "Region": {
           "$ref": "#/definitions/AzureRegion",
@@ -2153,8 +2168,7 @@
         },
         "StandbyServers": {
           "description": "The number of standby multiplayer servers for the region.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "Status": {
           "description": "The status of multiplayer servers in the build region. Valid values are - Unknown, Initialized, Deploying, Deployed, Unhealthy.",
@@ -2171,8 +2185,7 @@
       "properties": {
         "MaxServers": {
           "description": "The maximum number of multiplayer servers for the region.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "Region": {
           "$ref": "#/definitions/AzureRegion",
@@ -2181,8 +2194,7 @@
         },
         "StandbyServers": {
           "description": "The number of standby multiplayer servers for the region.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         }
       },
       "required": [
@@ -2197,7 +2209,9 @@
         "BuildWeightDistribution": {
           "description": "Dictionary of build ids and their respective weights for distribution of allocation requests.",
           "type": "object",
-          "x-actualtype": "uint32"
+          "additionalProperties": {
+            "type": "integer"
+          }
         }
       },
       "example": {
@@ -2223,7 +2237,10 @@
         },
         "Metadata": {
           "description": "The metadata of the build.",
-          "type": "object"
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
         },
         "RegionConfigurations": {
           "description": "The configuration and status for each region in the build.",
@@ -2268,7 +2285,11 @@
       "example": {}
     },
     "CancellationReason": {
-      "type": "object",
+      "type": "string",
+      "x-ms-enum": {
+        "name": "CancellationReason",
+        "modelAsString": false
+      },
       "enum": [
         "Requested",
         "Internal",
@@ -2346,7 +2367,11 @@
       }
     },
     "ContainerFlavor": {
-      "type": "object",
+      "type": "string",
+      "x-ms-enum": {
+        "name": "ContainerFlavor",
+        "modelAsString": false
+      },
       "enum": [
         "ManagedWindowsServerCore",
         "CustomLinux",
@@ -2374,8 +2399,7 @@
       "properties": {
         "Available": {
           "description": "The available core capacity for the (Region, VmFamily)",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "Region": {
           "$ref": "#/definitions/AzureRegion",
@@ -2384,8 +2408,7 @@
         },
         "Total": {
           "description": "The total core capacity for the (Region, VmFamily)",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "VmFamily": {
           "$ref": "#/definitions/AzureVmFamily",
@@ -2472,12 +2495,14 @@
         },
         "Metadata": {
           "description": "Metadata to tag the build. The keys are case insensitive. The build metadata is made available to the server through Game Server SDK (GSDK).Constraints: Maximum number of keys: 30, Maximum key length: 50, Maximum value length: 100",
-          "type": "object"
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
         },
         "MultiplayerServerCountPerVm": {
           "description": "The number of multiplayer servers to host on a single VM.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "Ports": {
           "description": "The ports to map the build on.",
@@ -2607,12 +2632,14 @@
         },
         "Metadata": {
           "description": "The metadata of the build.",
-          "type": "object"
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
         },
         "MultiplayerServerCountPerVm": {
           "description": "The number of multiplayer servers to host on a single VM of the build.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "Ports": {
           "description": "The ports the build is mapped on.",
@@ -2729,12 +2756,14 @@
         },
         "Metadata": {
           "description": "Metadata to tag the build. The keys are case insensitive. The build metadata is made available to the server through Game Server SDK (GSDK).Constraints: Maximum number of keys: 30, Maximum key length: 50, Maximum value length: 100",
-          "type": "object"
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
         },
         "MultiplayerServerCountPerVm": {
           "description": "The number of multiplayer servers to host on a single VM.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "Ports": {
           "description": "The ports to map the build on.",
@@ -2866,12 +2895,14 @@
         },
         "Metadata": {
           "description": "The metadata of the build.",
-          "type": "object"
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
         },
         "MultiplayerServerCountPerVm": {
           "description": "The number of multiplayer servers to host on a single VM of the build.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "Ports": {
           "description": "The ports the build is mapped on.",
@@ -2970,8 +3001,7 @@
         },
         "GiveUpAfterSeconds": {
           "description": "How long to attempt matching this ticket in seconds.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "MembersToMatchWith": {
           "description": "A list of Entity Keys of other users to match with.",
@@ -3076,8 +3106,7 @@
       "properties": {
         "GiveUpAfterSeconds": {
           "description": "How long to attempt matching this ticket in seconds.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "Members": {
           "description": "The users who will be part of this ticket.",
@@ -3110,23 +3139,19 @@
       "properties": {
         "Active": {
           "description": "The number of active multiplayer servers.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "Propping": {
           "description": "The number of multiplayer servers still downloading game resources (such as assets).",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "StandingBy": {
           "description": "The number of standingby multiplayer servers.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "Total": {
           "description": "The total number of multiplayer servers.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         }
       },
       "required": [
@@ -3428,12 +3453,14 @@
         },
         "Metadata": {
           "description": "Metadata of the build. The keys are case insensitive. The build metadata is made available to the server through Game Server SDK (GSDK).",
-          "type": "object"
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
         },
         "MultiplayerServerCountPerVm": {
           "description": "The number of multiplayer servers to hosted on a single VM of the build.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "Ports": {
           "description": "The ports the build is mapped on.",
@@ -3609,8 +3636,7 @@
         },
         "GiveUpAfterSeconds": {
           "description": "How long to attempt matching this ticket in seconds.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "MatchId": {
           "description": "The Id of a match.",
@@ -3887,8 +3913,7 @@
       "properties": {
         "NumberOfPlayersMatching": {
           "description": "The current number of players in the matchmaking queue, who are waiting to be matched.",
-          "type": "number",
-          "x-actualtype": "uint32"
+          "type": "integer"
         },
         "TimeToMatchStatisticsInSeconds": {
           "$ref": "#/definitions/Statistics",
@@ -3945,8 +3970,7 @@
         },
         "Port": {
           "description": "The remote login port of multiplayer server.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         }
       },
       "required": [
@@ -4059,8 +4083,7 @@
       "properties": {
         "PageSize": {
           "description": "The page size for the request.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "SkipToken": {
           "description": "The skip token for the paged request.",
@@ -4084,8 +4107,7 @@
         },
         "PageSize": {
           "description": "The page size on the response.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "SkipToken": {
           "description": "The skip token for the paged response.",
@@ -4126,8 +4148,7 @@
       "properties": {
         "PageSize": {
           "description": "The page size for the request.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "SkipToken": {
           "description": "The skip token for the paged request.",
@@ -4151,8 +4172,7 @@
         },
         "PageSize": {
           "description": "The page size on the response.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "SkipToken": {
           "description": "The skip token for the paged response.",
@@ -4169,8 +4189,7 @@
       "properties": {
         "PageSize": {
           "description": "The page size for the request.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "SkipToken": {
           "description": "The skip token for the paged request.",
@@ -4194,8 +4213,7 @@
         },
         "PageSize": {
           "description": "The page size on the response.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "SkipToken": {
           "description": "The skip token for the paged response.",
@@ -4225,8 +4243,7 @@
       "properties": {
         "PageSize": {
           "description": "The page size for the request.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "SkipToken": {
           "description": "The skip token for the paged request.",
@@ -4249,8 +4266,7 @@
         },
         "PageSize": {
           "description": "The page size on the response.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "SkipToken": {
           "description": "The skip token for the paged response.",
@@ -4357,8 +4373,7 @@
         },
         "PageSize": {
           "description": "The page size for the request.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "Region": {
           "$ref": "#/definitions/AzureRegion",
@@ -4392,8 +4407,7 @@
         },
         "PageSize": {
           "description": "The page size on the response.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "SkipToken": {
           "description": "The skip token for the paged response.",
@@ -4452,8 +4466,7 @@
       "properties": {
         "PageSize": {
           "description": "The page size on the response.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "QosServers": {
           "description": "The list of QoS servers.",
@@ -4508,8 +4521,7 @@
       "properties": {
         "PageSize": {
           "description": "The page size on the response.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "QosServers": {
           "description": "The list of QoS servers.",
@@ -4564,8 +4576,7 @@
       "properties": {
         "PageSize": {
           "description": "The page size on the response.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "QosServers": {
           "description": "The list of QoS servers.",
@@ -4619,8 +4630,7 @@
         },
         "PageSize": {
           "description": "The page size for the request.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "Region": {
           "$ref": "#/definitions/AzureRegion",
@@ -4647,8 +4657,7 @@
       "properties": {
         "PageSize": {
           "description": "The page size on the response.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "SkipToken": {
           "description": "The skip token for the paged response.",
@@ -4795,8 +4804,7 @@
         },
         "Num": {
           "description": "The number for the port.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "Protocol": {
           "$ref": "#/definitions/ProtocolType",
@@ -4812,7 +4820,11 @@
       ]
     },
     "ProtocolType": {
-      "type": "object",
+      "type": "string",
+      "x-ms-enum": {
+        "name": "ProtocolType",
+        "modelAsString": false
+      },
       "enum": [
         "TCP",
         "UDP"
@@ -5058,21 +5070,25 @@
         "Average": {
           "description": "The average.",
           "type": "number",
+          "format": "double",
           "x-actualtype": "double"
         },
         "Percentile50": {
           "description": "The 50th percentile.",
           "type": "number",
+          "format": "double",
           "x-actualtype": "double"
         },
         "Percentile90": {
           "description": "The 90th percentile.",
           "type": "number",
+          "format": "double",
           "x-actualtype": "double"
         },
         "Percentile99": {
           "description": "The 99th percentile.",
           "type": "number",
+          "format": "double",
           "x-actualtype": "double"
         }
       },
@@ -5084,7 +5100,11 @@
       ]
     },
     "TitleMultiplayerServerEnabledStatus": {
-      "type": "object",
+      "type": "string",
+      "x-ms-enum": {
+        "name": "TitleMultiplayerServerEnabledStatus",
+        "modelAsString": false
+      },
       "enum": [
         "Initializing",
         "Enabled",
@@ -6868,7 +6888,7 @@
       "description": "This API requires an Entity Session Token, available from the Entity GetEntityToken method."
     }
   },
-  "x-ms-docs-errors-mapping": {
+  "x-pf-docs-errors-mapping": {
     "Success": {
       "name": "Success"
     },

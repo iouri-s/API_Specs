@@ -29,7 +29,7 @@
         {
           "name": "Duration",
           "description": "The duration of the experiment, in days.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "uint32",
           "optional": false
         },
@@ -51,7 +51,7 @@
         {
           "name": "PopulationPercentage",
           "description": "Overall percentage of segment that will be in the experiment.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "uint32",
           "optional": false
         },
@@ -195,7 +195,7 @@
         {
           "name": "Duration",
           "description": "The duration of the experiment, in days.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "uint32",
           "optional": false
         },
@@ -224,7 +224,7 @@
         {
           "name": "PopulationPercentage",
           "description": "Overall percentage of segment that will be in the experiment.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "uint32",
           "optional": false
         },
@@ -494,7 +494,7 @@
         {
           "name": "Count",
           "description": "Observed count of the metric.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
@@ -738,7 +738,7 @@
         {
           "name": "Duration",
           "description": "The duration of the experiment, in days.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "uint32",
           "optional": false
         },
@@ -767,7 +767,7 @@
         {
           "name": "PopulationPercentage",
           "description": "Overall percentage of segment that will be in the experiment.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "uint32",
           "optional": false
         },
@@ -878,7 +878,7 @@
         {
           "name": "Weight",
           "description": "Percentage of players in the experiment that will see this variant.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "uint32",
           "optional": false
         }

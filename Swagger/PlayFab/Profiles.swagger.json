@@ -259,6 +259,7 @@
         "code": {
           "description": "Numerical HTTP code",
           "type": "number",
+          "format": "int32",
           "x-actualtype": "int32"
         },
         "status": {
@@ -272,6 +273,7 @@
         "errorCode": {
           "description": "Numerical Playfab error code",
           "type": "number",
+          "format": "int32",
           "x-actualtype": "int32"
         },
         "errorMessage": {
@@ -285,7 +287,11 @@
       }
     },
     "EffectType": {
-      "type": "object",
+      "type": "string",
+      "x-ms-enum": {
+        "name": "EffectType",
+        "modelAsString": false
+      },
       "enum": [
         "Allow",
         "Deny"
@@ -425,9 +431,11 @@
           }
         },
         "Files": {
-          "$ref": "#/definitions/EntityProfileFileMetadata",
           "description": "The files on this profile.",
           "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/EntityProfileFileMetadata"
+          },
           "x-isclass": true
         },
         "Language": {
@@ -445,9 +453,11 @@
           "x-isclass": true
         },
         "Objects": {
-          "$ref": "#/definitions/EntityDataObject",
           "description": "The objects on this profile.",
           "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/EntityDataObject"
+          },
           "x-isclass": true
         },
         "Permissions": {
@@ -459,15 +469,16 @@
           "x-isclass": true
         },
         "Statistics": {
-          "$ref": "#/definitions/EntityStatisticValue",
           "description": "The statistics on this profile.",
           "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/EntityStatisticValue"
+          },
           "x-isclass": true
         },
         "VersionNumber": {
           "description": "The version number of the profile in persistent storage at the time of the read. Used for optional optimistic concurrency during update.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         }
       },
       "required": [
@@ -501,8 +512,7 @@
         },
         "Size": {
           "description": "Storage service's reported byte count",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         }
       },
       "required": [
@@ -523,8 +533,7 @@
         },
         "Value": {
           "description": "Child statistic value",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         }
       },
       "required": [
@@ -535,9 +544,11 @@
       "type": "object",
       "properties": {
         "ChildStatistics": {
-          "$ref": "#/definitions/EntityStatisticChildValue",
           "description": "Child statistic values",
           "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/EntityStatisticChildValue"
+          },
           "x-isclass": true
         },
         "Metadata": {
@@ -550,13 +561,11 @@
         },
         "Value": {
           "description": "Statistic value",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "Version": {
           "description": "Statistic version",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         }
       },
       "required": [
@@ -734,9 +743,11 @@
           "type": "string"
         },
         "TitlePlayerAccounts": {
-          "$ref": "#/definitions/EntityKey",
           "description": "Dictionary of master player ids mapped to title player entity keys and id pairs",
           "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/EntityKey"
+          },
           "x-isclass": true
         }
       },
@@ -756,7 +767,11 @@
       }
     },
     "OperationTypes": {
-      "type": "object",
+      "type": "string",
+      "x-ms-enum": {
+        "name": "OperationTypes",
+        "modelAsString": false
+      },
       "enum": [
         "Created",
         "Updated",
@@ -876,8 +891,7 @@
         },
         "ExpectedVersion": {
           "description": "The expected version of a profile to perform this update on",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "Language": {
           "description": "The language to set on the given entity. Deletes the profile's language if passed in a null string.",
@@ -905,8 +919,7 @@
         },
         "VersionNumber": {
           "description": "The updated version of the profile after the language update",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         }
       },
       "example": {
@@ -1243,7 +1256,7 @@
       "description": "This API requires an Entity Session Token, available from the Entity GetEntityToken method."
     }
   },
-  "x-ms-docs-errors-mapping": {
+  "x-pf-docs-errors-mapping": {
     "Success": {
       "name": "Success"
     },

@@ -58,7 +58,7 @@
           "Client/GetTradeStatus",
           "Client/OpenTrade"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "TradeAcceptedCatalogItemInvalid",
           "TradeAcceptedItemsMismatch",
           "TradeAcceptingUserNotAllowed",
@@ -110,7 +110,7 @@
           "Client/GetFriendsList",
           "Client/SetFriendTags"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "UsersAlreadyFriends"
         ]
       }
@@ -147,7 +147,7 @@
           "Client/GetPlayFabIDsFromGenericIDs",
           "Client/RemoveGenericID"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "IdentifierAlreadyClaimed"
         ]
       }
@@ -211,7 +211,7 @@
             "$ref": "#/responses/ApiErrorWrapper"
           }
         },
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "UserAlreadyAdded"
         ]
       }
@@ -249,7 +249,7 @@
           "Client/LoginWithEmailAddress",
           "Client/LoginWithPlayFab"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "AccountAlreadyLinked",
           "EmailAddressNotAvailable",
           "InvalidEmailAddress",
@@ -291,7 +291,7 @@
         "x-seeAlso": [
           "Client/SubtractUserVirtualCurrency"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "APINotEnabledForGameClientAccess",
           "InvalidVirtualCurrency"
         ]
@@ -326,7 +326,7 @@
           }
         },
         "x-requestDetails": "More information can be found on configuring your game for the Google Cloud Messaging service in the Google developer documentation, here: http://developer.android.com/google/gcm/client.html. The steps to configure and send Push Notifications is described in the PlayFab tutorials, here: https://api.playfab.com/docs/pushCrashCourse/.",
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "NoPushNotificationARNForTitle"
         ]
       }
@@ -360,7 +360,7 @@
           }
         },
         "x-requestDetails": "If you have an ad attribution partner enabled, this will post an install to their service to track the device. It uses the given device id to match based on clicks on ads.",
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "InvalidPartnerResponse",
           "NoPartnerEnabled"
         ]
@@ -400,7 +400,7 @@
           "Client/GetTradeStatus",
           "Client/OpenTrade"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "TradeAlreadyFilled",
           "TradeCancelled",
           "TradeStatusNotValidForCancelling",
@@ -442,7 +442,7 @@
           "Client/PayForPurchase",
           "Client/StartPurchase"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "FailedByPaymentProvider",
           "PurchaseDoesNotExist"
         ]
@@ -476,7 +476,7 @@
             "$ref": "#/responses/ApiErrorWrapper"
           }
         },
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "CharacterNotFound",
           "InvalidItemProperties",
           "ItemNotFound",
@@ -512,7 +512,7 @@
             "$ref": "#/responses/ApiErrorWrapper"
           }
         },
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "ExpiredAuthToken",
           "FailedToGetEntitlements",
           "PSNInaccessible"
@@ -550,7 +550,7 @@
         "x-seeAlso": [
           "Client/LoginWithXbox"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "ExpiredXboxLiveToken",
           "InvalidXboxLiveToken",
           "XboxInaccessible",
@@ -588,7 +588,7 @@
           }
         },
         "x-requestDetails": "If SharedGroupId is specified, the service will attempt to create a group with that identifier, and will return an error if it is already in use. If no SharedGroupId is specified, a random identifier will be assigned.",
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "InvalidSharedGroupId"
         ]
       }
@@ -621,7 +621,7 @@
             "$ref": "#/responses/ApiErrorWrapper"
           }
         },
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "CloudScriptAPIRequestCountExceeded",
           "CloudScriptAPIRequestError",
           "CloudScriptFunctionArgumentSizeExceeded",
@@ -765,7 +765,7 @@
           "Client/GetUserData",
           "Client/UpdateCharacterData"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "CharacterNotFound",
           "UserisNotValid"
         ]
@@ -803,7 +803,7 @@
         "x-seeAlso": [
           "Client/GetUserInventory"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "CharacterNotFound"
         ]
       }
@@ -878,7 +878,7 @@
           "Client/GetUserData",
           "Client/UpdateCharacterData"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "CharacterNotFound",
           "UserisNotValid"
         ]
@@ -919,7 +919,7 @@
           "Client/GetLeaderboardForUserCharacters",
           "Client/UpdateCharacterStatistics"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "CharacterNotFound"
         ]
       }
@@ -958,7 +958,7 @@
           "Admin/GetContentList",
           "Admin/GetContentUploadUrl"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "ContentS3OriginBucketNotConfigured"
         ]
       }
@@ -1035,7 +1035,7 @@
           "Client/GetLeaderboardAroundPlayer",
           "Client/GetUserStatistics"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "FacebookAPIError",
           "LeaderboardVersionNotAvailable"
         ]
@@ -1076,7 +1076,7 @@
           "Client/GetLeaderboardAroundPlayer",
           "Client/GetUserStatistics"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "FacebookAPIError"
         ]
       }
@@ -1115,7 +1115,7 @@
           "Client/GetPlayerProfile",
           "Client/RemoveFriend"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "FacebookAPIError"
         ]
       }
@@ -1191,7 +1191,7 @@
           "Client/GetLeaderboardAroundPlayer",
           "Client/GetUserStatistics"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "LeaderboardVersionNotAvailable"
         ]
       }
@@ -1266,7 +1266,7 @@
           "Client/GetLeaderboard",
           "Client/GetUserStatistics"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "LeaderboardVersionNotAvailable"
         ]
       }
@@ -1338,7 +1338,7 @@
         "x-seeAlso": [
           "Client/GetPurchase"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "InvalidPaymentProvider",
           "NoPartnerEnabled"
         ]
@@ -1372,7 +1372,7 @@
             "$ref": "#/responses/ApiErrorWrapper"
           }
         },
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "PhotonApplicationNotAssociatedWithTitle",
           "PhotonApplicationNotFound",
           "PhotonNotEnabledForTitle"
@@ -1408,7 +1408,7 @@
           }
         },
         "x-responseDetails": "Returns whatever info is requested in the response for the user. If no user is explicitly requested this defaults to the authenticated user. If the user is the same as the requester, PII (like email address, facebook id) is returned if available. Otherwise, only public information is returned. All parameters default to false.",
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "RequestViewConstraintParamsNotAllowed"
         ]
       }
@@ -1442,7 +1442,7 @@
           }
         },
         "x-requestDetails": "This API allows for access to details regarding a user in the PlayFab service, usually for purposes of customer support. Note that data returned may be Personally Identifying Information (PII), such as email address, and so care should be taken in how this data is stored and managed. Since this call will always return the relevant information for users who have accessed the title, the recommendation is to not store this data locally.",
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "PlayerNotInGame",
           "RequestViewConstraintParamsNotAllowed"
         ]
@@ -1549,7 +1549,7 @@
           "Admin/UpdatePlayerStatisticDefinition",
           "Client/UpdatePlayerStatistics"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "StatisticNotFound"
         ]
       }
@@ -1871,7 +1871,7 @@
           }
         },
         "x-responseDetails": "For PlayStation Network identifiers which have not been linked to PlayFab accounts, null will be returned.",
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "InvalidPSNAuthCode"
         ]
       }
@@ -1998,7 +1998,7 @@
           }
         },
         "x-requestDetails": "This API is designed to return publisher-specific values which can be read, but not written to, by the client. This data is shared across all titles assigned to a particular publisher, and can be used for cross-game coordination. Only titles assigned to a publisher can use this API. For more information email devrel@playfab.com. Note that there may up to a minute delay in between updating title data and this API call returning the newest value.",
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "PublisherNotSet"
         ]
       }
@@ -2034,7 +2034,7 @@
         "x-seeAlso": [
           "Client/StartPurchase"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "PurchaseDoesNotExist"
         ]
       }
@@ -2133,7 +2133,7 @@
         },
         "x-requestDetails": "This query retrieves the current time from one of the servers in PlayFab. Please note that due to clock drift between servers, there is a potential variance of up to 5 seconds.",
         "x-responseDetails": "Time is always returned as Coordinated Universal Time (UTC).",
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "PublisherNotSet"
         ]
       }
@@ -2228,7 +2228,7 @@
           }
         },
         "x-requestDetails": "An RSA CSP blob to be used to encrypt the payload of account creation requests when that API requires a signature header. For example if Client/LoginWithCustomId requires signature headers but the player does not have an account yet follow these steps: 1) Call Client/GetTitlePublicKey with one of the title's shared secrets. 2) Convert the Base64 encoded CSP blob to a byte array and create an RSA signing object. 3) Encrypt the UTF8 encoded JSON body of the registration request and place the Base64 encoded result into the EncryptedRequest and with the TitleId field, all other fields can be left empty when performing the API request. 4) Client receives authentication token as normal. Future requests to LoginWithCustomId will require the X-PlayFab-Signature header.",
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "InvalidSharedSecretKey",
           "NoSharedSecretKeyConfigured"
         ]
@@ -2268,7 +2268,7 @@
           "Client/GetPlayerTrades",
           "Client/OpenTrade"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "TradeDoesNotExist"
         ]
       }
@@ -2375,7 +2375,7 @@
           "Client/GetUserPublisherReadOnlyData",
           "Client/UpdateUserPublisherData"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "PublisherNotSet"
         ]
       }
@@ -2413,7 +2413,7 @@
           "Client/GetUserPublisherData",
           "Client/UpdateUserPublisherData"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "PublisherNotSet"
         ]
       }
@@ -2517,7 +2517,7 @@
           }
         },
         "x-requestDetails": "Grants a character to the user of the type specified by the item ID. The user must already have an instance of this item in their inventory in order to allow character creation. This item can come from a purchase or grant, which must be done before calling to create the character.",
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "InvalidItemProperties",
           "ItemNotOwned"
         ]
@@ -2555,7 +2555,7 @@
           "Client/LoginWithAndroidDeviceID",
           "Client/UnlinkAndroidDeviceID"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "LinkedDeviceAlreadyClaimed"
         ]
       }
@@ -2592,7 +2592,7 @@
           "Client/LoginWithCustomID",
           "Client/UnlinkCustomID"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "LinkedIdentifierAlreadyClaimed"
         ]
       }
@@ -2630,7 +2630,7 @@
           "Client/LoginWithFacebook",
           "Client/UnlinkFacebookAccount"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "AccountAlreadyLinked",
           "FacebookAPIError",
           "InvalidFacebookToken",
@@ -2670,7 +2670,7 @@
           "Client/LoginWithFacebookInstantGamesId",
           "Client/UnlinkFacebookInstantGamesId"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "LinkedIdentifierAlreadyClaimed"
         ]
       }
@@ -2706,7 +2706,7 @@
         "x-seeAlso": [
           "Client/UnlinkGameCenterAccount"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "AccountAlreadyLinked",
           "GameCenterAuthenticationFailed",
           "LinkedAccountAlreadyClaimed"
@@ -2746,7 +2746,7 @@
           "Client/LoginWithGoogleAccount",
           "Client/UnlinkGoogleAccount"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "AccountAlreadyLinked",
           "GoogleOAuthError",
           "GoogleOAuthNoIdTokenIncludedInResponse",
@@ -2788,7 +2788,7 @@
           "Client/LoginWithIOSDeviceID",
           "Client/UnlinkIOSDeviceID"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "LinkedDeviceAlreadyClaimed"
         ]
       }
@@ -2825,7 +2825,7 @@
           "Client/LoginWithKongregate",
           "Client/UnlinkKongregate"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "FeatureNotConfiguredForTitle",
           "InvalidKongregateToken",
           "LinkedAccountAlreadyClaimed"
@@ -2864,7 +2864,7 @@
           "Client/LoginWithNintendoSwitchDeviceId",
           "Client/UnlinkNintendoSwitchDeviceId"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "LinkedIdentifierAlreadyClaimed"
         ]
       }
@@ -2901,7 +2901,7 @@
           "Client/LoginWithOpenIdConnect",
           "Client/UnlinkOpenIdConnect"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "InvalidIdentityProviderId",
           "LinkedIdentifierAlreadyClaimed"
         ]
@@ -2939,7 +2939,7 @@
           "Client/LoginWithPSN",
           "Client/UnlinkPSNAccount"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "AccountAlreadyLinked",
           "InvalidPSNAuthCode",
           "InvalidPSNAuthCode",
@@ -2982,7 +2982,7 @@
           "Client/LoginWithSteam",
           "Client/UnlinkSteamAccount"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "AccountAlreadyLinked",
           "InvalidSteamTicket",
           "LinkedAccountAlreadyClaimed",
@@ -3022,7 +3022,7 @@
           "Client/LoginWithTwitch",
           "Client/UnlinkTwitch"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "FeatureNotConfiguredForTitle",
           "InvalidTwitchToken",
           "LinkedAccountAlreadyClaimed",
@@ -3065,7 +3065,7 @@
           "Client/RegisterWithWindowsHello",
           "Client/UnlinkWindowsHello"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "AccountAlreadyLinked",
           "InvalidPublicKey"
         ]
@@ -3103,7 +3103,7 @@
           "Client/LoginWithXbox",
           "Client/UnlinkXboxAccount"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "AccountAlreadyLinked",
           "ExpiredXboxLiveToken",
           "InvalidXboxLiveToken",
@@ -3145,7 +3145,7 @@
           "Client/LoginWithIOSDeviceID",
           "Client/UnlinkAndroidDeviceID"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "InvalidSignature",
           "InvalidSignatureTime",
           "PlayerSecretAlreadyConfigured",
@@ -3187,7 +3187,7 @@
           "Client/LinkCustomID",
           "Client/UnlinkCustomID"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "InvalidSignature",
           "InvalidSignatureTime",
           "PlayerSecretAlreadyConfigured",
@@ -3230,7 +3230,7 @@
           "Client/LoginWithPlayFab",
           "Client/RegisterPlayFabUser"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "InvalidEmailOrPassword",
           "RequestViewConstraintParamsNotAllowed"
         ]
@@ -3269,7 +3269,7 @@
           "Client/LinkFacebookAccount",
           "Client/UnlinkFacebookAccount"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "FacebookAPIError",
           "InvalidFacebookToken",
           "PlayerSecretAlreadyConfigured",
@@ -3309,7 +3309,7 @@
           "Client/LinkFacebookInstantGamesId",
           "Client/UnlinkFacebookInstantGamesId"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "FacebookInstantGamesAuthNotConfiguredForTitle",
           "InvalidFacebookInstantGamesSignature",
           "InvalidSignature",
@@ -3352,7 +3352,7 @@
         "x-seeAlso": [
           "Client/LoginWithIOSDeviceID"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "GameCenterAuthenticationFailed",
           "RequestViewConstraintParamsNotAllowed"
         ]
@@ -3387,7 +3387,7 @@
           }
         },
         "x-requestDetails": "Google sign-in is accomplished by obtaining a Google OAuth 2.0 credential using the Google sign-in for Android APIs on the device and passing it to this API. If this is the first time a user has signed in with the Google account and CreateAccount is set to true, a new PlayFab account will be created and linked to the Google account. Otherwise, if no PlayFab account is linked to the Google account, an error indicating this will be returned, so that the title can guide the user through creation of a PlayFab account. The current (recommended) method for obtaining a Google account credential in an Android application is to call GoogleSignInAccount.getServerAuthCode() and send the auth code as the ServerAuthCode parameter of this API. Before doing this, you must create an OAuth 2.0 web application client ID in the Google API Console and configure its client ID and secret in the PlayFab Game Manager Google Add-on for your title. This method does not require prompting of the user for additional Google account permissions, resulting in a user experience with the least possible friction. For more information about obtaining the server auth code, see https://developers.google.com/identity/sign-in/android/offline-access. The previous (deprecated) method was to obtain an OAuth access token by calling GetAccessToken() on the client and passing it as the AccessToken parameter to this API. for the with the Google OAuth 2.0 Access Token. More information on this change can be found in the Google developer documentation (https://android-developers.googleblog.com/2016/01/play-games-permissions-are-changing-in.html).",
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "GoogleOAuthError",
           "GoogleOAuthNoIdTokenIncludedInResponse",
           "GoogleOAuthNotConfiguredForTitle",
@@ -3429,7 +3429,7 @@
           "Client/LinkIOSDeviceID",
           "Client/UnlinkIOSDeviceID"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "InvalidSignature",
           "InvalidSignatureTime",
           "PlayerSecretAlreadyConfigured",
@@ -3472,7 +3472,7 @@
           "Client/LinkKongregate",
           "Client/UnlinkKongregate"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "FeatureNotConfiguredForTitle",
           "InvalidKongregateToken",
           "RequestViewConstraintParamsNotAllowed"
@@ -3511,7 +3511,7 @@
           "Client/LinkNintendoSwitchDeviceId",
           "Client/UnlinkNintendoSwitchDeviceId"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "InvalidSignature",
           "InvalidSignatureTime",
           "PlayerSecretAlreadyConfigured",
@@ -3552,7 +3552,7 @@
           "Client/LinkOpenIdConnect",
           "Client/UnlinkOpenIdConnect"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "InvalidIdentityProviderId",
           "InvalidSignature",
           "InvalidSignatureTime",
@@ -3596,7 +3596,7 @@
           "Client/LoginWithEmailAddress",
           "Client/RegisterPlayFabUser"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "InvalidUsernameOrPassword",
           "RequestViewConstraintParamsNotAllowed"
         ]
@@ -3635,7 +3635,7 @@
           "Client/LinkPSNAccount",
           "Client/UnlinkPSNAccount"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "InvalidPSNAuthCode",
           "InvalidPSNIssuerId",
           "PSNInaccessible",
@@ -3676,7 +3676,7 @@
           "Client/LinkSteamAccount",
           "Client/UnlinkSteamAccount"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "InvalidSteamTicket",
           "RequestViewConstraintParamsNotAllowed",
           "SteamNotEnabledForTitle"
@@ -3716,7 +3716,7 @@
           "Client/LinkTwitch",
           "Client/UnlinkTwitch"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "FeatureNotConfiguredForTitle",
           "InvalidTwitchToken",
           "RequestViewConstraintParamsNotAllowed",
@@ -3757,7 +3757,7 @@
           "Client/GetWindowsHelloChallenge",
           "Client/RegisterWithWindowsHello"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "RequestViewConstraintParamsNotAllowed"
         ]
       }
@@ -3795,7 +3795,7 @@
           "Client/LinkXboxAccount",
           "Client/UnlinkXboxAccount"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "ExpiredXboxLiveToken",
           "InvalidXboxLiveToken",
           "RequestViewConstraintParamsNotAllowed",
@@ -3840,7 +3840,7 @@
           "Admin/RemoveServerBuild",
           "Client/StartGame"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "BuildNotFound",
           "GameModeNotFound"
         ]
@@ -3880,7 +3880,7 @@
           "Client/GetPlayerTrades",
           "Client/GetTradeStatus"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "TradeAcceptedCatalogItemInvalid",
           "TradeAcceptedCatalogItemIsNotTradable",
           "TradeAllowedUsersInvalid",
@@ -3930,7 +3930,7 @@
           "Client/ConfirmPurchase",
           "Client/StartPurchase"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "DuplicatePurchaseTransactionId",
           "FailedByPaymentProvider",
           "InsufficientFunds",
@@ -3973,7 +3973,7 @@
         "x-seeAlso": [
           "Client/StartPurchase"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "CharacterNotFound",
           "InsufficientFunds",
           "ItemNotFound",
@@ -4012,7 +4012,7 @@
           }
         },
         "x-requestDetails": "Coupon codes can be created for any item, or set of items, in the catalog for the title. This operation causes the coupon to be consumed, and the specific items to be awarded to the user. Attempting to re-use an already consumed code, or a code which has not yet been created in the service, will result in an error.",
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "CatalogNotConfigured",
           "CharacterNotFound",
           "CouponAlreadyRedeemed",
@@ -4048,7 +4048,7 @@
             "$ref": "#/responses/ApiErrorWrapper"
           }
         },
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "InvalidPSNAuthCode",
           "PSNInaccessible"
         ]
@@ -4083,7 +4083,7 @@
           }
         },
         "x-requestDetails": "The steps to configure and send Push Notifications is described in the PlayFab tutorials, here: https://api.playfab.com/docs/pushCrashCourse/",
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "NoPushNotificationARNForTitle",
           "PushServiceError"
         ]
@@ -4122,7 +4122,7 @@
           "Client/LoginWithEmailAddress",
           "Client/LoginWithPlayFab"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "EmailAddressNotAvailable",
           "InvalidEmailAddress",
           "InvalidPartnerResponse",
@@ -4167,7 +4167,7 @@
           "Client/GetWindowsHelloChallenge",
           "Client/LoginWithWindowsHello"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "AccountAlreadyLinked",
           "InvalidPublicKey"
         ]
@@ -4270,7 +4270,7 @@
           "Client/AddGenericID",
           "Client/GetPlayFabIDsFromGenericIDs"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "AccountNotLinked",
           "IdentifierNotLinked"
         ]
@@ -4335,7 +4335,7 @@
           }
         },
         "x-requestDetails": "Any arbitrary information collected by the device",
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "BodyTooLarge"
         ]
       }
@@ -4401,7 +4401,7 @@
         },
         "x-requestDetails": "The title should obtain a refresh receipt via restoreCompletedTransactions in the SKPaymentQueue of the Apple StoreKit and pass that in to this call. The resultant receipt contains new receipt instances for all non-consumable goods previously purchased by the user. This API call iterates through every purchase in the receipt and restores the items if they still exist in the catalog and can be validated.",
         "x-responseDetails": "Once verified, the valid items will be restored into the user's inventory.",
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "InvalidBundleID",
           "InvalidCurrencyCode",
           "InvalidReceipt",
@@ -4442,7 +4442,7 @@
           }
         },
         "x-requestDetails": "If the account in question is a \"temporary\" account (for example, one that was created via a call to LoginFromIOSDeviceID), thisfunction will have no effect. Only PlayFab accounts which have valid email addresses will be able to receive a password reset email using this API.",
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "EmailRecipientBlacklisted",
           "InvalidEmailAddress",
           "NoContactEmailAddressFound",
@@ -4514,7 +4514,7 @@
           }
         },
         "x-requestDetails": "APIs that require signatures require that the player have a configured Player Secret Key that is used to sign all requests. Players that don't have a secret will be blocked from making API calls until it is configured. To create a signature header add a SHA256 hashed string containing UTF8 encoded JSON body as it will be sent to the server, the current time in UTC formatted to ISO 8601, and the players secret formatted as 'body.date.secret'. Place the resulting hash into the header X-PlayFab-Signature, along with a header X-PlayFab-Timestamp of the same UTC timestamp used in the signature.",
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "PlayerSecretAlreadyConfigured"
         ]
       }
@@ -4555,7 +4555,7 @@
           "Client/Matchmake",
           "Admin/RemoveServerBuild"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "APINotEnabledForGameClientAccess",
           "BuildNotFound"
         ]
@@ -4628,7 +4628,7 @@
         "x-seeAlso": [
           "Client/AddUserVirtualCurrency"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "APINotEnabledForGameClientAccess",
           "InvalidVirtualCurrency"
         ]
@@ -4666,7 +4666,7 @@
           "Client/LinkAndroidDeviceID",
           "Client/LoginWithAndroidDeviceID"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "AccountNotLinked",
           "DeviceNotLinked"
         ]
@@ -4704,7 +4704,7 @@
           "Client/LinkCustomID",
           "Client/LoginWithCustomID"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "AccountNotLinked",
           "CustomIdNotLinked"
         ]
@@ -4741,7 +4741,7 @@
         "x-seeAlso": [
           "Client/LinkFacebookAccount"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "AccountNotLinked"
         ]
       }
@@ -4778,7 +4778,7 @@
           "Client/LinkFacebookInstantGamesId",
           "Client/LoginWithFacebookInstantGamesId"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "AccountNotLinked",
           "FacebookInstantGamesIdNotLinked"
         ]
@@ -4815,7 +4815,7 @@
         "x-seeAlso": [
           "Client/LinkGameCenterAccount"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "AccountNotLinked"
         ]
       }
@@ -4852,7 +4852,7 @@
           "Client/LinkGoogleAccount",
           "Client/LoginWithGoogleAccount"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "AccountNotLinked"
         ]
       }
@@ -4889,7 +4889,7 @@
           "Client/LinkIOSDeviceID",
           "Client/LoginWithIOSDeviceID"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "AccountNotLinked",
           "DeviceNotLinked"
         ]
@@ -4927,7 +4927,7 @@
           "Client/LinkKongregate",
           "Client/LoginWithKongregate"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "AccountNotLinked"
         ]
       }
@@ -4964,7 +4964,7 @@
           "Client/LinkNintendoSwitchDeviceId",
           "Client/LoginWithNintendoSwitchDeviceId"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "AccountNotLinked",
           "NintendoSwitchDeviceIdNotLinked"
         ]
@@ -5001,7 +5001,7 @@
         "x-seeAlso": [
           "Client/LinkOpenIdConnect"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "AccountNotLinked"
         ]
       }
@@ -5037,7 +5037,7 @@
         "x-seeAlso": [
           "Client/LinkPSNAccount"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "AccountNotLinked"
         ]
       }
@@ -5073,7 +5073,7 @@
         "x-seeAlso": [
           "Client/LinkSteamAccount"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "AccountNotLinked"
         ]
       }
@@ -5110,7 +5110,7 @@
           "Client/LinkTwitch",
           "Client/LoginWithTwitch"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "AccountNotLinked"
         ]
       }
@@ -5150,7 +5150,7 @@
           "Client/LoginWithWindowsHello",
           "Client/RegisterWithWindowsHello"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "AccountAlreadyLinked"
         ]
       }
@@ -5186,7 +5186,7 @@
         "x-seeAlso": [
           "Client/LinkXboxAccount"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "AccountNotLinked",
           "InvalidXboxLiveToken"
         ]
@@ -5222,7 +5222,7 @@
         },
         "x-requestDetails": "Specify the container and optionally the catalogVersion for the container to open",
         "x-responseDetails": "The items and vc found within the container. These will be added and stacked in the appropriate inventory.",
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "CharacterNotFound",
           "ContainerNotOwned",
           "InvalidContainerItem",
@@ -5261,7 +5261,7 @@
         },
         "x-requestDetails": "Specify the type of container to open and optionally the catalogVersion for the container to open",
         "x-responseDetails": "The items and vc found within the container. These will be added and stacked in the appropriate inventory.",
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "CharacterNotFound",
           "ContainerNotOwned",
           "InvalidContainerItem",
@@ -5334,7 +5334,7 @@
           "Client/GetCharacterReadOnlyData",
           "Client/GetUserData"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "CharacterNotFound"
         ]
       }
@@ -5374,7 +5374,7 @@
           "Client/GetLeaderboardAroundCharacter",
           "Client/GetLeaderboardForUserCharacters"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "APINotEnabledForGameClientAccess",
           "CharacterNotFound",
           "InvalidCharacterStatistics"
@@ -5415,7 +5415,7 @@
           "Client/GetPlayerStatistics",
           "Admin/UpdatePlayerStatisticDefinition"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "APINotEnabledForGameClientAccess",
           "DuplicateStatisticName",
           "StatisticCountLimitExceeded",
@@ -5526,7 +5526,7 @@
           "Client/GetUserPublisherData",
           "Client/GetUserPublisherReadOnlyData"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "PublisherNotSet"
         ]
       }
@@ -5560,7 +5560,7 @@
           }
         },
         "x-requestDetails": "In addition to the PlayFab username, titles can make use of a DisplayName which is also a unique identifier, but specific to the title. This allows for unique names which more closely match the theme or genre of a title, for example.",
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "InvalidPartnerResponse",
           "NameNotAvailable",
           "ProfaneDisplayName"
@@ -5596,7 +5596,7 @@
           }
         },
         "x-responseDetails": "Once verified, the catalog item matching the Amazon item name will be added to the user's inventory.",
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "AmazonValidationError",
           "InvalidReceipt",
           "MissingAmazonSharedKey",
@@ -5635,7 +5635,7 @@
         },
         "x-requestDetails": "The packageName and productId are defined in the GooglePlay store. The productId must match the ItemId of the inventory item in the PlayFab catalog for the title. This enables the PlayFab service to securely validate that the purchase is for the correct item, in order to prevent uses from passing valid receipts as being for more expensive items (passing a receipt for a 99-cent purchase as being for a $19.99 purchase, for example). Each receipt may be validated only once to avoid granting the same item over and over from a single purchase.",
         "x-responseDetails": "Once verified, the catalog item (ItemId) matching the GooglePlay store item (productId) will be added to the user's inventory.",
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "GoogleServiceAccountInvalid",
           "InvalidBundleID",
           "InvalidProductForSubscription",
@@ -5679,7 +5679,7 @@
         },
         "x-requestDetails": "The CurrencyCode and PurchasePrice must match the price which was set up for the item in the Apple store. In addition, The ItemId of the inventory in the PlayFab Catalog must match the Product ID as it was set up in the Apple store. This enables the PlayFab service to securely validate that the purchase is for the correct item, in order to prevent uses from passing valid receipts as being for more expensive items (passing a receipt for a 99-cent purchase as being for a $19.99 purchase, for example).",
         "x-responseDetails": "Once verified, the catalog item matching the iTunes item name will be added to the user's inventory.",
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "InvalidBundleID",
           "InvalidCurrencyCode",
           "InvalidEnvironmentForReceipt",
@@ -5723,7 +5723,7 @@
           }
         },
         "x-responseDetails": "Once verified, the catalog item matching the Product name will be added to the user's inventory.",
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "InvalidReceipt",
           "MissingAmazonSharedKey",
           "NoMatchingCatalogItemForReceipt",
@@ -5760,7 +5760,7 @@
           }
         },
         "x-requestDetails": "This API is designed to write a multitude of different client-defined events into PlayStream. It supports a flexible JSON schema, which allowsfor arbitrary key-value pairs to describe any character-based event. The created event will be locked to the authenticated title and player. ",
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "CharacterNotFound",
           "InvalidEventField",
           "NoWritePermissionsForEvent"
@@ -5796,7 +5796,7 @@
           }
         },
         "x-requestDetails": "This API is designed to write a multitude of different event types into PlayStream. It supports a flexible JSON schema, which allowsfor arbitrary key-value pairs to describe any player-based event. The created event will be locked to the authenticated title and player. ",
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "InvalidEventField",
           "NoWritePermissionsForEvent"
         ]
@@ -5831,7 +5831,7 @@
           }
         },
         "x-requestDetails": "This API is designed to write a multitude of different client-defined events into PlayStream. It supports a flexible JSON schema, which allowsfor arbitrary key-value pairs to describe any title-based event. The created event will be locked to the authenticated title. ",
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "InvalidEventField",
           "NoWritePermissionsForEvent"
         ]
@@ -5846,6 +5846,7 @@
         "code": {
           "description": "Numerical HTTP code",
           "type": "number",
+          "format": "int32",
           "x-actualtype": "int32"
         },
         "status": {
@@ -5859,6 +5860,7 @@
         "errorCode": {
           "description": "Numerical Playfab error code",
           "type": "number",
+          "format": "int32",
           "x-actualtype": "int32"
         },
         "errorMessage": {
@@ -6120,8 +6122,7 @@
       "properties": {
         "Amount": {
           "description": "Amount to be added to the user balance of the specified virtual currency.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "VirtualCurrency": {
           "description": "Name of the virtual currency which is to be incremented.",
@@ -6256,17 +6257,23 @@
         "RealCurrencyPrices": {
           "description": "Cost of the catalog item for each applicable real world currency.",
           "type": "object",
-          "x-actualtype": "uint32"
+          "additionalProperties": {
+            "type": "integer"
+          }
         },
         "VCAmount": {
           "description": "Amount of each applicable virtual currency which will be received as a result of purchasing this catalog item.",
           "type": "object",
-          "x-actualtype": "uint32"
+          "additionalProperties": {
+            "type": "integer"
+          }
         },
         "VirtualCurrencyPrices": {
           "description": "Cost of the catalog item for each applicable virtual currency.",
           "type": "object",
-          "x-actualtype": "uint32"
+          "additionalProperties": {
+            "type": "integer"
+          }
         }
       }
     },
@@ -6314,8 +6321,7 @@
         },
         "InitialLimitedEditionCount": {
           "description": "If the item has IsLImitedEdition set to true, and this is the first time this ItemId has been defined as a limited edition item, this value determines the total number of instances to allocate for the title. Once this limit has been reached, no more instances of this ItemId can be created, and attempts to purchase or grant it will return a Result of false for that ItemId. If the item has already been defined to have a limited edition count, or if this value is less than zero, it will be ignored.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "IsLimitedEdition": {
           "description": "BETA: If true, then only a fixed number can ever be granted.",
@@ -6344,7 +6350,9 @@
         "RealCurrencyPrices": {
           "description": "override prices for this item for specific currencies",
           "type": "object",
-          "x-actualtype": "uint32"
+          "additionalProperties": {
+            "type": "integer"
+          }
         },
         "Tags": {
           "description": "list of item tags",
@@ -6357,7 +6365,9 @@
         "VirtualCurrencyPrices": {
           "description": "price of this item in virtual currencies and \"RM\" (the base Real Money purchase price, in USD pennies)",
           "type": "object",
-          "x-actualtype": "uint32"
+          "additionalProperties": {
+            "type": "integer"
+          }
         }
       },
       "required": [
@@ -6392,7 +6402,9 @@
         "BundledVirtualCurrencies": {
           "description": "virtual currency types and balances which will be added to the player inventory when the bundle is added",
           "type": "object",
-          "x-actualtype": "uint32"
+          "additionalProperties": {
+            "type": "integer"
+          }
         }
       }
     },
@@ -6401,13 +6413,11 @@
       "properties": {
         "UsageCount": {
           "description": "number of times this object can be used, after which it will be removed from the player inventory",
-          "type": "number",
-          "x-actualtype": "uint32"
+          "type": "integer"
         },
         "UsagePeriod": {
           "description": "duration in seconds for how long the item will remain in the player inventory - once elapsed, the item will be removed (recommended minimum value is 5 seconds, as lower values can cause the item to expire before operations depending on this item's details have completed)",
-          "type": "number",
-          "x-actualtype": "uint32"
+          "type": "integer"
         },
         "UsagePeriodGroup": {
           "description": "all inventory item instances in the player inventory sharing a non-null UsagePeriodGroup have their UsagePeriod values added together, and share the result - when that period has elapsed, all the items in the group will be removed",
@@ -6442,7 +6452,9 @@
         "VirtualCurrencyContents": {
           "description": "virtual currency types and balances which will be added to the player inventory when the container is unlocked",
           "type": "object",
-          "x-actualtype": "uint32"
+          "additionalProperties": {
+            "type": "integer"
+          }
         }
       }
     },
@@ -6488,13 +6500,11 @@
         },
         "Position": {
           "description": "User's overall position in the leaderboard.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "StatValue": {
           "description": "Specific value of the user's statistic.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         }
       },
       "required": [
@@ -6525,7 +6535,11 @@
       }
     },
     "CloudScriptRevisionOption": {
-      "type": "object",
+      "type": "string",
+      "x-ms-enum": {
+        "name": "CloudScriptRevisionOption",
+        "modelAsString": false
+      },
       "enum": [
         "Live",
         "Latest",
@@ -6640,8 +6654,7 @@
         },
         "ConsumeCount": {
           "description": "Number of uses to consume from the item.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "ItemInstanceId": {
           "description": "Unique instance identifier of the item to be consumed.",
@@ -6666,8 +6679,7 @@
         },
         "RemainingUses": {
           "description": "Number of uses remaining on the item.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         }
       },
       "required": [
@@ -6687,8 +6699,7 @@
         },
         "ServiceLabel": {
           "description": "Id of the PSN service label to consume entitlements from",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         }
       },
       "required": [
@@ -6785,12 +6796,19 @@
       "properties": {
         "Data": {
           "description": "Content of data",
-          "type": "object"
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
         }
       }
     },
     "ContinentCode": {
-      "type": "object",
+      "type": "string",
+      "x-ms-enum": {
+        "name": "ContinentCode",
+        "modelAsString": false
+      },
       "enum": [
         "AF",
         "AN",
@@ -6802,7 +6820,11 @@
       ]
     },
     "CountryCode": {
-      "type": "object",
+      "type": "string",
+      "x-ms-enum": {
+        "name": "CountryCode",
+        "modelAsString": false
+      },
       "enum": [
         "AF",
         "AX",
@@ -7081,7 +7103,11 @@
       }
     },
     "Currency": {
-      "type": "object",
+      "type": "string",
+      "x-ms-enum": {
+        "name": "Currency",
+        "modelAsString": false
+      },
       "enum": [
         "AED",
         "AFN",
@@ -7303,8 +7329,7 @@
       "properties": {
         "GameCount": {
           "description": "number of games running",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "Games": {
           "description": "array of games found",
@@ -7316,8 +7341,7 @@
         },
         "PlayerCount": {
           "description": "total number of players across all servers",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         }
       },
       "required": [
@@ -7350,7 +7374,10 @@
       "properties": {
         "Info": {
           "description": "Information posted to the PlayStream Event. Currently arbitrary, and specific to the environment sending it.",
-          "type": "object"
+          "type": "object",
+          "additionalProperties": {
+            "type": "object"
+          }
         }
       },
       "example": {
@@ -7362,7 +7389,11 @@
       }
     },
     "EmailVerificationStatus": {
-      "type": "object",
+      "type": "string",
+      "x-ms-enum": {
+        "name": "EmailVerificationStatus",
+        "modelAsString": false
+      },
       "enum": [
         "Unverified",
         "Pending",
@@ -7444,8 +7475,7 @@
         },
         "SpecificRevision": {
           "description": "The specivic revision to execute, when RevisionSelection is set to 'Specific'",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         }
       },
       "required": [
@@ -7466,8 +7496,7 @@
       "properties": {
         "APIRequestsIssued": {
           "description": "Number of PlayFab API requests issued by the CloudScript function",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "Error": {
           "$ref": "#/definitions/ScriptExecutionError",
@@ -7477,6 +7506,7 @@
         },
         "ExecutionTimeSeconds": {
           "type": "number",
+          "format": "double",
           "x-actualtype": "double"
         },
         "FunctionName": {
@@ -7493,8 +7523,7 @@
         },
         "HttpRequestsIssued": {
           "description": "Number of external HTTP requests issued by the CloudScript function",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "Logs": {
           "description": "Entries logged during the function execution. These include both entries logged in the function code using log.info() and log.error() and error entries for API and HTTP request failures.",
@@ -7509,18 +7538,17 @@
           "type": "boolean"
         },
         "MemoryConsumedBytes": {
-          "type": "number",
-          "x-actualtype": "uint32"
+          "type": "integer"
         },
         "ProcessorTimeSeconds": {
           "description": "Processor time consumed while executing the function. This does not include time spent waiting on API calls or HTTP requests.",
           "type": "number",
+          "format": "double",
           "x-actualtype": "double"
         },
         "Revision": {
           "description": "The revision of the CloudScript that executed",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         }
       },
       "required": [
@@ -7713,8 +7741,7 @@
         },
         "MaxPlayers": {
           "description": "maximum players this server can support",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "PlayerUserIds": {
           "description": "array of current player IDs on this server",
@@ -7731,8 +7758,7 @@
         },
         "RunTime": {
           "description": "duration in seconds this server has been running",
-          "type": "number",
-          "x-actualtype": "uint32"
+          "type": "integer"
         },
         "ServerIPV4Address": {
           "description": "IPV4 address of the server",
@@ -7744,8 +7770,7 @@
         },
         "ServerPort": {
           "description": "port number to use for non-http communications with the server",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "ServerPublicDNSName": {
           "description": "Public DNS name (if any) of the server",
@@ -7757,7 +7782,10 @@
         },
         "Tags": {
           "description": "game session tags",
-          "type": "object"
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
         }
       },
       "required": [
@@ -7765,7 +7793,11 @@
       ]
     },
     "GameInstanceState": {
-      "type": "object",
+      "type": "string",
+      "x-ms-enum": {
+        "name": "GameInstanceState",
+        "modelAsString": false
+      },
       "enum": [
         "Open",
         "Closed"
@@ -8177,8 +8209,7 @@
         },
         "IfChangedFromDataVersion": {
           "description": "The version that currently exists according to the caller. The call will return the data for all of the keys if the version in the system is greater than this.",
-          "type": "number",
-          "x-actualtype": "uint32"
+          "type": "integer"
         },
         "Keys": {
           "description": "Specific keys to search for in the custom user data.",
@@ -8212,15 +8243,16 @@
           "type": "string"
         },
         "Data": {
-          "$ref": "#/definitions/UserDataRecord",
           "description": "User specific data for this title.",
           "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/UserDataRecord"
+          },
           "x-isclass": true
         },
         "DataVersion": {
           "description": "Indicates the current version of the data that has been set. This is incremented with every set call for that type of data (read-only, internal, etc). This version can be provided in Get calls to find updated data.",
-          "type": "number",
-          "x-actualtype": "uint32"
+          "type": "integer"
         }
       },
       "required": [
@@ -8282,12 +8314,16 @@
         "VirtualCurrency": {
           "description": "Array of virtual currency balance(s) belonging to the character.",
           "type": "object",
-          "x-actualtype": "int32"
+          "additionalProperties": {
+            "type": "integer"
+          }
         },
         "VirtualCurrencyRechargeTimes": {
-          "$ref": "#/definitions/VirtualCurrencyRechargeTime",
           "description": "Array of remaining times and timestamps for virtual currencies.",
           "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/VirtualCurrencyRechargeTime"
+          },
           "x-isclass": true
         }
       },
@@ -8329,13 +8365,11 @@
         },
         "MaxResultsCount": {
           "description": "Maximum number of entries to retrieve. Default 10, maximum 100.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "StartPosition": {
           "description": "First entry in the leaderboard to be retrieved.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "StatisticName": {
           "description": "Unique identifier for the title-specific statistic for the leaderboard.",
@@ -8399,7 +8433,9 @@
         "CharacterStatistics": {
           "description": "The requested character statistics.",
           "type": "object",
-          "x-actualtype": "int32"
+          "additionalProperties": {
+            "type": "integer"
+          }
         }
       },
       "example": {
@@ -8457,8 +8493,7 @@
         },
         "MaxResultsCount": {
           "description": "Maximum number of entries to retrieve. Default 10, maximum 100.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "PlayFabId": {
           "description": "PlayFab unique identifier of the user to center the leaderboard around. If null will center on the logged in user.",
@@ -8481,8 +8516,7 @@
         },
         "Version": {
           "description": "The version of the leaderboard to get.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "XboxToken": {
           "description": "Xbox token if Xbox friends should be included. Requires Xbox be configured on PlayFab.",
@@ -8515,8 +8549,7 @@
         },
         "Version": {
           "description": "The version of the leaderboard returned.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         }
       },
       "required": [
@@ -8545,8 +8578,7 @@
         },
         "MaxResultsCount": {
           "description": "Maximum number of entries to retrieve. Default 10, maximum 100.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "ProfileConstraints": {
           "$ref": "#/definitions/PlayerProfileViewConstraints",
@@ -8556,8 +8588,7 @@
         },
         "StartPosition": {
           "description": "Position in the leaderboard to start this listing (defaults to the first entry).",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "StatisticName": {
           "description": "Statistic used to rank friends for this leaderboard.",
@@ -8570,8 +8601,7 @@
         },
         "Version": {
           "description": "The version of the leaderboard to get.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "XboxToken": {
           "description": "Xbox token if Xbox friends should be included. Requires Xbox be configured on PlayFab.",
@@ -8701,8 +8731,7 @@
         },
         "MaxResultsCount": {
           "description": "Maximum number of entries to retrieve. Default 10, maximum 100.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "StatisticName": {
           "description": "Unique identifier for the title-specific statistic for the leaderboard.",
@@ -8750,8 +8779,7 @@
       "properties": {
         "MaxResultsCount": {
           "description": "Maximum number of entries to retrieve. Default 10, maximum 100.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "PlayFabId": {
           "description": "PlayFab unique identifier of the user to center the leaderboard around. If null will center on the logged in user.",
@@ -8774,8 +8802,7 @@
         },
         "Version": {
           "description": "The version of the leaderboard to get.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         }
       },
       "required": [
@@ -8804,8 +8831,7 @@
         },
         "Version": {
           "description": "The version of the leaderboard returned.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         }
       },
       "required": [
@@ -8826,8 +8852,7 @@
       "properties": {
         "MaxResultsCount": {
           "description": "Maximum number of entries to retrieve.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "StatisticName": {
           "description": "Unique identifier for the title-specific statistic for the leaderboard.",
@@ -8874,8 +8899,7 @@
       "properties": {
         "MaxResultsCount": {
           "description": "Maximum number of entries to retrieve. Default 10, maximum 100.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "ProfileConstraints": {
           "$ref": "#/definitions/PlayerProfileViewConstraints",
@@ -8885,8 +8909,7 @@
         },
         "StartPosition": {
           "description": "Position in the leaderboard to start this listing (defaults to the first entry).",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "StatisticName": {
           "description": "Statistic used to rank players for this leaderboard.",
@@ -8899,8 +8922,7 @@
         },
         "Version": {
           "description": "The version of the leaderboard to get.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         }
       },
       "required": [
@@ -8930,8 +8952,7 @@
         },
         "Version": {
           "description": "The version of the leaderboard returned.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         }
       },
       "required": [
@@ -9255,18 +9276,22 @@
         },
         "TitleData": {
           "description": "Title data for this title.",
-          "type": "object"
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
         },
         "UserData": {
-          "$ref": "#/definitions/UserDataRecord",
           "description": "User specific custom data.",
           "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/UserDataRecord"
+          },
           "x-isclass": true
         },
         "UserDataVersion": {
           "description": "The version of the UserData that was returned.",
-          "type": "number",
-          "x-actualtype": "uint32"
+          "type": "integer"
         },
         "UserInventory": {
           "description": "Array of inventory items in the user's current inventory.",
@@ -9278,25 +9303,30 @@
           "x-isclass": true
         },
         "UserReadOnlyData": {
-          "$ref": "#/definitions/UserDataRecord",
           "description": "User specific read-only data.",
           "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/UserDataRecord"
+          },
           "x-isclass": true
         },
         "UserReadOnlyDataVersion": {
           "description": "The version of the Read-Only UserData that was returned.",
-          "type": "number",
-          "x-actualtype": "uint32"
+          "type": "integer"
         },
         "UserVirtualCurrency": {
           "description": "Dictionary of virtual currency balance(s) belonging to the user.",
           "type": "object",
-          "x-actualtype": "int32"
+          "additionalProperties": {
+            "type": "integer"
+          }
         },
         "UserVirtualCurrencyRechargeTimes": {
-          "$ref": "#/definitions/VirtualCurrencyRechargeTime",
           "description": "Dictionary of remaining times and timestamps for virtual currencies.",
           "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/VirtualCurrencyRechargeTime"
+          },
           "x-isclass": true
         }
       },
@@ -10000,8 +10030,7 @@
       "properties": {
         "IssuerId": {
           "description": "Id of the PSN issuer environment. If null, defaults to 256 (production)",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "PSNAccountIDs": {
           "description": "Array of unique PlayStation Network identifiers for which the title needs to get PlayFab identifiers.",
@@ -10217,7 +10246,10 @@
       "properties": {
         "Data": {
           "description": "a dictionary object of key / value pairs",
-          "type": "object"
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
         }
       },
       "example": {
@@ -10335,9 +10367,11 @@
       "type": "object",
       "properties": {
         "Data": {
-          "$ref": "#/definitions/SharedGroupDataRecord",
           "description": "Data for the requested keys.",
           "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/SharedGroupDataRecord"
+          },
           "x-isclass": true
         },
         "Members": {
@@ -10502,7 +10536,10 @@
       "properties": {
         "Data": {
           "description": "a dictionary object of key / value pairs",
-          "type": "object"
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
         }
       },
       "example": {
@@ -10517,8 +10554,7 @@
       "properties": {
         "Count": {
           "description": "Limits the results to the last n entries. Defaults to 10 if not set.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         }
       },
       "example": {
@@ -10634,8 +10670,7 @@
       "properties": {
         "IfChangedFromDataVersion": {
           "description": "The version that currently exists according to the caller. The call will return the data for all of the keys if the version in the system is greater than this.",
-          "type": "number",
-          "x-actualtype": "uint32"
+          "type": "integer"
         },
         "Keys": {
           "description": "List of unique keys to load from.",
@@ -10660,15 +10695,16 @@
       "type": "object",
       "properties": {
         "Data": {
-          "$ref": "#/definitions/UserDataRecord",
           "description": "User specific data for this title.",
           "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/UserDataRecord"
+          },
           "x-isclass": true
         },
         "DataVersion": {
           "description": "Indicates the current version of the data that has been set. This is incremented with every set call for that type of data (read-only, internal, etc). This version can be provided in Get calls to find updated data.",
-          "type": "number",
-          "x-actualtype": "uint32"
+          "type": "integer"
         }
       },
       "required": [
@@ -10709,12 +10745,16 @@
         "VirtualCurrency": {
           "description": "Array of virtual currency balance(s) belonging to the user.",
           "type": "object",
-          "x-actualtype": "int32"
+          "additionalProperties": {
+            "type": "integer"
+          }
         },
         "VirtualCurrencyRechargeTimes": {
-          "$ref": "#/definitions/VirtualCurrencyRechargeTime",
           "description": "Array of remaining times and timestamps for virtual currencies.",
           "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/VirtualCurrencyRechargeTime"
+          },
           "x-isclass": true
         }
       },
@@ -10870,7 +10910,10 @@
         },
         "CustomData": {
           "description": "A set of custom key-value pairs on the instance of the inventory item, which is not to be confused with the catalog item's custom data.",
-          "type": "object"
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
         },
         "DisplayName": {
           "description": "CatalogItem.DisplayName at the time this item was purchased.",
@@ -10898,8 +10941,7 @@
         },
         "RemainingUses": {
           "description": "Total number of remaining uses, if this is a consumable item.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "UnitCurrency": {
           "description": "Currency type for the cost of the catalog item. Not available when granting items.",
@@ -10907,13 +10949,11 @@
         },
         "UnitPrice": {
           "description": "Cost of the catalog item in the given currency. Not available when granting items.",
-          "type": "number",
-          "x-actualtype": "uint32"
+          "type": "integer"
         },
         "UsesIncrementedBy": {
           "description": "The number of uses that were added or removed to this item in this call.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         }
       },
       "required": [
@@ -10945,8 +10985,7 @@
         },
         "Quantity": {
           "description": "How many of this item to purchase. Min 1, maximum 25.",
-          "type": "number",
-          "x-actualtype": "uint32"
+          "type": "integer"
         },
         "UpgradeFromItems": {
           "description": "Items to be upgraded as a result of this purchase (upgraded items are hidden, as they are \"replaced\" by the new items).",
@@ -11288,8 +11327,7 @@
         },
         "IssuerId": {
           "description": "Id of the PSN issuer environment. If null, defaults to 256 (production)",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "RedirectUri": {
           "description": "Redirect URI supplied to PSN when requesting an auth code",
@@ -11471,17 +11509,23 @@
         "Latitude": {
           "description": "Latitude coordinate of the geographic location.",
           "type": "number",
+          "format": "double",
           "x-actualtype": "double"
         },
         "Longitude": {
           "description": "Longitude coordinate of the geographic location.",
           "type": "number",
+          "format": "double",
           "x-actualtype": "double"
         }
       }
     },
     "LoginIdentityProvider": {
-      "type": "object",
+      "type": "string",
+      "x-ms-enum": {
+        "name": "LoginIdentityProvider",
+        "modelAsString": false
+      },
       "enum": [
         "Unknown",
         "PlayFab",
@@ -12093,8 +12137,7 @@
         },
         "IssuerId": {
           "description": "Id of the PSN issuer environment. If null, defaults to 256 (production)",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "PlayerSecret": {
           "description": "Player secret that is used to verify API request signatures (Enterprise Only).",
@@ -12364,8 +12407,7 @@
         },
         "PollWaitTimeMS": {
           "description": "time in milliseconds the application is configured to wait on matchmaking results",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "ServerIPV4Address": {
           "description": "IPV4 address of the server",
@@ -12377,8 +12419,7 @@
         },
         "ServerPort": {
           "description": "port number to use for non-http communications with the server",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "ServerPublicDNSName": {
           "description": "Public DNS name (if any) of the server",
@@ -12405,7 +12446,11 @@
       }
     },
     "MatchmakeStatus": {
-      "type": "object",
+      "type": "string",
+      "x-ms-enum": {
+        "name": "MatchmakeStatus",
+        "modelAsString": false
+      },
       "enum": [
         "Complete",
         "Waiting",
@@ -12457,13 +12502,11 @@
       "properties": {
         "Balance": {
           "description": "Balance of the virtual currency after modification.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "BalanceChange": {
           "description": "Amount added or subtracted from the user's virtual currency. Maximum VC balance is Int32 (2,147,483,647). Any increase over this value will be discarded.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "PlayFabId": {
           "description": "User currency was subtracted from.",
@@ -12597,8 +12640,7 @@
       "properties": {
         "CreditApplied": {
           "description": "Local credit applied to the transaction (provider specific).",
-          "type": "number",
-          "x-actualtype": "uint32"
+          "type": "integer"
         },
         "OrderId": {
           "description": "Purchase order identifier.",
@@ -12622,8 +12664,7 @@
         },
         "PurchasePrice": {
           "description": "Cost of the transaction.",
-          "type": "number",
-          "x-actualtype": "uint32"
+          "type": "integer"
         },
         "Status": {
           "$ref": "#/definitions/TransactionStatus",
@@ -12634,12 +12675,16 @@
         "VCAmount": {
           "description": "Virtual currencies granted by the transaction, if any.",
           "type": "object",
-          "x-actualtype": "int32"
+          "additionalProperties": {
+            "type": "integer"
+          }
         },
         "VirtualCurrency": {
           "description": "Current virtual currency balances for the user.",
           "type": "object",
-          "x-actualtype": "int32"
+          "additionalProperties": {
+            "type": "integer"
+          }
         }
       },
       "required": [
@@ -12662,8 +12707,7 @@
         },
         "Price": {
           "description": "Amount of the specified currency needed for the purchase.",
-          "type": "number",
-          "x-actualtype": "uint32"
+          "type": "integer"
         },
         "ProviderName": {
           "description": "Name of the purchase provider for this option.",
@@ -12671,8 +12715,7 @@
         },
         "StoreCredit": {
           "description": "Amount of existing credit the user has with the provider.",
-          "type": "number",
-          "x-actualtype": "uint32"
+          "type": "integer"
         }
       },
       "required": [
@@ -12693,8 +12736,7 @@
         },
         "Position": {
           "description": "User's overall position in the leaderboard.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "Profile": {
           "$ref": "#/definitions/PlayerProfileModel",
@@ -12704,8 +12746,7 @@
         },
         "StatValue": {
           "description": "Specific value of the user's statistic.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         }
       },
       "required": [
@@ -12827,8 +12868,7 @@
         },
         "TotalValueToDateInUSD": {
           "description": "Sum of the player's purchases made with real-money currencies, converted to US dollars equivalent and represented as a whole number of cents (1/100 USD). For example, 999 indicates nine dollars and ninety-nine cents.",
-          "type": "number",
-          "x-actualtype": "uint32"
+          "type": "integer"
         },
         "ValuesToDate": {
           "description": "List of the player's lifetime purchase totals, summed by real-money currency",
@@ -12957,8 +12997,7 @@
         },
         "Version": {
           "description": "version of the statistic",
-          "type": "number",
-          "x-actualtype": "uint32"
+          "type": "integer"
         }
       },
       "required": [
@@ -13002,8 +13041,7 @@
         },
         "Price": {
           "description": "Price the client expects to pay for the item (in case a new catalog or store was uploaded, with new prices).",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "StoreId": {
           "description": "Store to buy this item through. If not set, prices default to those in the catalog.",
@@ -13072,13 +13110,16 @@
         },
         "RecordedTransactionTotal": {
           "description": "Amount of the stated currency paid for the items, in centesimal units",
-          "type": "number",
-          "x-actualtype": "uint32"
+          "type": "integer"
         }
       }
     },
     "PushNotificationPlatform": {
-      "type": "object",
+      "type": "string",
+      "x-ms-enum": {
+        "name": "PushNotificationPlatform",
+        "modelAsString": false
+      },
       "enum": [
         "ApplePushNotificationService",
         "GoogleCloudMessaging"
@@ -13161,8 +13202,7 @@
         },
         "IssuerId": {
           "description": "Id of the PSN issuer environment. If null, defaults to 256 (production)",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "RedirectUri": {
           "description": "Redirect URI supplied to PSN when requesting an auth code",
@@ -13179,7 +13219,11 @@
       }
     },
     "Region": {
-      "type": "object",
+      "type": "string",
+      "x-ms-enum": {
+        "name": "Region",
+        "modelAsString": false
+      },
       "enum": [
         "USCentral",
         "USEast",
@@ -13494,8 +13538,7 @@
       "properties": {
         "SubmissionsRemaining": {
           "description": "The number of remaining reports which may be filed today.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         }
       },
       "required": [
@@ -13685,7 +13728,11 @@
       ]
     },
     "SourceType": {
-      "type": "object",
+      "type": "string",
+      "x-ms-enum": {
+        "name": "SourceType",
+        "modelAsString": false
+      },
       "enum": [
         "Admin",
         "BackEnd",
@@ -13764,8 +13811,7 @@
         },
         "ServerPort": {
           "description": "port on the server to be used for communication",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "ServerPublicDNSName": {
           "description": "server public DNS name",
@@ -13848,7 +13894,9 @@
         "VirtualCurrencyBalances": {
           "description": "Current virtual currency totals for the user.",
           "type": "object",
-          "x-actualtype": "int32"
+          "additionalProperties": {
+            "type": "integer"
+          }
         }
       },
       "example": {
@@ -13900,13 +13948,11 @@
         },
         "Value": {
           "description": "Statistic value",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "Version": {
           "description": "Statistic version (0 if not a versioned statistic)",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         }
       },
       "required": [
@@ -13923,8 +13969,7 @@
         },
         "Version": {
           "description": "the version of the statistic to be returned",
-          "type": "number",
-          "x-actualtype": "uint32"
+          "type": "integer"
         }
       },
       "required": [
@@ -13941,13 +13986,11 @@
         },
         "Value": {
           "description": "statistic value for the player",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "Version": {
           "description": "for updates to an existing statistic value for a player, the version of the statistic when it was loaded. Null when setting the statistic value for the first time.",
-          "type": "number",
-          "x-actualtype": "uint32"
+          "type": "integer"
         }
       },
       "required": [
@@ -13964,13 +14007,11 @@
         },
         "Value": {
           "description": "statistic value for the player",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "Version": {
           "description": "for updates to an existing statistic value for a player, the version of the statistic when it was loaded",
-          "type": "number",
-          "x-actualtype": "uint32"
+          "type": "integer"
         }
       },
       "required": [
@@ -14006,8 +14047,7 @@
         },
         "DisplayPosition": {
           "description": "Intended display position for this item. Note that 0 is the first position",
-          "type": "number",
-          "x-actualtype": "uint32"
+          "type": "integer"
         },
         "ItemId": {
           "description": "Unique identifier of the item as it exists in the catalog - note that this must exactly match the ItemId from the catalog",
@@ -14016,12 +14056,16 @@
         "RealCurrencyPrices": {
           "description": "Override prices for this item for specific currencies",
           "type": "object",
-          "x-actualtype": "uint32"
+          "additionalProperties": {
+            "type": "integer"
+          }
         },
         "VirtualCurrencyPrices": {
           "description": "Override prices for this item in virtual currencies and \"RM\" (the base Real Money purchase price, in USD pennies)",
           "type": "object",
-          "x-actualtype": "uint32"
+          "additionalProperties": {
+            "type": "integer"
+          }
         }
       },
       "required": [
@@ -14088,7 +14132,11 @@
       ]
     },
     "SubscriptionProviderStatus": {
-      "type": "object",
+      "type": "string",
+      "x-ms-enum": {
+        "name": "SubscriptionProviderStatus",
+        "modelAsString": false
+      },
       "enum": [
         "NoError",
         "Cancelled",
@@ -14106,8 +14154,7 @@
       "properties": {
         "Amount": {
           "description": "Amount to be subtracted from the user balance of the specified virtual currency.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "VirtualCurrency": {
           "description": "Name of the virtual currency which is to be decremented.",
@@ -14133,7 +14180,11 @@
       }
     },
     "TitleActivationStatus": {
-      "type": "object",
+      "type": "string",
+      "x-ms-enum": {
+        "name": "TitleActivationStatus",
+        "modelAsString": false
+      },
       "enum": [
         "None",
         "ActivatedTitleKey",
@@ -14246,7 +14297,11 @@
       }
     },
     "TradeStatus": {
-      "type": "object",
+      "type": "string",
+      "x-ms-enum": {
+        "name": "TradeStatus",
+        "modelAsString": false
+      },
       "enum": [
         "Invalid",
         "Opening",
@@ -14258,7 +14313,11 @@
       ]
     },
     "TransactionStatus": {
-      "type": "object",
+      "type": "string",
+      "x-ms-enum": {
+        "name": "TransactionStatus",
+        "modelAsString": false
+      },
       "enum": [
         "CreateCart",
         "Init",
@@ -14588,7 +14647,9 @@
         "VirtualCurrency": {
           "description": "Virtual currency granted to the player as a result of unlocking the container.",
           "type": "object",
-          "x-actualtype": "uint32"
+          "additionalProperties": {
+            "type": "integer"
+          }
         }
       },
       "example": {
@@ -14636,7 +14697,10 @@
         },
         "Data": {
           "description": "Key-value pairs to be written to the custom data. Note that keys are trimmed of whitespace, are limited in size, and may not begin with a '!' character or be null.",
-          "type": "object"
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
         },
         "KeysToRemove": {
           "description": "Optional list of Data-keys to remove from UserData. Some SDKs cannot insert null-values into Data due to language constraints. Use this to delete the keys directly.",
@@ -14671,8 +14735,7 @@
       "properties": {
         "DataVersion": {
           "description": "Indicates the current version of the data that has been set. This is incremented with every set call for that type of data (read-only, internal, etc). This version can be provided in Get calls to find updated data.",
-          "type": "number",
-          "x-actualtype": "uint32"
+          "type": "integer"
         }
       },
       "required": [
@@ -14693,7 +14756,9 @@
         "CharacterStatistics": {
           "description": "Statistics to be updated with the provided values, in the Key(string), Value(int) pattern.",
           "type": "object",
-          "x-actualtype": "int32"
+          "additionalProperties": {
+            "type": "integer"
+          }
         }
       },
       "required": [
@@ -14756,7 +14821,10 @@
       "properties": {
         "Data": {
           "description": "Key-value pairs to be written to the custom data. Note that keys are trimmed of whitespace, are limited in size, and may not begin with a '!' character or be null.",
-          "type": "object"
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
         },
         "KeysToRemove": {
           "description": "Optional list of Data-keys to remove from UserData. Some SDKs cannot insert null-values into Data due to language constraints. Use this to delete the keys directly.",
@@ -14798,7 +14866,10 @@
       "properties": {
         "Data": {
           "description": "Key-value pairs to be written to the custom data. Note that keys are trimmed of whitespace, are limited in size, and may not begin with a '!' character or be null.",
-          "type": "object"
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
         },
         "KeysToRemove": {
           "description": "Optional list of Data-keys to remove from UserData. Some SDKs cannot insert null-values into Data due to language constraints. Use this to delete the keys directly.",
@@ -14829,8 +14900,7 @@
       "properties": {
         "DataVersion": {
           "description": "Indicates the current version of the data that has been set. This is incremented with every set call for that type of data (read-only, internal, etc). This version can be provided in Get calls to find updated data.",
-          "type": "number",
-          "x-actualtype": "uint32"
+          "type": "integer"
         }
       },
       "required": [
@@ -15039,7 +15109,11 @@
     },
     "UserDataPermission": {
       "description": "Indicates whether a given data key is private (readable only by the player) or public (readable by all players). When a player makes a GetUserData request about another player, only keys marked Public will be returned.",
-      "type": "object",
+      "type": "string",
+      "x-ms-enum": {
+        "name": "UserDataPermission",
+        "modelAsString": false
+      },
       "enum": [
         "Private",
         "Public"
@@ -15177,7 +15251,11 @@
       }
     },
     "UserOrigination": {
-      "type": "object",
+      "type": "string",
+      "x-ms-enum": {
+        "name": "UserOrigination",
+        "modelAsString": false
+      },
       "enum": [
         "Organic",
         "Steam",
@@ -15368,8 +15446,7 @@
         },
         "PurchasePrice": {
           "description": "Amount of the stated currency paid, in centesimal units.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "ReceiptId": {
           "description": "ReceiptId returned by the Amazon App Store in-app purchase API",
@@ -15437,8 +15514,7 @@
         },
         "PurchasePrice": {
           "description": "Amount of the stated currency paid, in centesimal units.",
-          "type": "number",
-          "x-actualtype": "uint32"
+          "type": "integer"
         },
         "ReceiptJson": {
           "description": "Original JSON string returned by the Google Play IAB API.",
@@ -15507,8 +15583,7 @@
         },
         "PurchasePrice": {
           "description": "Amount of the stated currency paid, in centesimal units.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "ReceiptData": {
           "description": "Base64 encoded receipt data, passed back by the App Store as a result of a successful purchase.",
@@ -15571,8 +15646,7 @@
         },
         "PurchasePrice": {
           "description": "Amount of the stated currency paid, in centesimal units.",
-          "type": "number",
-          "x-actualtype": "uint32"
+          "type": "integer"
         },
         "Receipt": {
           "description": "XML Receipt returned by the Windows App Store in-app purchase API",
@@ -15628,8 +15702,7 @@
         },
         "TotalValue": {
           "description": "Total value of the purchases in a whole number of 1/100 monetary units. For example, 999 indicates nine dollars and ninety-nine cents when Currency is 'USD')",
-          "type": "number",
-          "x-actualtype": "uint32"
+          "type": "integer"
         },
         "TotalValueAsDecimal": {
           "description": "Total value of the purchases in a string representation of decimal monetary units. For example, '9.99' indicates nine dollars and ninety-nine cents when Currency is 'USD'.",
@@ -15662,8 +15735,7 @@
       "properties": {
         "RechargeMax": {
           "description": "Maximum value to which the regenerating currency will automatically increment. Note that it can exceed this value through use of the AddUserVirtualCurrency API call. However, it will not regenerate automatically until it has fallen below this value.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "RechargeTime": {
           "description": "Server timestamp in UTC indicating the next time the virtual currency will be incremented.",
@@ -15671,8 +15743,7 @@
         },
         "SecondsToRecharge": {
           "description": "Time remaining (in seconds) before the next recharge increment of the virtual currency.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         }
       },
       "required": [
@@ -15692,7 +15763,10 @@
       "properties": {
         "Body": {
           "description": "Custom event properties. Each property consists of a name (string) and a value (JSON object).",
-          "type": "object"
+          "type": "object",
+          "additionalProperties": {
+            "type": "object"
+          }
         },
         "CharacterId": {
           "description": "Unique PlayFab assigned ID for a specific character owned by a user",
@@ -15731,7 +15805,10 @@
       "properties": {
         "Body": {
           "description": "Custom data properties associated with the event. Each property consists of a name (string) and a value (JSON object).",
-          "type": "object"
+          "type": "object",
+          "additionalProperties": {
+            "type": "object"
+          }
         },
         "EventName": {
           "description": "The name of the event, within the namespace scoped to the title. The naming convention is up to the caller, but it commonly follows the subject_verb_object pattern (e.g. player_logged_in).",
@@ -15776,7 +15853,10 @@
       "properties": {
         "Body": {
           "description": "Custom event properties. Each property consists of a name (string) and a value (JSON object).",
-          "type": "object"
+          "type": "object",
+          "additionalProperties": {
+            "type": "object"
+          }
         },
         "EventName": {
           "description": "The name of the event, within the namespace scoped to the title. The naming convention is up to the caller, but it commonly follows the subject_verb_object pattern (e.g. player_logged_in).",
@@ -21031,7 +21111,7 @@
       "description": "This API requires an Entity Session Token, available from the Entity GetEntityToken method."
     }
   },
-  "x-ms-docs-errors-mapping": {
+  "x-pf-docs-errors-mapping": {
     "Success": {
       "name": "Success"
     },

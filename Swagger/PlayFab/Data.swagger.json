@@ -59,7 +59,7 @@
           "File/GetFiles",
           "File/InitiateFileUploads"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "FileNotFound",
           "NoEntityFileOperationPending"
         ]
@@ -99,7 +99,7 @@
           "File/GetFiles",
           "File/InitiateFileUploads"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "EntityFileOperationPending",
           "FileNotFound"
         ]
@@ -140,7 +140,7 @@
           "File/GetFiles",
           "File/InitiateFileUploads"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "FileNotFound",
           "NoEntityFileOperationPending"
         ]
@@ -218,7 +218,7 @@
           "File/FinalizeFileUploads",
           "File/GetFiles"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "EntityFileOperationPending"
         ]
       }
@@ -289,7 +289,7 @@
         "x-seeAlso": [
           "Object/GetObjects"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "InvalidTicket"
         ]
       }
@@ -303,6 +303,7 @@
         "code": {
           "description": "Numerical HTTP code",
           "type": "number",
+          "format": "int32",
           "x-actualtype": "int32"
         },
         "status": {
@@ -316,6 +317,7 @@
         "errorCode": {
           "description": "Numerical Playfab error code",
           "type": "number",
+          "format": "int32",
           "x-actualtype": "int32"
         },
         "errorMessage": {
@@ -347,8 +349,7 @@
         },
         "ProfileVersion": {
           "description": "The expected version of the profile, if set and doesn't match the current version of the profile the operation will not be performed.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         }
       },
       "required": [
@@ -377,8 +378,7 @@
         },
         "ProfileVersion": {
           "description": "The current version of the profile, can be used for concurrency control during updates.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         }
       },
       "required": [
@@ -412,8 +412,7 @@
         },
         "ProfileVersion": {
           "description": "The expected version of the profile, if set and doesn't match the current version of the profile the operation will not be performed.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         }
       },
       "required": [
@@ -443,8 +442,7 @@
         },
         "ProfileVersion": {
           "description": "The current version of the profile, can be used for concurrency control during updates.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         }
       },
       "required": [
@@ -520,15 +518,16 @@
           "x-isclass": true
         },
         "Metadata": {
-          "$ref": "#/definitions/GetFileMetadata",
           "description": "Collection of metadata for the entity's files",
           "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/GetFileMetadata"
+          },
           "x-isclass": true
         },
         "ProfileVersion": {
           "description": "The current version of the profile, can be used for concurrency control during updates.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         }
       },
       "required": [
@@ -556,8 +555,7 @@
         },
         "Size": {
           "description": "Storage service's reported byte count",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         }
       },
       "required": [
@@ -597,15 +595,16 @@
           "x-isclass": true
         },
         "Metadata": {
-          "$ref": "#/definitions/GetFileMetadata",
           "description": "Collection of metadata for the entity's files",
           "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/GetFileMetadata"
+          },
           "x-isclass": true
         },
         "ProfileVersion": {
           "description": "The current version of the profile, can be used for concurrency control during updates.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         }
       },
       "required": [
@@ -665,15 +664,16 @@
           "x-isclass": true
         },
         "Objects": {
-          "$ref": "#/definitions/ObjectResult",
           "description": "Requested objects that the calling entity has access to",
           "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/ObjectResult"
+          },
           "x-isclass": true
         },
         "ProfileVersion": {
           "description": "The current version of the profile, can be used for concurrency control during updates.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         }
       },
       "required": [
@@ -726,8 +726,7 @@
         },
         "ProfileVersion": {
           "description": "The expected version of the profile, if set and doesn't match the current version of the profile the operation will not be performed.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         }
       },
       "required": [
@@ -757,8 +756,7 @@
         },
         "ProfileVersion": {
           "description": "The current version of the profile, can be used for concurrency control during updates.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "UploadDetails": {
           "description": "Collection of file names and upload urls",
@@ -813,7 +811,11 @@
       }
     },
     "OperationTypes": {
-      "type": "object",
+      "type": "string",
+      "x-ms-enum": {
+        "name": "OperationTypes",
+        "modelAsString": false
+      },
       "enum": [
         "Created",
         "Updated",
@@ -876,8 +878,7 @@
         },
         "ExpectedProfileVersion": {
           "description": "Optional field used for concurrency control. By specifying the previously returned value of ProfileVersion from GetProfile API, you can ensure that the object set will only be performed if the profile has not been updated by any other clients since the version you last loaded.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "Objects": {
           "description": "Collection of objects to set on the profile.",
@@ -939,8 +940,7 @@
       "properties": {
         "ProfileVersion": {
           "description": "New version of the entity profile.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "SetResults": {
           "description": "New version of the entity profile.",
@@ -1292,7 +1292,7 @@
       "description": "This API requires an Entity Session Token, available from the Entity GetEntityToken method."
     }
   },
-  "x-ms-docs-errors-mapping": {
+  "x-pf-docs-errors-mapping": {
     "Success": {
       "name": "Success"
     },

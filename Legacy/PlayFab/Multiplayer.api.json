@@ -326,7 +326,7 @@
         {
           "name": "PageSize",
           "description": "The page size on the response.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
@@ -371,7 +371,7 @@
         {
           "name": "MaxServers",
           "description": "The maximum number of multiplayer servers for the region.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
@@ -386,7 +386,7 @@
         {
           "name": "StandbyServers",
           "description": "The number of standby multiplayer servers for the region.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
@@ -408,7 +408,7 @@
         {
           "name": "MaxServers",
           "description": "The maximum number of multiplayer servers for the region.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
@@ -423,7 +423,7 @@
         {
           "name": "StandbyServers",
           "description": "The number of standby multiplayer servers for the region.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         }
@@ -439,7 +439,7 @@
           "name": "BuildWeightDistribution",
           "description": "Dictionary of build ids and their respective weights for distribution of allocation requests.",
           "collection": "map",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "uint32",
           "optional": true
         }
@@ -829,7 +829,7 @@
         {
           "name": "Available",
           "description": "The available core capacity for the (Region, VmFamily)",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
@@ -844,7 +844,7 @@
         {
           "name": "Total",
           "description": "The total core capacity for the (Region, VmFamily)",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
@@ -977,7 +977,7 @@
         {
           "name": "MultiplayerServerCountPerVm",
           "description": "The number of multiplayer servers to host on a single VM.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
@@ -1089,7 +1089,7 @@
         {
           "name": "MultiplayerServerCountPerVm",
           "description": "The number of multiplayer servers to host on a single VM of the build.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
@@ -1181,7 +1181,7 @@
         {
           "name": "MultiplayerServerCountPerVm",
           "description": "The number of multiplayer servers to host on a single VM.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
@@ -1293,7 +1293,7 @@
         {
           "name": "MultiplayerServerCountPerVm",
           "description": "The number of multiplayer servers to host on a single VM of the build.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
@@ -1351,7 +1351,7 @@
         {
           "name": "GiveUpAfterSeconds",
           "description": "How long to attempt matching this ticket in seconds.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
@@ -1479,7 +1479,7 @@
         {
           "name": "GiveUpAfterSeconds",
           "description": "How long to attempt matching this ticket in seconds.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
@@ -1539,7 +1539,7 @@
         {
           "name": "GiveUpAfterSeconds",
           "description": "How long to attempt matching this ticket in seconds.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
@@ -1570,28 +1570,28 @@
         {
           "name": "Active",
           "description": "The number of active multiplayer servers.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
         {
           "name": "Propping",
           "description": "The number of multiplayer servers still downloading game resources (such as assets).",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
         {
           "name": "StandingBy",
           "description": "The number of standingby multiplayer servers.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
         {
           "name": "Total",
           "description": "The total number of multiplayer servers.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         }
@@ -1618,7 +1618,7 @@
         {
           "name": "SecondsBetweenExpansions",
           "description": "How many seconds before this rule is expanded.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "uint32",
           "optional": false
         }
@@ -1645,7 +1645,7 @@
         {
           "name": "SecondsBetweenExpansions",
           "description": "How many seconds before this rule is expanded.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "uint32",
           "optional": false
         }
@@ -1672,7 +1672,7 @@
         {
           "name": "SecondsBetweenExpansions",
           "description": "How many seconds before this rule is expanded.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "uint32",
           "optional": false
         }
@@ -1699,7 +1699,7 @@
         {
           "name": "SecondsBetweenExpansions",
           "description": "How many seconds before this rule is expanded.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "uint32",
           "optional": false
         }
@@ -1726,7 +1726,7 @@
         {
           "name": "SecondsBetweenExpansions",
           "description": "How many seconds before this rule is expanded.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "uint32",
           "optional": false
         }
@@ -1912,7 +1912,7 @@
         {
           "name": "SecondsUntilOptional",
           "description": "How many seconds before this rule is no longer enforced (but tickets that comply with this rule will still be prioritized over those that don't). Leave blank if this rule is always enforced.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "uint32",
           "optional": true
         },
@@ -2220,7 +2220,7 @@
         {
           "name": "MultiplayerServerCountPerVm",
           "description": "The number of multiplayer servers to hosted on a single VM of the build.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
@@ -2527,7 +2527,7 @@
         {
           "name": "GiveUpAfterSeconds",
           "description": "How long to attempt matching this ticket in seconds.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
@@ -2847,7 +2847,7 @@
         {
           "name": "NumberOfPlayersMatching",
           "description": "The current number of players in the matchmaking queue, who are waiting to be matched.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "uint32",
           "optional": true
         },
@@ -2910,7 +2910,7 @@
         {
           "name": "Port",
           "description": "The remote login port of multiplayer server.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         }
@@ -2991,7 +2991,7 @@
         {
           "name": "GiveUpAfterSeconds",
           "description": "How long to attempt matching this ticket in seconds.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
@@ -3176,7 +3176,7 @@
         {
           "name": "SecondsBetweenExpansions",
           "description": "How many seconds before this rule is expanded.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "uint32",
           "optional": false
         }
@@ -3194,21 +3194,21 @@
         {
           "name": "Delta",
           "description": "This value gets added to MaxLatency at every expansion interval.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "uint32",
           "optional": false
         },
         {
           "name": "Limit",
           "description": "Once the max Latency reaches this value, expansion stops.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "uint32",
           "optional": false
         },
         {
           "name": "SecondsBetweenExpansions",
           "description": "How many seconds before this rule is expanded.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "uint32",
           "optional": false
         }
@@ -3226,14 +3226,14 @@
         {
           "name": "Delta",
           "description": "This value gets added to MinIntersectionSize at every expansion interval.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "uint32",
           "optional": false
         },
         {
           "name": "SecondsBetweenExpansions",
           "description": "How many seconds before this rule is expanded.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "uint32",
           "optional": false
         }
@@ -3265,7 +3265,7 @@
         {
           "name": "SecondsBetweenExpansions",
           "description": "How many seconds before this rule is expanded.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "uint32",
           "optional": false
         }
@@ -3283,21 +3283,21 @@
         {
           "name": "Delta",
           "description": "This value gets added to Difference at every expansion interval.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "uint32",
           "optional": false
         },
         {
           "name": "Limit",
           "description": "Once the total difference reaches this value, expansion stops. Optional.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "uint32",
           "optional": true
         },
         {
           "name": "SecondsBetweenExpansions",
           "description": "How many seconds before this rule is expanded.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "uint32",
           "optional": false
         }
@@ -3314,7 +3314,7 @@
         {
           "name": "PageSize",
           "description": "The page size for the request.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": true
         },
@@ -3346,7 +3346,7 @@
         {
           "name": "PageSize",
           "description": "The page size on the response.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
@@ -3388,7 +3388,7 @@
         {
           "name": "PageSize",
           "description": "The page size for the request.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": true
         },
@@ -3420,7 +3420,7 @@
         {
           "name": "PageSize",
           "description": "The page size on the response.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
@@ -3444,7 +3444,7 @@
         {
           "name": "PageSize",
           "description": "The page size for the request.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": true
         },
@@ -3476,7 +3476,7 @@
         {
           "name": "PageSize",
           "description": "The page size on the response.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
@@ -3500,7 +3500,7 @@
         {
           "name": "PageSize",
           "description": "The page size for the request.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": true
         },
@@ -3531,7 +3531,7 @@
         {
           "name": "PageSize",
           "description": "The page size on the response.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
@@ -3671,7 +3671,7 @@
         {
           "name": "PageSize",
           "description": "The page size for the request.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": true
         },
@@ -3711,7 +3711,7 @@
         {
           "name": "PageSize",
           "description": "The page size on the response.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
@@ -3751,7 +3751,7 @@
         {
           "name": "PageSize",
           "description": "The page size on the response.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
@@ -3792,7 +3792,7 @@
         {
           "name": "PageSize",
           "description": "The page size on the response.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
@@ -3833,7 +3833,7 @@
         {
           "name": "PageSize",
           "description": "The page size on the response.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
@@ -3921,7 +3921,7 @@
         {
           "name": "PageSize",
           "description": "The page size for the request.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": true
         },
@@ -3952,7 +3952,7 @@
         {
           "name": "PageSize",
           "description": "The page size on the response.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
@@ -4091,21 +4091,21 @@
         {
           "name": "MaxMatchSize",
           "description": "Maximum number of players in a match.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "uint32",
           "optional": false
         },
         {
           "name": "MaxTicketSize",
           "description": "Maximum number of players in a ticket. Optional.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "uint32",
           "optional": true
         },
         {
           "name": "MinMatchSize",
           "description": "Minimum number of players in a match.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "uint32",
           "optional": false
         },
@@ -4205,14 +4205,14 @@
         {
           "name": "MaxTeamSize",
           "description": "The maximum number of players required for the team.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "uint32",
           "optional": false
         },
         {
           "name": "MinTeamSize",
           "description": "The minimum number of players required for the team.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "uint32",
           "optional": false
         },
@@ -4274,7 +4274,7 @@
         {
           "name": "SecondsUntilOptional",
           "description": "How many seconds before this rule is no longer enforced (but tickets that comply with this rule will still be prioritized over those that don't). Leave blank if this rule is always enforced.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "uint32",
           "optional": true
         },
@@ -4317,7 +4317,7 @@
         {
           "name": "SecondsBetweenExpansions",
           "description": "How many seconds before this rule is expanded.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "uint32",
           "optional": false
         }
@@ -4422,7 +4422,7 @@
         {
           "name": "Value",
           "description": "The custom expansion value.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "uint32",
           "optional": false
         }
@@ -4444,7 +4444,7 @@
         {
           "name": "Num",
           "description": "The number for the port.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
@@ -4550,7 +4550,7 @@
         {
           "name": "MaxLatency",
           "description": "Specifies the maximum latency that is allowed between the client and the selected server. The value is in milliseconds.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "uint32",
           "optional": false
         },
@@ -4571,7 +4571,7 @@
         {
           "name": "SecondsUntilOptional",
           "description": "How many seconds before this rule is no longer enforced (but tickets that comply with this rule will still be prioritized over those that don't). Leave blank if this rule is always enforced.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "uint32",
           "optional": true
         },
@@ -5014,7 +5014,7 @@
         {
           "name": "MinIntersectionSize",
           "description": "The minimum number of values that must match between sets.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "uint32",
           "optional": false
         },
@@ -5028,7 +5028,7 @@
         {
           "name": "SecondsUntilOptional",
           "description": "How many seconds before this rule is no longer enforced (but tickets that comply with this rule will still be prioritized over those that don't). Leave blank if this rule is always enforced.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "uint32",
           "optional": true
         },
@@ -5216,7 +5216,7 @@
         {
           "name": "SecondsUntilOptional",
           "description": "How many seconds before this rule is no longer enforced (but tickets that comply with this rule will still be prioritized over those that don't). Leave blank if this rule is always enforced.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "uint32",
           "optional": true
         },
@@ -5249,7 +5249,7 @@
         {
           "name": "SecondsBetweenExpansions",
           "description": "How many seconds before this rule is expanded.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "uint32",
           "optional": false
         }
@@ -5312,7 +5312,7 @@
         {
           "name": "SecondsUntilOptional",
           "description": "How many seconds before this rule is no longer enforced (but tickets that comply with this rule will still be prioritized over those that don't). Leave blank if this rule is always enforced.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "uint32",
           "optional": true
         }
@@ -5338,7 +5338,7 @@
         {
           "name": "Difference",
           "description": "The allowed difference in team size between any two teams.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "uint32",
           "optional": false
         },
@@ -5360,7 +5360,7 @@
         {
           "name": "SecondsUntilOptional",
           "description": "How many seconds before this rule is no longer enforced (but tickets that comply with this rule will still be prioritized over those that don't). Leave blank if this rule is always enforced.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "uint32",
           "optional": true
         }
@@ -5385,7 +5385,7 @@
         {
           "name": "SecondsUntilOptional",
           "description": "How many seconds before this rule is no longer enforced (but tickets that comply with this rule will still be prioritized over those that don't). Leave blank if this rule is always enforced.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "uint32",
           "optional": true
         }

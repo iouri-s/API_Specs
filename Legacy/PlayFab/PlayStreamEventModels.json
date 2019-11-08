@@ -2163,7 +2163,7 @@
             {
               "name": "ReservedMAU",
               "description": "Reserved Capacity MAU",
-              "jsontype": "Number",
+              "jsontype": "Integer",
               "actualtype": "int32",
               "optional": true
             },
@@ -2240,7 +2240,7 @@
             {
               "name": "PreviousUsesRemaining",
               "description": "For multiple use items, the number of uses that remained before the item was consumed.",
-              "jsontype": "Number",
+              "jsontype": "Integer",
               "actualtype": "uint32",
               "optional": false
             },
@@ -2253,7 +2253,7 @@
             {
               "name": "UsesRemaining",
               "description": "For multiple use items, the number of uses remaining after the item was consumed.",
-              "jsontype": "Number",
+              "jsontype": "Integer",
               "actualtype": "uint32",
               "optional": false
             }
@@ -2374,7 +2374,7 @@
             {
               "name": "RemainingUses",
               "description": "How many uses the item has, if it has a limited number of uses.",
-              "jsontype": "Number",
+              "jsontype": "Integer",
               "actualtype": "uint32",
               "optional": true
             },
@@ -2409,14 +2409,14 @@
             {
               "name": "StatisticPreviousValue",
               "description": "Old value of the statistic, before the change.",
-              "jsontype": "Number",
+              "jsontype": "Integer",
               "actualtype": "int32",
               "optional": true
             },
             {
               "name": "StatisticValue",
               "description": "New value of the statistic, after the change.",
-              "jsontype": "Number",
+              "jsontype": "Integer",
               "actualtype": "int32",
               "optional": false
             },
@@ -2429,7 +2429,7 @@
             {
               "name": "Version",
               "description": "Version of the statistic that changed. This is relevant for statistics that reset, since each time the statistic resets the version increments.",
-              "jsontype": "Number",
+              "jsontype": "Integer",
               "actualtype": "uint32",
               "optional": false
             }
@@ -2464,7 +2464,7 @@
             {
               "name": "Version",
               "description": "Version of the statistic that changed. This is relevant for statistics that reset, since each time the statistic resets the version increments.",
-              "jsontype": "Number",
+              "jsontype": "Integer",
               "actualtype": "uint32",
               "optional": false
             }
@@ -2514,7 +2514,7 @@
             {
               "name": "Quantity",
               "description": "Quantity of items that were purchased.",
-              "jsontype": "Number",
+              "jsontype": "Integer",
               "actualtype": "int32",
               "optional": false
             },
@@ -2534,7 +2534,7 @@
             {
               "name": "UnitPrice",
               "description": "Price paid per item, expressed in the virtual currency.",
-              "jsontype": "Number",
+              "jsontype": "Integer",
               "actualtype": "uint32",
               "optional": false
             }
@@ -2569,7 +2569,7 @@
             {
               "name": "VirtualCurrencyBalance",
               "description": "New virtual currency balance after the change.",
-              "jsontype": "Number",
+              "jsontype": "Integer",
               "actualtype": "int32",
               "optional": false
             },
@@ -2583,7 +2583,7 @@
             {
               "name": "VirtualCurrencyPreviousBalance",
               "description": "Old virtual currency balance before the change.",
-              "jsontype": "Number",
+              "jsontype": "Integer",
               "actualtype": "int32",
               "optional": false
             }
@@ -3085,7 +3085,7 @@
             {
               "name": "ViewsRemainingThisPeriod",
               "description": "Views this player has remaining for the placement's window, if applicable",
-              "jsontype": "Number",
+              "jsontype": "Integer",
               "actualtype": "int32",
               "optional": true
             }
@@ -3378,7 +3378,7 @@
             {
               "name": "PreviousUsesRemaining",
               "description": "For multiple use items, the number of uses that remained before the item was consumed.",
-              "jsontype": "Number",
+              "jsontype": "Integer",
               "actualtype": "uint32",
               "optional": false
             },
@@ -3392,7 +3392,7 @@
             {
               "name": "UsesRemaining",
               "description": "For multiple use items, the number of uses remaining after the item was consumed.",
-              "jsontype": "Number",
+              "jsontype": "Integer",
               "actualtype": "uint32",
               "optional": false
             }
@@ -3623,7 +3623,7 @@
             {
               "name": "RemainingUses",
               "description": "How many uses the item has, if it has a limited number of uses.",
-              "jsontype": "Number",
+              "jsontype": "Integer",
               "actualtype": "uint32",
               "optional": true
             },
@@ -3702,7 +3702,7 @@
             {
               "name": "ServerPort",
               "description": "Network port assigned to the custom game server.",
-              "jsontype": "Number",
+              "jsontype": "Integer",
               "actualtype": "uint32",
               "optional": false
             },
@@ -3781,7 +3781,7 @@
             {
               "name": "ServerPort",
               "description": "Network port assigned to the custom game server.",
-              "jsontype": "Number",
+              "jsontype": "Integer",
               "actualtype": "uint32",
               "optional": false
             },
@@ -3966,7 +3966,7 @@
             {
               "name": "ServerPort",
               "description": "Network port assigned to the custom game server.",
-              "jsontype": "Number",
+              "jsontype": "Integer",
               "actualtype": "uint32",
               "optional": false
             },
@@ -4083,7 +4083,7 @@
             {
               "name": "PurchasePrice",
               "description": "Cost of the transaction.",
-              "jsontype": "Number",
+              "jsontype": "Integer",
               "actualtype": "uint32",
               "optional": false
             },
@@ -4106,7 +4106,7 @@
               "name": "VirtualCurrencyBalances",
               "description": "Current virtual currency balances for the user.",
               "collection": "map",
-              "jsontype": "Number",
+              "jsontype": "Integer",
               "actualtype": "int32",
               "optional": true
             },
@@ -4114,7 +4114,7 @@
               "name": "VirtualCurrencyGrants",
               "description": "Virtual currencies granted by the transaction, if any.",
               "collection": "map",
-              "jsontype": "Number",
+              "jsontype": "Integer",
               "actualtype": "int32",
               "optional": true
             }
@@ -4138,7 +4138,7 @@
             {
               "name": "Rank",
               "description": "Player's rank on the leaderboard.",
-              "jsontype": "Number",
+              "jsontype": "Integer",
               "actualtype": "uint32",
               "optional": false
             },
@@ -4152,14 +4152,14 @@
             {
               "name": "Value",
               "description": "Player's leaderboard value.",
-              "jsontype": "Number",
+              "jsontype": "Integer",
               "actualtype": "int32",
               "optional": false
             },
             {
               "name": "Version",
               "description": "Version of the leaderboard on which the player is ranked. For player statistic leaderboards, this matches the version of the statistic.",
-              "jsontype": "Number",
+              "jsontype": "Integer",
               "actualtype": "uint32",
               "optional": false
             },
@@ -4198,7 +4198,7 @@
             {
               "name": "OrderTotal",
               "description": "Total value of the purchase in the system currency (defaults to USD).",
-              "jsontype": "Number",
+              "jsontype": "Integer",
               "actualtype": "uint32",
               "optional": false
             },
@@ -4250,7 +4250,7 @@
             {
               "name": "TransactionTotal",
               "description": "Total value of the purchase in the local currency used to make the purchase, if applicable.",
-              "jsontype": "Number",
+              "jsontype": "Integer",
               "actualtype": "uint32",
               "optional": true
             }
@@ -4512,7 +4512,7 @@
             {
               "name": "StatisticId",
               "description": "Unique ID of the statistic that changed.",
-              "jsontype": "Number",
+              "jsontype": "Integer",
               "actualtype": "uint32",
               "optional": false
             },
@@ -4526,14 +4526,14 @@
             {
               "name": "StatisticPreviousValue",
               "description": "Old value of the statistic, before the change.",
-              "jsontype": "Number",
+              "jsontype": "Integer",
               "actualtype": "int32",
               "optional": true
             },
             {
               "name": "StatisticValue",
               "description": "New value of the statistic, after the change.",
-              "jsontype": "Number",
+              "jsontype": "Integer",
               "actualtype": "int32",
               "optional": false
             },
@@ -4547,7 +4547,7 @@
             {
               "name": "Version",
               "description": "Version of the statistic that changed. This is relevant for statistics that reset, since each time the statistic resets the version increments.",
-              "jsontype": "Number",
+              "jsontype": "Integer",
               "actualtype": "uint32",
               "optional": false
             }
@@ -4563,7 +4563,7 @@
             {
               "name": "StatisticId",
               "description": "Unique ID of the statistic that was deleted.",
-              "jsontype": "Number",
+              "jsontype": "Integer",
               "actualtype": "uint32",
               "optional": false
             },
@@ -4577,7 +4577,7 @@
             {
               "name": "StatisticPreviousValue",
               "description": "Old value of the statistic, before being deleted.",
-              "jsontype": "Number",
+              "jsontype": "Integer",
               "actualtype": "int32",
               "optional": true
             },
@@ -4591,7 +4591,7 @@
             {
               "name": "Version",
               "description": "Version of the statistic. This is relevant for statistics that reset, since each time the statistic resets the version increments.",
-              "jsontype": "Number",
+              "jsontype": "Integer",
               "actualtype": "uint32",
               "optional": false
             }
@@ -4816,7 +4816,7 @@
             {
               "name": "Quantity",
               "description": "Quantity of items that were purchased.",
-              "jsontype": "Number",
+              "jsontype": "Integer",
               "actualtype": "int32",
               "optional": false
             },
@@ -4837,7 +4837,7 @@
             {
               "name": "UnitPrice",
               "description": "Price paid per item, expressed in the virtual currency.",
-              "jsontype": "Number",
+              "jsontype": "Integer",
               "actualtype": "uint32",
               "optional": false
             }
@@ -4897,7 +4897,7 @@
             {
               "name": "VirtualCurrencyBalance",
               "description": "New virtual currency balance after the change.",
-              "jsontype": "Number",
+              "jsontype": "Integer",
               "actualtype": "int32",
               "optional": false
             },
@@ -4911,7 +4911,7 @@
             {
               "name": "VirtualCurrencyPreviousBalance",
               "description": "Old virtual currency balance before the change.",
-              "jsontype": "Number",
+              "jsontype": "Integer",
               "actualtype": "int32",
               "optional": false
             }
@@ -5248,7 +5248,7 @@
             {
               "name": "ServerPort",
               "description": "Network port of the host assigned to the custom game server.",
-              "jsontype": "Number",
+              "jsontype": "Integer",
               "actualtype": "uint32",
               "optional": false
             },
@@ -5307,7 +5307,7 @@
             {
               "name": "MaxPlayers",
               "description": "Maximum number of players that may be connected to the game lobby.",
-              "jsontype": "Number",
+              "jsontype": "Integer",
               "actualtype": "int32",
               "optional": true
             },
@@ -5356,7 +5356,7 @@
             {
               "name": "ServerPort",
               "description": "Network port of the host assigned to the custom game server.",
-              "jsontype": "Number",
+              "jsontype": "Integer",
               "actualtype": "uint32",
               "optional": false
             },
@@ -5680,7 +5680,7 @@
             {
               "name": "Revision",
               "description": "Revision number of the CloudScript file that was added.",
-              "jsontype": "Number",
+              "jsontype": "Integer",
               "actualtype": "int32",
               "optional": false
             },
@@ -5701,7 +5701,7 @@
             {
               "name": "Version",
               "description": "Version number of the CloudScript file that was added.",
-              "jsontype": "Number",
+              "jsontype": "Integer",
               "actualtype": "int32",
               "optional": false
             }
@@ -5730,14 +5730,14 @@
             {
               "name": "MaxGamesPerHost",
               "description": "The maximum number of game sessions that can be run on a single server.",
-              "jsontype": "Number",
+              "jsontype": "Integer",
               "actualtype": "int32",
               "optional": false
             },
             {
               "name": "MinFreeGameSlots",
               "description": "The minimum number of free slots to maintain across all servers for this build.",
-              "jsontype": "Number",
+              "jsontype": "Integer",
               "actualtype": "int32",
               "optional": false
             },
@@ -6238,14 +6238,14 @@
             {
               "name": "MaxGamesPerHost",
               "description": "The maximum number of game sessions that can be run on a single server.",
-              "jsontype": "Number",
+              "jsontype": "Integer",
               "actualtype": "int32",
               "optional": false
             },
             {
               "name": "MinFreeGameSlots",
               "description": "The minimum number of free slots to maintain across all servers for this build.",
-              "jsontype": "Number",
+              "jsontype": "Integer",
               "actualtype": "int32",
               "optional": false
             },
@@ -6397,7 +6397,7 @@
             {
               "name": "Revision",
               "description": "Revision number of the CloudScript that was activated.",
-              "jsontype": "Number",
+              "jsontype": "Integer",
               "actualtype": "int32",
               "optional": false
             },
@@ -6834,7 +6834,7 @@
             {
               "name": "StatisticVersion",
               "description": "Version of the statistic, following the update.",
-              "jsontype": "Number",
+              "jsontype": "Integer",
               "actualtype": "uint32",
               "optional": false
             }
@@ -8849,7 +8849,7 @@
         {
           "name": "APIRequestsIssued",
           "description": "Number of PlayFab API requests issued by the CloudScript function",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
@@ -8891,7 +8891,7 @@
         {
           "name": "HttpRequestsIssued",
           "description": "Number of external HTTP requests issued by the CloudScript function",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
@@ -8913,7 +8913,7 @@
         },
         {
           "name": "MemoryConsumedBytes",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "uint32",
           "optional": false
         },
@@ -8927,7 +8927,7 @@
         {
           "name": "Revision",
           "description": "The revision of the CloudScript that executed",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         }
@@ -8963,7 +8963,7 @@
         {
           "name": "ByteCount",
           "description": "The storage size according to the underlying provider.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
@@ -8992,7 +8992,7 @@
         {
           "name": "PreviousByteCount",
           "description": "The storage size of the old file, if there was one.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": true
         },
@@ -9242,7 +9242,7 @@
         {
           "name": "MaxServers",
           "description": "The maximum number of multiplayer servers for the region.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
@@ -9257,7 +9257,7 @@
         {
           "name": "StandbyServers",
           "description": "The number of standby multiplayer servers for the region.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         }
@@ -9386,7 +9386,7 @@
         {
           "name": "AllocatedRegionPreferenceRanking",
           "description": "The integer ranking of what region that the multiplayer server was allocated in from the PreferredRegions list.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": true
         },
@@ -11125,7 +11125,7 @@
         {
           "name": "StatisticId",
           "description": "Unique ID of the statistic.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "uint32",
           "optional": false
         },
@@ -11754,7 +11754,7 @@
           "name": "RealCurrencyPrices",
           "description": "Cost of the catalog item for each applicable real world currency.",
           "collection": "map",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "uint32",
           "optional": true
         },
@@ -11762,7 +11762,7 @@
           "name": "VCAmount",
           "description": "Amount of each applicable virtual currency which will be received as a result of purchasing this catalog item.",
           "collection": "map",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "uint32",
           "optional": true
         },
@@ -11770,7 +11770,7 @@
           "name": "VirtualCurrencyPrices",
           "description": "Cost of the catalog item for each applicable virtual currency.",
           "collection": "map",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "uint32",
           "optional": true
         }
@@ -11954,14 +11954,14 @@
         {
           "name": "StatisticValue",
           "description": "Current statistic value",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
         {
           "name": "StatisticVersion",
           "description": "Statistic version (0 if not a versioned statistic)",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         }
@@ -12144,7 +12144,7 @@
           "name": "Statistics",
           "description": "Dictionary of player's statistics using only the latest version's value",
           "collection": "map",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": true
         },
@@ -12166,7 +12166,7 @@
         {
           "name": "TotalValueToDateInUSD",
           "description": "A sum of player's total purchases in USD across all currencies.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "uint32",
           "optional": true
         },
@@ -12174,7 +12174,7 @@
           "name": "ValuesToDate",
           "description": "Dictionary of player's total purchases by currency.",
           "collection": "map",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "uint32",
           "optional": true
         },
@@ -12182,7 +12182,7 @@
           "name": "VirtualCurrencyBalances",
           "description": "Dictionary of player's virtual currency balances",
           "collection": "map",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": true
         }
@@ -12331,7 +12331,7 @@
       "properties": [
         {
           "name": "LowerBoundInclusive",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": true
         },
@@ -12368,7 +12368,7 @@
         },
         {
           "name": "UpperBoundInclusive",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": true
         }
@@ -12476,7 +12476,7 @@
         {
           "name": "DisplayNameRandomSuffixLength",
           "description": "Display name randomly-generated suffix length.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": true
         },
@@ -12683,7 +12683,7 @@
         {
           "name": "ExecutionTimeMilliseconds",
           "description": "The amount of time the function took to execute",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },

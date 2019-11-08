@@ -81,7 +81,7 @@
         {
           "name": "APIRequestsIssued",
           "description": "Number of PlayFab API requests issued by the CloudScript function",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
@@ -123,7 +123,7 @@
         {
           "name": "HttpRequestsIssued",
           "description": "Number of external HTTP requests issued by the CloudScript function",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
@@ -145,7 +145,7 @@
         },
         {
           "name": "MemoryConsumedBytes",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "uint32",
           "optional": false
         },
@@ -159,7 +159,7 @@
         {
           "name": "Revision",
           "description": "The revision of the CloudScript that executed",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         }
@@ -213,7 +213,7 @@
         {
           "name": "SpecificRevision",
           "description": "The specific revision to execute, when RevisionSelection is set to 'Specific'",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": true
         }
@@ -282,7 +282,7 @@
         {
           "name": "ExecutionTimeMilliseconds",
           "description": "The amount of time the function took to execute",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },

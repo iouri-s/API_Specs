@@ -59,7 +59,7 @@
           "Admin/GetTaskInstances",
           "Admin/RunTask"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "TaskInstanceNotFound"
         ]
       }
@@ -92,7 +92,7 @@
             "$ref": "#/responses/ApiErrorWrapper"
           }
         },
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "TitleNewsDuplicateLanguage",
           "TitleNewsInvalidLanguage",
           "TitleNewsNotFound"
@@ -127,7 +127,7 @@
             "$ref": "#/responses/ApiErrorWrapper"
           }
         },
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "TitleNewsItemCountLimitExceeded"
         ]
       }
@@ -165,7 +165,7 @@
           "Admin/GetPlayerTags",
           "Admin/RemovePlayerTag"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "PlayerTagCountLimitExceeded"
         ]
       }
@@ -206,7 +206,7 @@
           "Admin/RemoveServerBuild",
           "Matchmaker/StartGame"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "BuildAlreadyExists",
           "BuildPackageDoesNotExist",
           "GameServerBuildSizeLimitExceeded",
@@ -245,7 +245,7 @@
         "x-seeAlso": [
           "Admin/SubtractUserVirtualCurrency"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "InvalidVirtualCurrency"
         ]
       }
@@ -283,7 +283,7 @@
           "Admin/ListVirtualCurrencyTypes",
           "Admin/RemoveVirtualCurrencyTypes"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "InvalidVirtualCurrencyCode",
           "VirtualCurrencyCountLimitExceeded"
         ]
@@ -396,7 +396,7 @@
           "Admin/RunTask",
           "Admin/UpdateTask"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "InvalidScheduledTaskName",
           "InvalidTaskSchedule",
           "ScheduledTaskCreateConflict",
@@ -440,7 +440,7 @@
           "Admin/RunTask",
           "Admin/UpdateTask"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "InvalidScheduledTaskName",
           "InvalidTaskSchedule",
           "ScheduledTaskCreateConflict",
@@ -556,7 +556,7 @@
           "Client/UpdatePlayerStatistics",
           "Server/UpdatePlayerStatistics"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "StatisticCountLimitExceeded",
           "StatisticNameConflict"
         ]
@@ -732,7 +732,7 @@
           "Admin/GetPlayerSharedSecrets",
           "Admin/UpdatePlayerSharedSecret"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "SecretKeyNotFound"
         ]
       }
@@ -771,7 +771,7 @@
           "Admin/SetStoreItems",
           "Admin/UpdateStoreItems"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "CatalogNotConfigured",
           "StoreNotFound"
         ]
@@ -848,7 +848,7 @@
         "x-seeAlso": [
           "Admin/DeletePlayer"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "TitleContainsUserAccounts"
         ]
       }
@@ -920,7 +920,7 @@
           "Admin/GetTaskInstances",
           "Admin/RunTask"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "TaskInstanceNotFound"
         ]
       }
@@ -1021,7 +1021,7 @@
             "$ref": "#/responses/ApiErrorWrapper"
           }
         },
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "RevisionNotFound",
           "VersionNotFound"
         ]
@@ -1063,7 +1063,7 @@
           "Admin/GetTaskInstances",
           "Admin/RunTask"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "TaskInstanceNotFound"
         ]
       }
@@ -1132,7 +1132,7 @@
           "Server/GetContentDownloadUrl",
           "Admin/GetContentUploadUrl"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "ContentS3OriginBucketNotConfigured"
         ]
       }
@@ -1171,7 +1171,7 @@
           "Server/GetContentDownloadUrl",
           "Admin/GetContentList"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "BillingInformationRequired",
           "ContentQuotaExceeded"
         ]
@@ -1206,7 +1206,7 @@
           }
         },
         "x-requestDetails": "Gets the download URL for the requested report data (in CSV form). The reports available through this API call are those available in the Game Manager, in the Analytics->Reports tab.",
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "InvalidReportDate",
           "ReportNotAvailable"
         ]
@@ -1244,7 +1244,7 @@
           "Admin/GetMatchmakerGameModes",
           "Admin/ModifyMatchmakerGameModes"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "GameNotFound"
         ]
       }
@@ -1347,7 +1347,7 @@
           }
         },
         "x-requestDetails": "Gets a player ID from an auth token. The token expires after 30 minutes and cannot be used to look up a player when expired.",
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "AuthTokenDoesNotExist"
         ]
       }
@@ -1381,7 +1381,7 @@
           }
         },
         "x-requestDetails": "This API allows for access to details regarding a user in the PlayFab service, usually for purposes of customer support. Note that data returned may be Personally Identifying Information (PII), such as email address, and so care should be taken in how this data is stored and managed. Since this call will always return the relevant information for users who have accessed the title, the recommendation is to not store this data locally.",
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "PlayerNotInGame"
         ]
       }
@@ -1417,7 +1417,7 @@
         "x-seeAlso": [
           "Admin/GetAllSegments"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "SegmentNotFound"
         ]
       }
@@ -1489,7 +1489,7 @@
         "x-seeAlso": [
           "Admin/GetAllSegments"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "ExpiredContinuationToken",
           "GetPlayersInSegmentRateLimitExceeded",
           "InvalidContinuationToken",
@@ -1574,7 +1574,7 @@
           "Client/UpdatePlayerStatistics",
           "Server/UpdatePlayerStatistics"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "StatisticNotFound"
         ]
       }
@@ -1680,7 +1680,7 @@
         "x-seeAlso": [
           "Admin/SetPublisherData"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "PublisherNotSet"
         ]
       }
@@ -1752,7 +1752,7 @@
           "Admin/ModifyServerBuild",
           "Admin/RemoveServerBuild"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "BuildNotFound"
         ]
       }
@@ -1791,7 +1791,7 @@
           "Admin/ModifyServerBuild",
           "Admin/RemoveServerBuild"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "BuildAlreadyExists"
         ]
       }
@@ -1868,7 +1868,7 @@
           "Admin/GetCloudScriptTaskInstance",
           "Admin/RunTask"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "TaskNotFound"
         ]
       }
@@ -2011,7 +2011,7 @@
         "x-seeAlso": [
           "Admin/GetUserInventory"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "TitleNotActivated"
         ]
       }
@@ -2051,7 +2051,7 @@
           "Admin/RevokeBans",
           "Admin/UpdateBans"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "UserisNotValid"
         ]
       }
@@ -2348,7 +2348,7 @@
         },
         "x-requestDetails": "This function directly adds inventory items to user inventories. As a result of this operations, the user will not be charged any transaction fee, regardless of the inventory item catalog definition. Please note that the processing time for inventory grants and purchases increases fractionally the more items are in the inventory, and the more items are in the grant/purchase operation.",
         "x-responseDetails": "Please note that the order of the items in the response may not match the order of items in the request.",
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "CatalogNotConfigured"
         ]
       }
@@ -2385,7 +2385,7 @@
         "x-seeAlso": [
           "Admin/CheckLimitedEditionItemAvailability"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "RequestAlreadyRunning"
         ]
       }
@@ -2429,7 +2429,7 @@
           "Client/UpdatePlayerStatistics",
           "Server/UpdatePlayerStatistics"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "StatisticNotFound",
           "StatisticUpdateInProgress",
           "StatisticVersionIncrementRateExceeded"
@@ -2612,7 +2612,7 @@
           "Admin/ListServerBuilds",
           "Admin/RemoveServerBuild"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "BuildNotAvailable",
           "BuildNotFound",
           "GameServerHostCountLimitExceeded"
@@ -2755,7 +2755,7 @@
           "Admin/AddVirtualCurrencyTypes",
           "Admin/ListVirtualCurrencyTypes"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "InvalidVirtualCurrencyCode",
           "VirtualCurrencyCannotBeDeleted"
         ]
@@ -2821,7 +2821,7 @@
           }
         },
         "x-requestDetails": "Resets a player's password taking in a new password based and validating the user based off of a token sent to the playerto their email. The token expires after 30 minutes.",
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "AuthTokenAlreadyUsedToResetPassword",
           "AuthTokenDoesNotExist",
           "AuthTokenExpired",
@@ -2926,7 +2926,7 @@
           "Admin/RevokeBans",
           "Admin/UpdateBans"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "UserisNotValid"
         ]
       }
@@ -3000,7 +3000,7 @@
         "x-seeAlso": [
           "Admin/GetUserInventory"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "ItemNotFound"
         ]
       }
@@ -3037,7 +3037,7 @@
         "x-seeAlso": [
           "Admin/GetUserInventory"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "ItemNotFound"
         ]
       }
@@ -3079,7 +3079,7 @@
           "Admin/GetTasks",
           "Admin/UpdateTask"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "TaskNotFound"
         ]
       }
@@ -3113,7 +3113,7 @@
           }
         },
         "x-requestDetails": "If the account in question is a \"temporary\" account (for example, one that was created via a call to LoginFromIOSDeviceID), thisfunction will have no effect. Only PlayFab accounts which have valid email addresses will be able to receive a password reset email using this API.",
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "InvalidEmailAddress"
         ]
       }
@@ -3151,7 +3151,7 @@
           "Admin/GetCatalogItems",
           "Admin/UpdateCatalogItems"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "InvalidDropTable",
           "InvalidItemId",
           "InvalidItemProperties",
@@ -3218,7 +3218,7 @@
             "$ref": "#/responses/ApiErrorWrapper"
           }
         },
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "RevisionNotFound",
           "VersionNotFound"
         ]
@@ -3256,7 +3256,7 @@
         "x-seeAlso": [
           "Admin/GetPublisherData"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "PublisherNotSet"
         ]
       }
@@ -3295,7 +3295,7 @@
           "Admin/GetStoreItems",
           "Admin/UpdateStoreItems"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "CatalogNotConfigured",
           "InvalidItemId",
           "InvalidJSONContent"
@@ -3334,7 +3334,7 @@
         "x-seeAlso": [
           "Admin/GetTitleData"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "DataLengthExceeded",
           "TooManyKeys"
         ]
@@ -3372,7 +3372,7 @@
         "x-seeAlso": [
           "Admin/GetTitleInternalData"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "DataLengthExceeded",
           "TooManyKeys"
         ]
@@ -3407,7 +3407,7 @@
           }
         },
         "x-requestDetails": "When using the Apple Push Notification service (APNS) or the development version (APNS_SANDBOX), the APNS Private Key should be used as the Credential in this call. With Google Cloud Messaging (GCM), the Android API Key should be used. The current ARN (if one exists) can be overwritten by setting the OverwriteOldARN boolean to true.",
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "PushServiceError",
           "ValueAlreadyExists"
         ]
@@ -3444,7 +3444,7 @@
         "x-seeAlso": [
           "Admin/AddUserVirtualCurrency"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "InvalidVirtualCurrency"
         ]
       }
@@ -3519,7 +3519,7 @@
           "Admin/GetCatalogItems",
           "Admin/SetCatalogItems"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "InvalidItemProperties",
           "InvalidJSONContent"
         ]
@@ -3553,7 +3553,7 @@
             "$ref": "#/responses/ApiErrorWrapper"
           }
         },
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "JavascriptException",
           "ServiceUnavailable"
         ]
@@ -3627,7 +3627,7 @@
           "Admin/CreatePlayerSharedSecret",
           "Admin/GetPlayerSharedSecrets"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "SecretKeyNotFound"
         ]
       }
@@ -3670,7 +3670,7 @@
           "Client/UpdatePlayerStatistics",
           "Server/UpdatePlayerStatistics"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "StatisticNotFound",
           "StatisticUpdateInProgress"
         ]
@@ -3742,7 +3742,7 @@
         "x-seeAlso": [
           "Admin/GetRandomResultTables"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "InvalidDropTable",
           "InvalidJSONContent"
         ]
@@ -3782,7 +3782,7 @@
           "Admin/GetStoreItems",
           "Admin/SetStoreItems"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "CatalogNotConfigured",
           "InvalidItemId",
           "InvalidJSONContent"
@@ -3825,7 +3825,7 @@
           "Admin/GetTasks",
           "Admin/RunTask"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "InvalidScheduledTaskName",
           "InvalidScheduledTaskParameter",
           "InvalidScheduledTaskType",
@@ -3948,7 +3948,7 @@
           "Admin/UpdateUserPublisherInternalData",
           "Admin/UpdateUserPublisherReadOnlyData"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "PublisherNotSet"
         ]
       }
@@ -3989,7 +3989,7 @@
           "Admin/UpdateUserPublisherData",
           "Admin/UpdateUserPublisherReadOnlyData"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "PublisherNotSet"
         ]
       }
@@ -4030,7 +4030,7 @@
           "Admin/UpdateUserPublisherData",
           "Admin/UpdateUserPublisherInternalData"
         ],
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "PublisherNotSet"
         ]
       }
@@ -4102,7 +4102,7 @@
           }
         },
         "x-requestDetails": "In addition to the PlayFab username, titles can make use of a DisplayName which is also a unique identifier, but specific to the title. This allows for unique names which more closely match the theme or genre of a title, for example. This API enables changing that name, whether due to a customer request, an offensive name choice, etc.",
-        "x-ms-docs-errors": [
+        "x-pf-docs-errors": [
           "InsufficientFunds",
           "NameNotAvailable"
         ]
@@ -4117,6 +4117,7 @@
         "code": {
           "description": "Numerical HTTP code",
           "type": "number",
+          "format": "int32",
           "x-actualtype": "int32"
         },
         "status": {
@@ -4130,6 +4131,7 @@
         "errorCode": {
           "description": "Numerical Playfab error code",
           "type": "number",
+          "format": "int32",
           "x-actualtype": "int32"
         },
         "errorMessage": {
@@ -4197,11 +4199,13 @@
         "EstimatedSecondsRemaining": {
           "description": "Estimated time remaining in seconds.",
           "type": "number",
+          "format": "double",
           "x-actualtype": "double"
         },
         "PercentComplete": {
           "description": "Progress represented as percentage.",
           "type": "number",
+          "format": "double",
           "x-actualtype": "double"
         },
         "ScheduledByUserId": {
@@ -4230,13 +4234,11 @@
         },
         "TotalPlayersInSegment": {
           "description": "Total players in segment when task was started.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "TotalPlayersProcessed": {
           "description": "Total number of players that have had the actions applied to.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         }
       },
       "required": [
@@ -4423,13 +4425,11 @@
         },
         "MaxGamesPerHost": {
           "description": "maximum number of game server instances that can run on a single host machine",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "MinFreeGameSlots": {
           "description": "minimum capacity of additional game server instances that can be started before the autoscaling service starts new host machines (given the number of current running host machines and game server instances)",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         }
       },
       "required": [
@@ -4479,13 +4479,11 @@
         },
         "MaxGamesPerHost": {
           "description": "maximum number of game server instances that can run on a single host machine",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "MinFreeGameSlots": {
           "description": "minimum capacity of additional game server instances that can be started before the autoscaling service starts new host machines (given the number of current running host machines and game server instances)",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "Status": {
           "$ref": "#/definitions/GameBuildStatus",
@@ -4528,8 +4526,7 @@
       "properties": {
         "Amount": {
           "description": "Amount to be added to the user balance of the specified virtual currency. Maximum VC balance is Int32 (2,147,483,647). Any increase over this value will be discarded.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "PlayFabId": {
           "description": "PlayFab unique identifier of the user whose virtual currency balance is to be increased.",
@@ -4594,7 +4591,11 @@
       }
     },
     "AuthTokenType": {
-      "type": "object",
+      "type": "string",
+      "x-ms-enum": {
+        "name": "AuthTokenType",
+        "modelAsString": false
+      },
       "enum": [
         "Email"
       ]
@@ -4646,8 +4647,7 @@
       "properties": {
         "DurationInHours": {
           "description": "The duration in hours for the ban. Leave this blank for a permanent ban.",
-          "type": "number",
-          "x-actualtype": "uint32"
+          "type": "integer"
         },
         "IPAddress": {
           "description": "IP address to be banned. May affect multiple players.",
@@ -4781,8 +4781,7 @@
         },
         "InitialLimitedEditionCount": {
           "description": "If the item has IsLImitedEdition set to true, and this is the first time this ItemId has been defined as a limited edition item, this value determines the total number of instances to allocate for the title. Once this limit has been reached, no more instances of this ItemId can be created, and attempts to purchase or grant it will return a Result of false for that ItemId. If the item has already been defined to have a limited edition count, or if this value is less than zero, it will be ignored.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "IsLimitedEdition": {
           "description": "BETA: If true, then only a fixed number can ever be granted.",
@@ -4811,7 +4810,9 @@
         "RealCurrencyPrices": {
           "description": "override prices for this item for specific currencies",
           "type": "object",
-          "x-actualtype": "uint32"
+          "additionalProperties": {
+            "type": "integer"
+          }
         },
         "Tags": {
           "description": "list of item tags",
@@ -4824,7 +4825,9 @@
         "VirtualCurrencyPrices": {
           "description": "price of this item in virtual currencies and \"RM\" (the base Real Money purchase price, in USD pennies)",
           "type": "object",
-          "x-actualtype": "uint32"
+          "additionalProperties": {
+            "type": "integer"
+          }
         }
       },
       "required": [
@@ -4859,7 +4862,9 @@
         "BundledVirtualCurrencies": {
           "description": "virtual currency types and balances which will be added to the player inventory when the bundle is added",
           "type": "object",
-          "x-actualtype": "uint32"
+          "additionalProperties": {
+            "type": "integer"
+          }
         }
       }
     },
@@ -4868,13 +4873,11 @@
       "properties": {
         "UsageCount": {
           "description": "number of times this object can be used, after which it will be removed from the player inventory",
-          "type": "number",
-          "x-actualtype": "uint32"
+          "type": "integer"
         },
         "UsagePeriod": {
           "description": "duration in seconds for how long the item will remain in the player inventory - once elapsed, the item will be removed (recommended minimum value is 5 seconds, as lower values can cause the item to expire before operations depending on this item's details have completed)",
-          "type": "number",
-          "x-actualtype": "uint32"
+          "type": "integer"
         },
         "UsagePeriodGroup": {
           "description": "all inventory item instances in the player inventory sharing a non-null UsagePeriodGroup have their UsagePeriod values added together, and share the result - when that period has elapsed, all the items in the group will be removed",
@@ -4909,7 +4912,9 @@
         "VirtualCurrencyContents": {
           "description": "virtual currency types and balances which will be added to the player inventory when the container is unlocked",
           "type": "object",
-          "x-actualtype": "uint32"
+          "additionalProperties": {
+            "type": "integer"
+          }
         }
       }
     },
@@ -4939,8 +4944,7 @@
       "properties": {
         "Amount": {
           "description": "The amount of the specified resource remaining.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         }
       },
       "required": [
@@ -4996,11 +5000,13 @@
         "EstimatedSecondsRemaining": {
           "description": "Estimated time remaining in seconds.",
           "type": "number",
+          "format": "double",
           "x-actualtype": "double"
         },
         "PercentComplete": {
           "description": "Progress represented as percentage.",
           "type": "number",
+          "format": "double",
           "x-actualtype": "double"
         },
         "Result": {
@@ -5074,18 +5080,15 @@
       "properties": {
         "LatestRevision": {
           "description": "Most recent revision for this Cloud Script version",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "PublishedRevision": {
           "description": "Published code revision for this Cloud Script version",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "Version": {
           "description": "Version number",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         }
       },
       "required": [
@@ -5095,7 +5098,11 @@
       ]
     },
     "Conditionals": {
-      "type": "object",
+      "type": "string",
+      "x-ms-enum": {
+        "name": "Conditionals",
+        "modelAsString": false
+      },
       "enum": [
         "Any",
         "True",
@@ -5153,8 +5160,7 @@
         },
         "Size": {
           "description": "Size of the content in bytes",
-          "type": "number",
-          "x-actualtype": "uint32"
+          "type": "integer"
         }
       },
       "required": [
@@ -5163,7 +5169,11 @@
       ]
     },
     "ContinentCode": {
-      "type": "object",
+      "type": "string",
+      "x-ms-enum": {
+        "name": "ContinentCode",
+        "modelAsString": false
+      },
       "enum": [
         "AF",
         "AN",
@@ -5175,7 +5185,11 @@
       ]
     },
     "CountryCode": {
-      "type": "object",
+      "type": "string",
+      "x-ms-enum": {
+        "name": "CountryCode",
+        "modelAsString": false
+      },
       "enum": [
         "AF",
         "AX",
@@ -5645,7 +5659,11 @@
       }
     },
     "Currency": {
-      "type": "object",
+      "type": "string",
+      "x-ms-enum": {
+        "name": "Currency",
+        "modelAsString": false
+      },
       "enum": [
         "AED",
         "AFN",
@@ -5974,14 +5992,22 @@
       "properties": {}
     },
     "EffectType": {
-      "type": "object",
+      "type": "string",
+      "x-ms-enum": {
+        "name": "EffectType",
+        "modelAsString": false
+      },
       "enum": [
         "Allow",
         "Deny"
       ]
     },
     "EmailVerificationStatus": {
-      "type": "object",
+      "type": "string",
+      "x-ms-enum": {
+        "name": "EmailVerificationStatus",
+        "modelAsString": false
+      },
       "enum": [
         "Unverified",
         "Pending",
@@ -6014,8 +6040,7 @@
       "properties": {
         "APIRequestsIssued": {
           "description": "Number of PlayFab API requests issued by the CloudScript function",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "Error": {
           "$ref": "#/definitions/ScriptExecutionError",
@@ -6025,6 +6050,7 @@
         },
         "ExecutionTimeSeconds": {
           "type": "number",
+          "format": "double",
           "x-actualtype": "double"
         },
         "FunctionName": {
@@ -6041,8 +6067,7 @@
         },
         "HttpRequestsIssued": {
           "description": "Number of external HTTP requests issued by the CloudScript function",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "Logs": {
           "description": "Entries logged during the function execution. These include both entries logged in the function code using log.info() and log.error() and error entries for API and HTTP request failures.",
@@ -6057,18 +6082,17 @@
           "type": "boolean"
         },
         "MemoryConsumedBytes": {
-          "type": "number",
-          "x-actualtype": "uint32"
+          "type": "integer"
         },
         "ProcessorTimeSeconds": {
           "description": "Processor time consumed while executing the function. This does not include time spent waiting on API calls or HTTP requests.",
           "type": "number",
+          "format": "double",
           "x-actualtype": "double"
         },
         "Revision": {
           "description": "The revision of the CloudScript that executed",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         }
       },
       "required": [
@@ -6131,7 +6155,11 @@
       }
     },
     "GameBuildStatus": {
-      "type": "object",
+      "type": "string",
+      "x-ms-enum": {
+        "name": "GameBuildStatus",
+        "modelAsString": false
+      },
       "enum": [
         "Available",
         "Validating",
@@ -6149,13 +6177,11 @@
         },
         "MaxPlayerCount": {
           "description": "maximum user count a specific Game Server Instance can support",
-          "type": "number",
-          "x-actualtype": "uint32"
+          "type": "integer"
         },
         "MinPlayerCount": {
           "description": "minimum user count required for this Game Server Instance to continue (usually 1)",
-          "type": "number",
-          "x-actualtype": "uint32"
+          "type": "integer"
         },
         "StartOpen": {
           "description": "whether to start as an open session, meaning that players can matchmake into it (defaults to true)",
@@ -6175,7 +6201,11 @@
       }
     },
     "GenericErrorCodes": {
-      "type": "object",
+      "type": "string",
+      "x-ms-enum": {
+        "name": "GenericErrorCodes",
+        "modelAsString": false
+      },
       "enum": [
         "Success",
         "UnkownError",
@@ -7037,13 +7067,11 @@
       "properties": {
         "Revision": {
           "description": "Revision number. If left null, defaults to the latest revision",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "Version": {
           "description": "Version number. If left null, defaults to the latest version",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         }
       },
       "example": {
@@ -7072,13 +7100,11 @@
         },
         "Revision": {
           "description": "Revision number.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "Version": {
           "description": "Version number.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         }
       },
       "required": [
@@ -7213,13 +7239,11 @@
         },
         "ItemCount": {
           "description": "Number of content items returned. We currently have a maximum of 1000 items limit.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "TotalSize": {
           "description": "The total size of listed contents in bytes.",
-          "type": "number",
-          "x-actualtype": "uint32"
+          "type": "integer"
         }
       },
       "required": [
@@ -7279,13 +7303,11 @@
       "properties": {
         "Day": {
           "description": "Reporting year (UTC)",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "Month": {
           "description": "Reporting month (UTC)",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "ReportName": {
           "description": "Report name",
@@ -7293,8 +7315,7 @@
         },
         "Year": {
           "description": "Reporting year (UTC)",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         }
       },
       "required": [
@@ -7380,8 +7401,7 @@
         },
         "ServerPort": {
           "description": "communication port for this Game Server Instance",
-          "type": "number",
-          "x-actualtype": "uint32"
+          "type": "integer"
         },
         "ServerPublicDNSName": {
           "description": "Public DNS name (if any) of the server",
@@ -7618,13 +7638,11 @@
         },
         "MaxBatchSize": {
           "description": "Maximum number of profiles to load. Default is 1,000. Maximum is 10,000.",
-          "type": "number",
-          "x-actualtype": "uint32"
+          "type": "integer"
         },
         "SecondsToLive": {
           "description": "Number of seconds to keep the continuation token active. After token expiration it is not possible to continue paging results. Default is 300 (5 minutes). Maximum is 1,800 (30 minutes).",
-          "type": "number",
-          "x-actualtype": "uint32"
+          "type": "integer"
         },
         "SegmentId": {
           "description": "Unique identifier for this segment.",
@@ -7657,8 +7675,7 @@
         },
         "ProfilesInSegment": {
           "description": "Count of profiles matching this segment.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         }
       },
       "required": [
@@ -7873,7 +7890,10 @@
       "properties": {
         "Data": {
           "description": "a dictionary object of key / value pairs",
-          "type": "object"
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
         }
       },
       "example": {
@@ -7897,9 +7917,11 @@
       "type": "object",
       "properties": {
         "Tables": {
-          "$ref": "#/definitions/RandomResultTableListing",
           "description": "array of random result tables currently available",
           "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/RandomResultTableListing"
+          },
           "x-isclass": true
         }
       },
@@ -7992,13 +8014,11 @@
         },
         "MaxGamesPerHost": {
           "description": "maximum number of game server instances that can run on a single host machine",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "MinFreeGameSlots": {
           "description": "minimum capacity of additional game server instances that can be started before the autoscaling service starts new host machines (given the number of current running host machines and game server instances)",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "Status": {
           "$ref": "#/definitions/GameBuildStatus",
@@ -8293,7 +8313,10 @@
       "properties": {
         "Data": {
           "description": "a dictionary object of key / value pairs",
-          "type": "object"
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
         }
       },
       "example": {
@@ -8357,8 +8380,7 @@
       "properties": {
         "IfChangedFromDataVersion": {
           "description": "The version that currently exists according to the caller. The call will return the data for all of the keys if the version in the system is greater than this.",
-          "type": "number",
-          "x-actualtype": "uint32"
+          "type": "integer"
         },
         "Keys": {
           "description": "Specific keys to search for in the custom user data.",
@@ -8388,15 +8410,16 @@
       "type": "object",
       "properties": {
         "Data": {
-          "$ref": "#/definitions/UserDataRecord",
           "description": "User specific data for this title.",
           "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/UserDataRecord"
+          },
           "x-isclass": true
         },
         "DataVersion": {
           "description": "Indicates the current version of the data that has been set. This is incremented with every set call for that type of data (read-only, internal, etc). This version can be provided in Get calls to find updated data.",
-          "type": "number",
-          "x-actualtype": "uint32"
+          "type": "integer"
         },
         "PlayFabId": {
           "description": "PlayFab unique identifier of the user whose custom data is being returned.",
@@ -8457,12 +8480,16 @@
         "VirtualCurrency": {
           "description": "Array of virtual currency balance(s) belonging to the user.",
           "type": "object",
-          "x-actualtype": "int32"
+          "additionalProperties": {
+            "type": "integer"
+          }
         },
         "VirtualCurrencyRechargeTimes": {
-          "$ref": "#/definitions/VirtualCurrencyRechargeTime",
           "description": "Array of remaining times and timestamps for virtual currencies.",
           "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/VirtualCurrencyRechargeTime"
+          },
           "x-isclass": true
         }
       },
@@ -8524,7 +8551,10 @@
         },
         "CustomData": {
           "description": "A set of custom key-value pairs on the instance of the inventory item, which is not to be confused with the catalog item's custom data.",
-          "type": "object"
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
         },
         "DisplayName": {
           "description": "CatalogItem.DisplayName at the time this item was purchased.",
@@ -8556,8 +8586,7 @@
         },
         "RemainingUses": {
           "description": "Total number of remaining uses, if this is a consumable item.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "Result": {
           "description": "Result of this operation.",
@@ -8569,13 +8598,11 @@
         },
         "UnitPrice": {
           "description": "Cost of the catalog item in the given currency. Not available when granting items.",
-          "type": "number",
-          "x-actualtype": "uint32"
+          "type": "integer"
         },
         "UsesIncrementedBy": {
           "description": "The number of uses that were added or removed to this item in this call.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         }
       },
       "required": [
@@ -8692,8 +8719,7 @@
       "properties": {
         "Amount": {
           "description": "Amount to increase availability by.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "CatalogVersion": {
           "description": "Which catalog is being updated. If null, uses the default catalog.",
@@ -8765,7 +8791,10 @@
         },
         "Data": {
           "description": "Key-value pairs to be written to the custom data. Note that keys are trimmed of whitespace, are limited in size, and may not begin with a '!' character or be null.",
-          "type": "object"
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
         },
         "ItemId": {
           "description": "Unique identifier of the catalog item to be granted to the user.",
@@ -8822,7 +8851,10 @@
         },
         "CustomData": {
           "description": "A set of custom key-value pairs on the instance of the inventory item, which is not to be confused with the catalog item's custom data.",
-          "type": "object"
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
         },
         "DisplayName": {
           "description": "CatalogItem.DisplayName at the time this item was purchased.",
@@ -8850,8 +8882,7 @@
         },
         "RemainingUses": {
           "description": "Total number of remaining uses, if this is a consumable item.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "UnitCurrency": {
           "description": "Currency type for the cost of the catalog item. Not available when granting items.",
@@ -8859,13 +8890,11 @@
         },
         "UnitPrice": {
           "description": "Cost of the catalog item in the given currency. Not available when granting items.",
-          "type": "number",
-          "x-actualtype": "uint32"
+          "type": "integer"
         },
         "UsesIncrementedBy": {
           "description": "The number of uses that were added or removed to this item in this call.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         }
       },
       "required": [
@@ -9055,17 +9084,23 @@
         "Latitude": {
           "description": "Latitude coordinate of the geographic location.",
           "type": "number",
+          "format": "double",
           "x-actualtype": "double"
         },
         "Longitude": {
           "description": "Longitude coordinate of the geographic location.",
           "type": "number",
+          "format": "double",
           "x-actualtype": "double"
         }
       }
     },
     "LoginIdentityProvider": {
-      "type": "object",
+      "type": "string",
+      "x-ms-enum": {
+        "name": "LoginIdentityProvider",
+        "modelAsString": false
+      },
       "enum": [
         "Unknown",
         "PlayFab",
@@ -9278,13 +9313,11 @@
         },
         "MaxGamesPerHost": {
           "description": "maximum number of game server instances that can run on a single host machine",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "MinFreeGameSlots": {
           "description": "minimum capacity of additional game server instances that can be started before the autoscaling service starts new host machines (given the number of current running host machines and game server instances)",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "Timestamp": {
           "description": "new timestamp",
@@ -9338,13 +9371,11 @@
         },
         "MaxGamesPerHost": {
           "description": "maximum number of game server instances that can run on a single host machine",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "MinFreeGameSlots": {
           "description": "minimum capacity of additional game server instances that can be started before the autoscaling service starts new host machines (given the number of current running host machines and game server instances)",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "Status": {
           "$ref": "#/definitions/GameBuildStatus",
@@ -9385,13 +9416,11 @@
       "properties": {
         "Balance": {
           "description": "Balance of the virtual currency after modification.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "BalanceChange": {
           "description": "Amount added or subtracted from the user's virtual currency. Maximum VC balance is Int32 (2,147,483,647). Any increase over this value will be discarded.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "PlayFabId": {
           "description": "User currency was subtracted from.",
@@ -9568,11 +9597,13 @@
         "Latitude": {
           "description": "Latitude coordinate of the player's geographic location.",
           "type": "number",
+          "format": "double",
           "x-actualtype": "double"
         },
         "Longitude": {
           "description": "Longitude coordinate of the player's geographic location.",
           "type": "number",
+          "format": "double",
           "x-actualtype": "double"
         }
       },
@@ -9629,9 +9660,11 @@
           "x-isclass": true
         },
         "Locations": {
-          "$ref": "#/definitions/PlayerLocation",
           "description": "Dictionary of player's locations by type.",
           "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/PlayerLocation"
+          },
           "x-isclass": true
         },
         "Origination": {
@@ -9674,7 +9707,9 @@
         "Statistics": {
           "description": "Dictionary of player's statistics using only the latest version's value",
           "type": "object",
-          "x-actualtype": "int32"
+          "additionalProperties": {
+            "type": "integer"
+          }
         },
         "Tags": {
           "description": "List of player's tags for segmentation.",
@@ -9689,18 +9724,21 @@
         },
         "TotalValueToDateInUSD": {
           "description": "A sum of player's total purchases in USD across all currencies.",
-          "type": "number",
-          "x-actualtype": "uint32"
+          "type": "integer"
         },
         "ValuesToDate": {
           "description": "Dictionary of player's total purchases by currency.",
           "type": "object",
-          "x-actualtype": "uint32"
+          "additionalProperties": {
+            "type": "integer"
+          }
         },
         "VirtualCurrencyBalances": {
           "description": "Dictionary of player's virtual currency balances",
           "type": "object",
-          "x-actualtype": "int32"
+          "additionalProperties": {
+            "type": "integer"
+          }
         }
       }
     },
@@ -9818,8 +9856,7 @@
         },
         "TotalValueToDateInUSD": {
           "description": "Sum of the player's purchases made with real-money currencies, converted to US dollars equivalent and represented as a whole number of cents (1/100 USD). For example, 999 indicates nine dollars and ninety-nine cents.",
-          "type": "number",
-          "x-actualtype": "uint32"
+          "type": "integer"
         },
         "ValuesToDate": {
           "description": "List of the player's lifetime purchase totals, summed by real-money currency",
@@ -9936,13 +9973,11 @@
         },
         "StatisticValue": {
           "description": "Current statistic value",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "StatisticVersion": {
           "description": "Statistic version (0 if not a versioned statistic)",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         }
       },
       "required": [
@@ -9961,8 +9996,7 @@
         },
         "CurrentVersion": {
           "description": "current active version of the statistic, incremented each time the statistic resets",
-          "type": "number",
-          "x-actualtype": "uint32"
+          "type": "integer"
         },
         "StatisticName": {
           "description": "unique name of the statistic",
@@ -10019,8 +10053,7 @@
         },
         "Version": {
           "description": "version of the statistic",
-          "type": "number",
-          "x-actualtype": "uint32"
+          "type": "integer"
         }
       },
       "required": [
@@ -10036,7 +10069,11 @@
       }
     },
     "PushNotificationPlatform": {
-      "type": "object",
+      "type": "string",
+      "x-ms-enum": {
+        "name": "PushNotificationPlatform",
+        "modelAsString": false
+      },
       "enum": [
         "ApplePushNotificationService",
         "GoogleCloudMessaging"
@@ -10073,7 +10110,11 @@
       }
     },
     "PushSetupPlatform": {
-      "type": "object",
+      "type": "string",
+      "x-ms-enum": {
+        "name": "PushSetupPlatform",
+        "modelAsString": false
+      },
       "enum": [
         "GCM",
         "APNS",
@@ -10165,7 +10206,11 @@
       }
     },
     "Region": {
-      "type": "object",
+      "type": "string",
+      "x-ms-enum": {
+        "name": "Region",
+        "modelAsString": false
+      },
       "enum": [
         "USCentral",
         "USEast",
@@ -10321,7 +10366,11 @@
       "properties": {}
     },
     "ResolutionOutcome": {
-      "type": "object",
+      "type": "string",
+      "x-ms-enum": {
+        "name": "ResolutionOutcome",
+        "modelAsString": false
+      },
       "enum": [
         "Revoke",
         "Reinstate",
@@ -10389,8 +10438,7 @@
         },
         "Weight": {
           "description": "How likely this is to be rolled - larger numbers add more weight",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         }
       },
       "required": [
@@ -10404,7 +10452,11 @@
       }
     },
     "ResultTableNodeType": {
-      "type": "object",
+      "type": "string",
+      "x-ms-enum": {
+        "name": "ResultTableNodeType",
+        "modelAsString": false
+      },
       "enum": [
         "ItemId",
         "TableId"
@@ -10707,7 +10759,11 @@
       }
     },
     "ScheduledTaskType": {
-      "type": "object",
+      "type": "string",
+      "x-ms-enum": {
+        "name": "ScheduledTaskType",
+        "modelAsString": false
+      },
       "enum": [
         "CloudScript",
         "ActionsOnPlayerSegment",
@@ -10786,13 +10842,11 @@
       "properties": {
         "Revision": {
           "description": "Revision to make the current published revision",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "Version": {
           "description": "Version number",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         }
       },
       "required": [
@@ -10935,7 +10989,11 @@
       }
     },
     "SourceType": {
-      "type": "object",
+      "type": "string",
+      "x-ms-enum": {
+        "name": "SourceType",
+        "modelAsString": false
+      },
       "enum": [
         "Admin",
         "BackEnd",
@@ -10947,7 +11005,11 @@
       ]
     },
     "StatisticAggregationMethod": {
-      "type": "object",
+      "type": "string",
+      "x-ms-enum": {
+        "name": "StatisticAggregationMethod",
+        "modelAsString": false
+      },
       "enum": [
         "Last",
         "Min",
@@ -10964,13 +11026,11 @@
         },
         "Value": {
           "description": "Statistic value",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "Version": {
           "description": "Statistic version (0 if not a versioned statistic)",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         }
       },
       "required": [
@@ -10979,7 +11039,11 @@
       ]
     },
     "StatisticResetIntervalOption": {
-      "type": "object",
+      "type": "string",
+      "x-ms-enum": {
+        "name": "StatisticResetIntervalOption",
+        "modelAsString": false
+      },
       "enum": [
         "Never",
         "Hour",
@@ -10989,7 +11053,11 @@
       ]
     },
     "StatisticVersionArchivalStatus": {
-      "type": "object",
+      "type": "string",
+      "x-ms-enum": {
+        "name": "StatisticVersionArchivalStatus",
+        "modelAsString": false
+      },
       "enum": [
         "NotScheduled",
         "Scheduled",
@@ -10999,7 +11067,11 @@
       ]
     },
     "StatisticVersionStatus": {
-      "type": "object",
+      "type": "string",
+      "x-ms-enum": {
+        "name": "StatisticVersionStatus",
+        "modelAsString": false
+      },
       "enum": [
         "Active",
         "SnapshotPending",
@@ -11018,8 +11090,7 @@
         },
         "DisplayPosition": {
           "description": "Intended display position for this item. Note that 0 is the first position",
-          "type": "number",
-          "x-actualtype": "uint32"
+          "type": "integer"
         },
         "ItemId": {
           "description": "Unique identifier of the item as it exists in the catalog - note that this must exactly match the ItemId from the catalog",
@@ -11028,12 +11099,16 @@
         "RealCurrencyPrices": {
           "description": "Override prices for this item for specific currencies",
           "type": "object",
-          "x-actualtype": "uint32"
+          "additionalProperties": {
+            "type": "integer"
+          }
         },
         "VirtualCurrencyPrices": {
           "description": "Override prices for this item in virtual currencies and \"RM\" (the base Real Money purchase price, in USD pennies)",
           "type": "object",
-          "x-actualtype": "uint32"
+          "additionalProperties": {
+            "type": "integer"
+          }
         }
       },
       "required": [
@@ -11100,7 +11175,11 @@
       ]
     },
     "SubscriptionProviderStatus": {
-      "type": "object",
+      "type": "string",
+      "x-ms-enum": {
+        "name": "SubscriptionProviderStatus",
+        "modelAsString": false
+      },
       "enum": [
         "NoError",
         "Cancelled",
@@ -11117,8 +11196,7 @@
       "properties": {
         "Amount": {
           "description": "Amount to be subtracted from the user balance of the specified virtual currency.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "PlayFabId": {
           "description": "PlayFab unique identifier of the user whose virtual currency balance is to be decreased.",
@@ -11159,11 +11237,13 @@
         "EstimatedSecondsRemaining": {
           "description": "Estimated time remaining in seconds.",
           "type": "number",
+          "format": "double",
           "x-actualtype": "double"
         },
         "PercentComplete": {
           "description": "Progress represented as percentage.",
           "type": "number",
+          "format": "double",
           "x-actualtype": "double"
         },
         "ScheduledByUserId": {
@@ -11212,7 +11292,11 @@
       }
     },
     "TaskInstanceStatus": {
-      "type": "object",
+      "type": "string",
+      "x-ms-enum": {
+        "name": "TaskInstanceStatus",
+        "modelAsString": false
+      },
       "enum": [
         "Succeeded",
         "Starting",
@@ -11223,7 +11307,11 @@
       ]
     },
     "TitleActivationStatus": {
-      "type": "object",
+      "type": "string",
+      "x-ms-enum": {
+        "name": "TitleActivationStatus",
+        "modelAsString": false
+      },
       "enum": [
         "None",
         "ActivatedTitleKey",
@@ -11598,13 +11686,11 @@
       "properties": {
         "Revision": {
           "description": "New revision number created",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "Version": {
           "description": "Cloud Script version updated",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         }
       },
       "required": [
@@ -11971,7 +12057,10 @@
       "properties": {
         "Data": {
           "description": "Key-value pairs to be written to the custom data. Note that keys are trimmed of whitespace, are limited in size, and may not begin with a '!' character or be null.",
-          "type": "object"
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
         },
         "KeysToRemove": {
           "description": "Optional list of Data-keys to remove from UserData. Some SDKs cannot insert null-values into Data due to language constraints. Use this to delete the keys directly.",
@@ -12010,8 +12099,7 @@
       "properties": {
         "DataVersion": {
           "description": "Indicates the current version of the data that has been set. This is incremented with every set call for that type of data (read-only, internal, etc). This version can be provided in Get calls to find updated data.",
-          "type": "number",
-          "x-actualtype": "uint32"
+          "type": "integer"
         }
       },
       "required": [
@@ -12027,7 +12115,10 @@
       "properties": {
         "Data": {
           "description": "Key-value pairs to be written to the custom data. Note that keys are trimmed of whitespace, are limited in size, and may not begin with a '!' character or be null.",
-          "type": "object"
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
         },
         "KeysToRemove": {
           "description": "Optional list of Data-keys to remove from UserData. Some SDKs cannot insert null-values into Data due to language constraints. Use this to delete the keys directly.",
@@ -12259,7 +12350,11 @@
     },
     "UserDataPermission": {
       "description": "Indicates whether a given data key is private (readable only by the player) or public (readable by all players). When a player makes a GetUserData request about another player, only keys marked Public will be returned.",
-      "type": "object",
+      "type": "string",
+      "x-ms-enum": {
+        "name": "UserDataPermission",
+        "modelAsString": false
+      },
       "enum": [
         "Private",
         "Public"
@@ -12397,7 +12492,11 @@
       }
     },
     "UserOrigination": {
-      "type": "object",
+      "type": "string",
+      "x-ms-enum": {
+        "name": "UserOrigination",
+        "modelAsString": false
+      },
       "enum": [
         "Organic",
         "Steam",
@@ -12562,8 +12661,7 @@
         },
         "TotalValue": {
           "description": "Total value of the purchases in a whole number of 1/100 monetary units. For example, 999 indicates nine dollars and ninety-nine cents when Currency is 'USD')",
-          "type": "number",
-          "x-actualtype": "uint32"
+          "type": "integer"
         },
         "TotalValueAsDecimal": {
           "description": "Total value of the purchases in a string representation of decimal monetary units. For example, '9.99' indicates nine dollars and ninety-nine cents when Currency is 'USD'.",
@@ -12587,18 +12685,15 @@
         },
         "InitialDeposit": {
           "description": "amount to automatically grant users upon first login to the title",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "RechargeMax": {
           "description": "maximum amount to which the currency will recharge (cannot exceed MaxAmount, but can be less)",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "RechargeRate": {
           "description": "rate at which the currency automatically be added to over time, in units per day (24 hours)",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         }
       },
       "required": [
@@ -12615,8 +12710,7 @@
       "properties": {
         "RechargeMax": {
           "description": "Maximum value to which the regenerating currency will automatically increment. Note that it can exceed this value through use of the AddUserVirtualCurrency API call. However, it will not regenerate automatically until it has fallen below this value.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "RechargeTime": {
           "description": "Server timestamp in UTC indicating the next time the virtual currency will be incremented.",
@@ -12624,8 +12718,7 @@
         },
         "SecondsToRecharge": {
           "description": "Time remaining (in seconds) before the next recharge increment of the virtual currency.",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         }
       },
       "required": [
@@ -16303,7 +16396,7 @@
       "description": "This API requires an Entity Session Token, available from the Entity GetEntityToken method."
     }
   },
-  "x-ms-docs-errors-mapping": {
+  "x-pf-docs-errors-mapping": {
     "Success": {
       "name": "Success"
     },

@@ -415,7 +415,7 @@
         {
           "name": "Amount",
           "description": "The amount of the catalog item.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": true
         },
@@ -473,7 +473,7 @@
         {
           "name": "Sort",
           "description": "Sort setting of the catalog item.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": true
         }
@@ -491,7 +491,7 @@
         {
           "name": "Amount",
           "description": "The amount of the catalog price.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
@@ -573,7 +573,7 @@
         {
           "name": "Skip",
           "description": "The number of results to skip.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
@@ -595,7 +595,7 @@
         {
           "name": "Top",
           "description": "The number of results to retrieve.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         }
@@ -614,7 +614,7 @@
         {
           "name": "Count",
           "description": "The total count of hits for the search query.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": true
         },
@@ -895,7 +895,7 @@
         {
           "name": "Quantity",
           "description": "The quantity of the item to craft.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
@@ -983,7 +983,7 @@
         {
           "name": "Quantity",
           "description": "The quantity of the item to craft.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
@@ -1030,7 +1030,7 @@
         {
           "name": "ExpectedAmount",
           "description": "Amount the client expects to use to craft the item.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
@@ -1109,14 +1109,14 @@
         {
           "name": "Amount",
           "description": "The total amount of the ingredient on inventory.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
         {
           "name": "ChangedAmount",
           "description": "The amount of the ingredient used in this call.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
@@ -1141,14 +1141,14 @@
         {
           "name": "Amount",
           "description": "The total amount of the item on inventory.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
         {
           "name": "ChangedAmount",
           "description": "The amount of the item purchased in this call.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": true
         },
@@ -1675,7 +1675,7 @@
         },
         {
           "name": "Amount",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
@@ -1704,13 +1704,13 @@
       "properties": [
         {
           "name": "Amount",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
         {
           "name": "ChangedAmount",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": true
         },
@@ -2560,7 +2560,7 @@
         {
           "name": "Count",
           "description": "Number of items to retrieve. Maximum page size is 10.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
@@ -2594,7 +2594,7 @@
         {
           "name": "Count",
           "description": "The total number of items created by the caller.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
@@ -2963,14 +2963,14 @@
         {
           "name": "Skip",
           "description": "The number of review results to skip. If not specified, defaults to 0.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
         {
           "name": "Top",
           "description": "The number of review results to retrieve. If not specified, defaults to 10.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         }
@@ -2996,7 +2996,7 @@
         {
           "name": "Count",
           "description": "The total number of reviews associated with this item.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
@@ -3600,7 +3600,7 @@
         },
         {
           "name": "Quantity",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         }
@@ -3617,13 +3617,13 @@
       "properties": [
         {
           "name": "Amount",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
         {
           "name": "ChangedAmount",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": true
         },
@@ -3939,7 +3939,7 @@
         {
           "name": "Quantity",
           "description": "The quantity of the item to purchase.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
@@ -4027,7 +4027,7 @@
         {
           "name": "Quantity",
           "description": "The quantity of the item to purchase.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
@@ -4074,7 +4074,7 @@
         {
           "name": "ExpectedPrice",
           "description": "Price the client expects to pay for the item.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         }
@@ -4146,14 +4146,14 @@
         {
           "name": "Amount",
           "description": "The total amount of the currency on inventory.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
         {
           "name": "ChangedAmount",
           "description": "The amount of the currency used in this call.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
@@ -4178,14 +4178,14 @@
         {
           "name": "Amount",
           "description": "The total amount of the item on inventory.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
         {
           "name": "ChangedAmount",
           "description": "The amount of the item purchased in this call.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": true
         },
@@ -4271,42 +4271,42 @@
         {
           "name": "Count1Star",
           "description": "The total count of 1 star ratings for this item",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": true
         },
         {
           "name": "Count2Star",
           "description": "The total count of 2 star ratings for this item",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": true
         },
         {
           "name": "Count3Star",
           "description": "The total count of 3 star ratings for this item",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": true
         },
         {
           "name": "Count4Star",
           "description": "The total count of 4 star ratings for this item",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": true
         },
         {
           "name": "Count5Star",
           "description": "The total count of 5 star ratings for this item",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": true
         },
         {
           "name": "TotalCount",
           "description": "The total count of ratings for this item",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": true
         }
@@ -4424,21 +4424,21 @@
         {
           "name": "HelpfulNegative",
           "description": "The number of negative helpfulness votes for this review.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
         {
           "name": "HelpfulnessVotes",
           "description": "Total number of helpfulness votes for this review.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
         {
           "name": "HelpfulPositive",
           "description": "The number of positive helpfulness votes for this review.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
@@ -4473,7 +4473,7 @@
         {
           "name": "Rating",
           "description": "Star rating associated with this review.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
@@ -4540,7 +4540,7 @@
         {
           "name": "Rating",
           "description": "Star rating associated with this review.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
@@ -4622,7 +4622,7 @@
         {
           "name": "ReviewsCount",
           "description": "The total number of reviews associated with this item.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         }
@@ -4720,7 +4720,7 @@
         {
           "name": "Skip",
           "description": "The number of search results to skip.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
@@ -4735,7 +4735,7 @@
         {
           "name": "Top",
           "description": "The number of search results to retrieve.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         }
@@ -4962,7 +4962,7 @@
         {
           "name": "Skip",
           "description": "The number of search results to skip.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
@@ -4977,7 +4977,7 @@
         {
           "name": "Top",
           "description": "The number of search results to retrieve.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         }
@@ -5032,7 +5032,7 @@
         {
           "name": "Skip",
           "description": "The number of search results to skip.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
@@ -5047,7 +5047,7 @@
         {
           "name": "Top",
           "description": "The number of search results to retrieve.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         }
@@ -5131,7 +5131,7 @@
         {
           "name": "Skip",
           "description": "The number of search results to skip.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
@@ -5146,7 +5146,7 @@
         {
           "name": "Top",
           "description": "The number of search results to retrieve.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         }
@@ -5229,7 +5229,7 @@
         {
           "name": "Skip",
           "description": "The number of search results to skip.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
@@ -5244,7 +5244,7 @@
         {
           "name": "Top",
           "description": "The number of search results to retrieve.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         }
@@ -5327,7 +5327,7 @@
         {
           "name": "Skip",
           "description": "The number of search results to skip.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         },
@@ -5342,7 +5342,7 @@
         {
           "name": "Top",
           "description": "The number of search results to retrieve.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         }
@@ -6183,7 +6183,7 @@
         {
           "name": "FileSize",
           "description": "Size of the file to be uploaded, in bytes.",
-          "jsontype": "Number",
+          "jsontype": "Integer",
           "actualtype": "int32",
           "optional": false
         }
