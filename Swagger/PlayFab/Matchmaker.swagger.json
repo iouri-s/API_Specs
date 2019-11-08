@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "version": "191029",
+    "version": "191108",
     "title": "PlayFab Matchmaker API",
     "description": "Enables the use of an external match-making service in conjunction with PlayFab hosted Game Server instances",
     "termsOfService": "https://playfab.com/terms/",
@@ -58,9 +58,6 @@
           "Matchmaker/PlayerLeft",
           "Matchmaker/StartGame",
           "Matchmaker/UserInfo"
-        ],
-        "x-ms-docs-errors": [
-          "InvalidParams"
         ]
       }
     },
@@ -97,9 +94,6 @@
           "Matchmaker/PlayerLeft",
           "Matchmaker/StartGame",
           "Matchmaker/UserInfo"
-        ],
-        "x-ms-docs-errors": [
-          "InvalidParams"
         ]
       }
     },
@@ -136,9 +130,6 @@
           "Matchmaker/PlayerJoined",
           "Matchmaker/StartGame",
           "Matchmaker/UserInfo"
-        ],
-        "x-ms-docs-errors": [
-          "InvalidParams"
         ]
       }
     },
@@ -177,8 +168,7 @@
           "Matchmaker/UserInfo"
         ],
         "x-ms-docs-errors": [
-          "BuildNotFound",
-          "InvalidParams"
+          "BuildNotFound"
         ]
       }
     },
@@ -215,9 +205,6 @@
           "Matchmaker/PlayerJoined",
           "Matchmaker/PlayerLeft",
           "Matchmaker/StartGame"
-        ],
-        "x-ms-docs-errors": [
-          "InvalidParams"
         ]
       }
     }
@@ -2793,6 +2780,10 @@
       "id": 1490,
       "name": "EvaluationModePlayerCountExceeded"
     },
+    "GetPlayersInSegmentRateLimitExceeded": {
+      "id": 1491,
+      "name": "GetPlayersInSegmentRateLimitExceeded"
+    },
     "MatchmakingEntityInvalid": {
       "id": 2001,
       "name": "MatchmakingEntityInvalid"
@@ -3052,6 +3043,10 @@
     "ExperimentationNoScorecard": {
       "id": 7009,
       "name": "ExperimentationNoScorecard"
+    },
+    "ExperimentationTreatmentAssignmentFailed": {
+      "id": 7010,
+      "name": "ExperimentationTreatmentAssignmentFailed"
     },
     "MaxActionDepthExceeded": {
       "id": 8000,

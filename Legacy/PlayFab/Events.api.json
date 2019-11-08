@@ -161,11 +161,7 @@
       "errors": [
         "EventEntityNotAllowed",
         "EventNamespaceNotAllowed",
-        "InvalidJSONContent",
-        "NotAuthenticated",
-        "NotAuthorized",
-        "OverLimit",
-        "ProfileDoesNotExist"
+        "InvalidJSONContent"
       ]
     },
     {
@@ -183,11 +179,7 @@
       "errors": [
         "EventEntityNotAllowed",
         "EventNamespaceNotAllowed",
-        "InvalidJSONContent",
-        "NotAuthenticated",
-        "NotAuthorized",
-        "OverLimit",
-        "ProfileDoesNotExist"
+        "InvalidJSONContent"
       ]
     }
   ],
@@ -2112,6 +2104,10 @@
       "id": 1490,
       "name": "EvaluationModePlayerCountExceeded"
     },
+    "GetPlayersInSegmentRateLimitExceeded": {
+      "id": 1491,
+      "name": "GetPlayersInSegmentRateLimitExceeded"
+    },
     "MatchmakingEntityInvalid": {
       "id": 2001,
       "name": "MatchmakingEntityInvalid"
@@ -2371,6 +2367,10 @@
     "ExperimentationNoScorecard": {
       "id": 7009,
       "name": "ExperimentationNoScorecard"
+    },
+    "ExperimentationTreatmentAssignmentFailed": {
+      "id": 7010,
+      "name": "ExperimentationTreatmentAssignmentFailed"
     },
     "MaxActionDepthExceeded": {
       "id": 8000,
@@ -2862,6 +2862,7 @@
     "InsightsManagementGetOperationStatusInvalidParameter",
     "DuplicatePurchaseTransactionId",
     "EvaluationModePlayerCountExceeded",
+    "GetPlayersInSegmentRateLimitExceeded",
     "MatchmakingEntityInvalid",
     "MatchmakingPlayerAttributesInvalid",
     "MatchmakingQueueNotFound",
@@ -2927,6 +2928,7 @@
     "ExperimentationExceededMaxVariantLength",
     "ExperimentInvalidId",
     "ExperimentationNoScorecard",
+    "ExperimentationTreatmentAssignmentFailed",
     "MaxActionDepthExceeded",
     "SnapshotNotFound"
   ]

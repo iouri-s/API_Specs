@@ -1463,9 +1463,7 @@
         "Group/RemoveGroupApplication"
       ],
       "errors": [
-        "GroupApplicationNotFound",
-        "NotAuthenticated",
-        "NotAuthorized"
+        "GroupApplicationNotFound"
       ]
     },
     {
@@ -1488,9 +1486,8 @@
         "Group/RemoveGroupInvitation"
       ],
       "errors": [
-        "GroupInvitationNotFound",
-        "NotAuthenticated",
-        "NotAuthorized"
+        "EntityIsAlreadyMember",
+        "GroupInvitationNotFound"
       ]
     },
     {
@@ -1513,9 +1510,6 @@
         "Group/RemoveMembers"
       ],
       "errors": [
-        "InvalidParams",
-        "NotAuthenticated",
-        "NotAuthorized",
         "RoleDoesNotExist"
       ]
     },
@@ -1540,9 +1534,6 @@
       "errors": [
         "EntityBlockedByGroup",
         "EntityIsAlreadyMember",
-        "InvalidParams",
-        "NotAuthenticated",
-        "NotAuthorized",
         "OutstandingInvitationAcceptedInstead"
       ]
     },
@@ -1562,10 +1553,6 @@
       "seeAlso": [
         "Group/ListGroupBlocks",
         "Group/UnblockEntity"
-      ],
-      "errors": [
-        "NotAuthenticated",
-        "NotAuthorized"
       ]
     },
     {
@@ -1587,9 +1574,6 @@
         "Group/RemoveMembers"
       ],
       "errors": [
-        "InvalidParams",
-        "NotAuthenticated",
-        "NotAuthorized",
         "RoleDoesNotExist"
       ]
     },
@@ -1615,10 +1599,7 @@
         "Group/RemoveMembers"
       ],
       "errors": [
-        "GroupNameNotAvailable",
-        "NotAuthenticated",
-        "NotAuthorized",
-        "ProfileDoesNotExist"
+        "GroupNameNotAvailable"
       ]
     },
     {
@@ -1639,8 +1620,6 @@
       ],
       "errors": [
         "DuplicateRoleId",
-        "NotAuthenticated",
-        "NotAuthorized",
         "RoleNameNotAvailable"
       ]
     },
@@ -1659,10 +1638,6 @@
       "resultExample": "",
       "seeAlso": [
         "Group/CreateGroup"
-      ],
-      "errors": [
-        "NotAuthenticated",
-        "NotAuthorized"
       ]
     },
     {
@@ -1682,8 +1657,6 @@
         "Group/CreateRole"
       ],
       "errors": [
-        "NotAuthenticated",
-        "NotAuthorized",
         "RoleDoesNotExist"
       ]
     },
@@ -1702,10 +1675,6 @@
       "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"GroupName\": \"Example Group\",\r\n    \"Group\": {\r\n      \"Id\": \"ABC1234ABC\"\r\n    },\r\n    \"MemberRoleId\": \"ABC123DEF\",\r\n    \"AdminRoleId\": \"ABC123456\",\r\n    \"Roles\": {\r\n      \"admins\": \"Administrators\",\r\n      \"members\": \"Members\",\r\n      \"awesomepeople\": \"Some Other Role\"\r\n    },\r\n    \"Created\": \"2017-12-31T11:59:59Z\",\r\n    \"ProfileVersion\": 17\r\n  }\r\n}",
       "seeAlso": [
         "Group/UpdateGroup"
-      ],
-      "errors": [
-        "NotAuthenticated",
-        "NotAuthorized"
       ]
     },
     {
@@ -1728,10 +1697,8 @@
         "Group/RemoveGroupInvitation"
       ],
       "errors": [
+        "EntityBlockedByGroup",
         "EntityIsAlreadyMember",
-        "InvalidParams",
-        "NotAuthenticated",
-        "NotAuthorized",
         "OutstandingApplicationAcceptedInstead",
         "RoleDoesNotExist"
       ]
@@ -1753,8 +1720,6 @@
         "Group/GetGroup"
       ],
       "errors": [
-        "NotAuthenticated",
-        "NotAuthorized",
         "RoleDoesNotExist"
       ]
     },
@@ -1775,10 +1740,6 @@
         "Group/AcceptGroupApplication",
         "Group/ApplyToGroup",
         "Group/RemoveGroupApplication"
-      ],
-      "errors": [
-        "NotAuthenticated",
-        "NotAuthorized"
       ]
     },
     {
@@ -1797,10 +1758,6 @@
       "seeAlso": [
         "Group/BlockEntity",
         "Group/UnblockEntity"
-      ],
-      "errors": [
-        "NotAuthenticated",
-        "NotAuthorized"
       ]
     },
     {
@@ -1821,10 +1778,6 @@
         "Group/InviteToGroup",
         "Group/ListMembershipOpportunities",
         "Group/RemoveGroupInvitation"
-      ],
-      "errors": [
-        "NotAuthenticated",
-        "NotAuthorized"
       ]
     },
     {
@@ -1842,10 +1795,6 @@
       "resultExample": "",
       "seeAlso": [
         "Group/ListMembership"
-      ],
-      "errors": [
-        "NotAuthenticated",
-        "NotAuthorized"
       ]
     },
     {
@@ -1864,10 +1813,6 @@
       "seeAlso": [
         "Group/ListGroupMembers",
         "Group/ListMembershipOpportunities"
-      ],
-      "errors": [
-        "NotAuthenticated",
-        "NotAuthorized"
       ]
     },
     {
@@ -1886,10 +1831,6 @@
       "seeAlso": [
         "Group/ListGroupApplications",
         "Group/ListGroupInvitations"
-      ],
-      "errors": [
-        "NotAuthenticated",
-        "NotAuthorized"
       ]
     },
     {
@@ -1911,9 +1852,7 @@
         "Group/ListGroupApplications"
       ],
       "errors": [
-        "GroupApplicationNotFound",
-        "NotAuthenticated",
-        "NotAuthorized"
+        "GroupApplicationNotFound"
       ]
     },
     {
@@ -1936,9 +1875,7 @@
         "Group/ListMembershipOpportunities"
       ],
       "errors": [
-        "GroupInvitationNotFound",
-        "NotAuthenticated",
-        "NotAuthorized"
+        "GroupInvitationNotFound"
       ]
     },
     {
@@ -1957,10 +1894,6 @@
       "seeAlso": [
         "Group/AddMembers",
         "Group/ListGroupMembers"
-      ],
-      "errors": [
-        "NotAuthenticated",
-        "NotAuthorized"
       ]
     },
     {
@@ -1979,10 +1912,6 @@
       "seeAlso": [
         "Group/BlockEntity",
         "Group/ListGroupBlocks"
-      ],
-      "errors": [
-        "NotAuthenticated",
-        "NotAuthorized"
       ]
     },
     {
@@ -2005,8 +1934,6 @@
       ],
       "errors": [
         "GroupNameNotAvailable",
-        "NotAuthenticated",
-        "NotAuthorized",
         "RoleDoesNotExist"
       ]
     },
@@ -2028,8 +1955,6 @@
         "Group/DeleteRole"
       ],
       "errors": [
-        "NotAuthenticated",
-        "NotAuthorized",
         "RoleDoesNotExist"
       ]
     }
@@ -3955,6 +3880,10 @@
       "id": 1490,
       "name": "EvaluationModePlayerCountExceeded"
     },
+    "GetPlayersInSegmentRateLimitExceeded": {
+      "id": 1491,
+      "name": "GetPlayersInSegmentRateLimitExceeded"
+    },
     "MatchmakingEntityInvalid": {
       "id": 2001,
       "name": "MatchmakingEntityInvalid"
@@ -4214,6 +4143,10 @@
     "ExperimentationNoScorecard": {
       "id": 7009,
       "name": "ExperimentationNoScorecard"
+    },
+    "ExperimentationTreatmentAssignmentFailed": {
+      "id": 7010,
+      "name": "ExperimentationTreatmentAssignmentFailed"
     },
     "MaxActionDepthExceeded": {
       "id": 8000,
@@ -4705,6 +4638,7 @@
     "InsightsManagementGetOperationStatusInvalidParameter",
     "DuplicatePurchaseTransactionId",
     "EvaluationModePlayerCountExceeded",
+    "GetPlayersInSegmentRateLimitExceeded",
     "MatchmakingEntityInvalid",
     "MatchmakingPlayerAttributesInvalid",
     "MatchmakingQueueNotFound",
@@ -4770,6 +4704,7 @@
     "ExperimentationExceededMaxVariantLength",
     "ExperimentInvalidId",
     "ExperimentationNoScorecard",
+    "ExperimentationTreatmentAssignmentFailed",
     "MaxActionDepthExceeded",
     "SnapshotNotFound"
   ]

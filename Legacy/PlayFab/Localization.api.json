@@ -52,12 +52,7 @@
       "request": "GetLanguageListRequest",
       "requestExample": "{}",
       "result": "GetLanguageListResponse",
-      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"LanguageList\": [\r\n      \"en\"\r\n    ]\r\n  }\r\n}",
-      "errors": [
-        "NotAuthenticated",
-        "NotAuthorized",
-        "ProfileDoesNotExist"
-      ]
+      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"LanguageList\": [\r\n      \"en\"\r\n    ]\r\n  }\r\n}"
     }
   ],
   "errors": {
@@ -1981,6 +1976,10 @@
       "id": 1490,
       "name": "EvaluationModePlayerCountExceeded"
     },
+    "GetPlayersInSegmentRateLimitExceeded": {
+      "id": 1491,
+      "name": "GetPlayersInSegmentRateLimitExceeded"
+    },
     "MatchmakingEntityInvalid": {
       "id": 2001,
       "name": "MatchmakingEntityInvalid"
@@ -2240,6 +2239,10 @@
     "ExperimentationNoScorecard": {
       "id": 7009,
       "name": "ExperimentationNoScorecard"
+    },
+    "ExperimentationTreatmentAssignmentFailed": {
+      "id": 7010,
+      "name": "ExperimentationTreatmentAssignmentFailed"
     },
     "MaxActionDepthExceeded": {
       "id": 8000,
@@ -2731,6 +2734,7 @@
     "InsightsManagementGetOperationStatusInvalidParameter",
     "DuplicatePurchaseTransactionId",
     "EvaluationModePlayerCountExceeded",
+    "GetPlayersInSegmentRateLimitExceeded",
     "MatchmakingEntityInvalid",
     "MatchmakingPlayerAttributesInvalid",
     "MatchmakingQueueNotFound",
@@ -2796,6 +2800,7 @@
     "ExperimentationExceededMaxVariantLength",
     "ExperimentInvalidId",
     "ExperimentationNoScorecard",
+    "ExperimentationTreatmentAssignmentFailed",
     "MaxActionDepthExceeded",
     "SnapshotNotFound"
   ]

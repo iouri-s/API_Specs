@@ -13839,7 +13839,7 @@
       "request": "AcceptTradeRequest",
       "requestExample": "{\r\n  \"OfferingPlayerId\": \"CD803BF233CE76CC\",\r\n  \"TradeId\": \"D819CEC225EA9948C351\",\r\n  \"AcceptedInventoryInstanceIds\": [\r\n    \"95C1797ADDAC24DC0383\",\r\n    \"0F7793DF55CCEAF21B84\"\r\n  ]\r\n}",
       "result": "AcceptTradeResponse",
-      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"Trade\": {\r\n      \"Status\": \"Filled\",\r\n      \"TradeId\": \"D819CEC225EA9948C351\",\r\n      \"OfferingPlayerId\": \"CD803BF233CE76CC\",\r\n      \"OfferedInventoryInstanceIds\": [\r\n        \"1359447\",\r\n        \"635691\"\r\n      ],\r\n      \"OfferedCatalogItemIds\": [\r\n        \"gun_1\",\r\n        \"skin_3\"\r\n      ],\r\n      \"RequestedCatalogItemIds\": [\r\n        \"rare_hat_7\"\r\n      ],\r\n      \"AcceptedPlayerId\": \"461535E1EF4150A86889\",\r\n      \"AcceptedInventoryInstanceIds\": [\r\n        \"95C1797ADDAC24DC0383\",\r\n        \"0F7793DF55CCEAF21B84\"\r\n      ],\r\n      \"OpenedAt\": \"2015-04-07T09:04:28Z\",\r\n      \"FilledAt\": \"2015-04-07T09:20:53Z\"\r\n    }\r\n  }\r\n}",
+      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"Trade\": {\r\n      \"Status\": \"Filled\",\r\n      \"TradeId\": \"D819CEC225EA9948C351\",\r\n      \"OfferingPlayerId\": \"CD803BF233CE76CC\",\r\n      \"OfferedInventoryInstanceIds\": [\r\n        \"1359447\",\r\n        \"635691\"\r\n      ],\r\n      \"OfferedCatalogItemIds\": [\r\n        \"gun_1\",\r\n        \"skin_3\"\r\n      ],\r\n      \"RequestedCatalogItemIds\": [\r\n        \"rare_hat_7\"\r\n      ],\r\n      \"AcceptedPlayerId\": \"461535E1EF4150A86889\",\r\n      \"AcceptedInventoryInstanceIds\": [\r\n        \"95C1797ADDAC24DC0383\",\r\n        \"0F7793DF55CCEAF21B84\"\r\n      ],\r\n      \"OpenedAt\": \"2015-04-07T02:04:28Z\",\r\n      \"FilledAt\": \"2015-04-07T02:20:53Z\"\r\n    }\r\n  }\r\n}",
       "seeAlso": [
         "Client/CancelTrade",
         "Client/GetPlayerTrades",
@@ -13882,7 +13882,6 @@
         "Client/SetFriendTags"
       ],
       "errors": [
-        "AccountNotFound",
         "UsersAlreadyFriends"
       ]
     },
@@ -13933,7 +13932,6 @@
       "result": "AddSharedGroupMembersResult",
       "resultExample": "",
       "errors": [
-        "AccountNotFound",
         "UserAlreadyAdded"
       ]
     },
@@ -13959,7 +13957,6 @@
         "EmailAddressNotAvailable",
         "InvalidEmailAddress",
         "InvalidPassword",
-        "InvalidTitleId",
         "InvalidUsername",
         "UsernameNotAvailable"
       ]
@@ -14031,7 +14028,7 @@
       "request": "CancelTradeRequest",
       "requestExample": "{\r\n  \"TradeId\": \"D819CEC225EA9948C351\"\r\n}",
       "result": "CancelTradeResponse",
-      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"Trade\": {\r\n      \"Status\": \"Cancelled\",\r\n      \"TradeId\": \"D819CEC225EA9948C351\",\r\n      \"OfferingPlayerId\": \"CD803BF233CE76CC\",\r\n      \"OfferedInventoryInstanceIds\": [\r\n        \"1359447\",\r\n        \"635691\"\r\n      ],\r\n      \"RequestedCatalogItemIds\": [\r\n        \"rare_hat_7\"\r\n      ],\r\n      \"OpenedAt\": \"2015-04-07T09:04:28Z\",\r\n      \"CancelledAt\": \"2015-04-07T09:18:24Z\"\r\n    }\r\n  }\r\n}",
+      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"Trade\": {\r\n      \"Status\": \"Cancelled\",\r\n      \"TradeId\": \"D819CEC225EA9948C351\",\r\n      \"OfferingPlayerId\": \"CD803BF233CE76CC\",\r\n      \"OfferedInventoryInstanceIds\": [\r\n        \"1359447\",\r\n        \"635691\"\r\n      ],\r\n      \"RequestedCatalogItemIds\": [\r\n        \"rare_hat_7\"\r\n      ],\r\n      \"OpenedAt\": \"2015-04-07T02:04:28Z\",\r\n      \"CancelledAt\": \"2015-04-07T02:18:24Z\"\r\n    }\r\n  }\r\n}",
       "seeAlso": [
         "Client/AcceptTrade",
         "Client/GetPlayerTrades",
@@ -14178,10 +14175,7 @@
       "request": "GetAccountInfoRequest",
       "requestExample": "{\r\n  \"PlayFabId\": \"10931252888739651331\"\r\n}",
       "result": "GetAccountInfoResult",
-      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"AccountInfo\": {\r\n      \"PlayFabId\": \"10931252888739651331\",\r\n      \"Created\": \"2013-04-07T09:04:28Z\",\r\n      \"Username\": \"accountname\",\r\n      \"TitleInfo\": {\r\n        \"Origination\": \"IOS\",\r\n        \"Created\": \"2014-01-08T11:03:18Z\",\r\n        \"LastLogin\": \"2014-04-07T09:04:28Z\",\r\n        \"FirstLogin\": \"2014-01-08T11:03:18Z\",\r\n        \"TitlePlayerAccount\": {\r\n          \"Id\": \"174812abf712\",\r\n          \"Type\": \"title_player_account\",\r\n          \"TypeString\": \"title_player_account\"\r\n        }\r\n      },\r\n      \"FacebookInfo\": {\r\n        \"FacebookId\": \"23525445454\"\r\n      },\r\n      \"SteamInfo\": {\r\n        \"SteamCountry\": \"US\",\r\n        \"SteamCurrency\": \"USD\"\r\n      },\r\n      \"GameCenterInfo\": {\r\n        \"GameCenterId\": \"someone\"\r\n      }\r\n    }\r\n  }\r\n}",
-      "errors": [
-        "AccountNotFound"
-      ]
+      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"AccountInfo\": {\r\n      \"PlayFabId\": \"10931252888739651331\",\r\n      \"Created\": \"2013-04-07T09:04:28Z\",\r\n      \"Username\": \"accountname\",\r\n      \"TitleInfo\": {\r\n        \"Origination\": \"IOS\",\r\n        \"Created\": \"2014-01-08T11:03:18Z\",\r\n        \"LastLogin\": \"2014-04-07T09:04:28Z\",\r\n        \"FirstLogin\": \"2014-01-08T11:03:18Z\",\r\n        \"TitlePlayerAccount\": {\r\n          \"Id\": \"174812abf712\",\r\n          \"Type\": \"title_player_account\",\r\n          \"TypeString\": \"title_player_account\"\r\n        }\r\n      },\r\n      \"FacebookInfo\": {\r\n        \"FacebookId\": \"23525445454\"\r\n      },\r\n      \"SteamInfo\": {\r\n        \"SteamCountry\": \"US\",\r\n        \"SteamCurrency\": \"USD\"\r\n      },\r\n      \"GameCenterInfo\": {\r\n        \"GameCenterId\": \"someone\"\r\n      }\r\n    }\r\n  }\r\n}"
     },
     {
       "name": "GetAdPlacements",
@@ -14198,9 +14192,6 @@
       "resultExample": "",
       "AnyInclusiveFlags": [
         "Beta"
-      ],
-      "errors": [
-        "InvalidRequest"
       ]
     },
     {
@@ -14483,7 +14474,6 @@
         "Client/GetUserStatistics"
       ],
       "errors": [
-        "AccountNotFound",
         "FacebookAPIError"
       ]
     },
@@ -14614,7 +14604,6 @@
         "Client/GetUserStatistics"
       ],
       "errors": [
-        "AccountNotFound",
         "LeaderboardVersionNotAvailable"
       ]
     },
@@ -14635,9 +14624,6 @@
         "Client/GetCharacterLeaderboard",
         "Client/GetLeaderboard",
         "Server/GetLeaderboardAroundUser"
-      ],
-      "errors": [
-        "AccountNotFound"
       ]
     },
     {
@@ -14692,7 +14678,6 @@
       "result": "GetPlayerCombinedInfoResult",
       "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"PlayFabId\": \"4027527BF22653D1\",\r\n    \"InfoResultPayload\": {\r\n      \"AccountInfo\": {\r\n        \"PlayFabId\": \"4027527BF22653D1\",\r\n        \"Created\": \"2013-04-07T09:04:28Z\",\r\n        \"Username\": \"my name\",\r\n        \"TitleInfo\": {\r\n          \"Origination\": \"IOS\",\r\n          \"Created\": \"2014-01-08T11:03:18Z\",\r\n          \"LastLogin\": \"2014-04-07T09:04:28Z\",\r\n          \"FirstLogin\": \"2014-01-08T11:03:18Z\",\r\n          \"TitlePlayerAccount\": {\r\n            \"Id\": \"174812abf712\",\r\n            \"Type\": \"title_player_account\",\r\n            \"TypeString\": \"title_player_account\"\r\n          }\r\n        },\r\n        \"FacebookInfo\": {\r\n          \"FacebookId\": \"23525445454\"\r\n        },\r\n        \"SteamInfo\": {\r\n          \"SteamCountry\": \"US\",\r\n          \"SteamCurrency\": \"USD\"\r\n        },\r\n        \"GameCenterInfo\": {\r\n          \"GameCenterId\": \"someone\"\r\n        }\r\n      },\r\n      \"UserVirtualCurrency\": {\r\n        \"GC\": 15\r\n      },\r\n      \"UserVirtualCurrencyRechargeTimes\": {\r\n        \"GC\": {\r\n          \"SecondsToRecharge\": 3600,\r\n          \"RechargeTime\": \"2014-01-01T12:00:00Z\",\r\n          \"RechargeMax\": 50\r\n        }\r\n      },\r\n      \"UserData\": {\r\n        \"preferences\": {\r\n          \"Value\": \"alpha\",\r\n          \"LastUpdated\": \"2014-08-20T12:30:45Z\",\r\n          \"Permission\": \"Public\"\r\n        },\r\n        \"progress\": {\r\n          \"Value\": \"level_twenty\",\r\n          \"LastUpdated\": \"2014-09-01T10:12:30Z\",\r\n          \"Permission\": \"Private\"\r\n        }\r\n      },\r\n      \"UserDataVersion\": 12,\r\n      \"UserReadOnlyDataVersion\": 0,\r\n      \"PlayerProfile\": {\r\n        \"TitleId\": \"TitleName\",\r\n        \"PlayerId\": \"10931252888739651331\",\r\n        \"Created\": \"0001-01-01T00:00:00Z\",\r\n        \"LastLogin\": \"0001-01-01T00:00:00Z\",\r\n        \"BannedUntil\": \"9999-12-31T23:59:59.999Z\",\r\n        \"DisplayName\": \"PlayerDisplayName\",\r\n        \"TotalValueToDateInUSD\": 0\r\n      }\r\n    }\r\n  }\r\n}",
       "errors": [
-        "AccountNotFound",
         "RequestViewConstraintParamsNotAllowed"
       ]
     },
@@ -14711,7 +14696,6 @@
       "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"PlayerProfile\": {\r\n      \"TitleId\": \"TitleName\",\r\n      \"PlayerId\": \"10931252888739651331\",\r\n      \"Created\": \"0001-01-01T00:00:00Z\",\r\n      \"LastLogin\": \"0001-01-01T00:00:00Z\",\r\n      \"BannedUntil\": \"9999-12-31T23:59:59.999Z\",\r\n      \"DisplayName\": \"PlayerDisplayName\",\r\n      \"TotalValueToDateInUSD\": 0\r\n    }\r\n  }\r\n}",
       "errors": [
         "PlayerNotInGame",
-        "ProfileDoesNotExist",
         "RequestViewConstraintParamsNotAllowed"
       ]
     },
@@ -14782,10 +14766,7 @@
       "request": "GetPlayerTagsRequest",
       "requestExample": "{\r\n  \"PlayFabId\": \"10931252888739651331\",\r\n  \"Namespace\": \"title.AAA\"\r\n}",
       "result": "GetPlayerTagsResult",
-      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"PlayFabId\": \"10931252888739651331\",\r\n    \"Tags\": [\r\n      \"title.AAA.MostKilled\",\r\n      \"title.AAA.MostPlayed\",\r\n      \"title.AAA.MostBanned\"\r\n    ]\r\n  }\r\n}",
-      "errors": [
-        "AccountNotFound"
-      ]
+      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"PlayFabId\": \"10931252888739651331\",\r\n    \"Tags\": [\r\n      \"title.AAA.MostKilled\",\r\n      \"title.AAA.MostPlayed\",\r\n      \"title.AAA.MostBanned\"\r\n    ]\r\n  }\r\n}"
     },
     {
       "name": "GetPlayerTrades",
@@ -14798,7 +14779,7 @@
       "request": "GetPlayerTradesRequest",
       "requestExample": "{\r\n  \"StatusFilter\": \"Filled\"\r\n}",
       "result": "GetPlayerTradesResponse",
-      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"OpenedTrades\": [\r\n      {\r\n        \"Status\": \"Filled\",\r\n        \"TradeId\": \"D819CEC225EA9948C351\",\r\n        \"OfferingPlayerId\": \"CD803BF233CE76CC\",\r\n        \"OfferedInventoryInstanceIds\": [\r\n          \"1359447\",\r\n          \"635691\"\r\n        ],\r\n        \"OfferedCatalogItemIds\": [\r\n          \"gun_1\",\r\n          \"skin_3\"\r\n        ],\r\n        \"RequestedCatalogItemIds\": [\r\n          \"rare_hat_7\"\r\n        ],\r\n        \"AcceptedPlayerId\": \"461535E1EF4150A86889\",\r\n        \"AcceptedInventoryInstanceIds\": [\r\n          \"95C1797ADDAC24DC0383\",\r\n          \"0F7793DF55CCEAF21B84\"\r\n        ],\r\n        \"OpenedAt\": \"2015-04-07T09:04:28Z\",\r\n        \"FilledAt\": \"2015-04-07T09:20:53Z\"\r\n      }\r\n    ],\r\n    \"AcceptedTrades\": [\r\n      {\r\n        \"Status\": \"Filled\",\r\n        \"TradeId\": \"20BC5A5DCD966_D4935E795ABAE6\",\r\n        \"OfferingPlayerId\": \"20BC5A5DCD966\",\r\n        \"OfferedInventoryInstanceIds\": [\r\n          \"23BDCB\"\r\n        ],\r\n        \"OfferedCatalogItemIds\": [\r\n          \"boost_10\"\r\n        ],\r\n        \"RequestedCatalogItemIds\": [\r\n          \"gem_5\",\r\n          \"card_3\"\r\n        ],\r\n        \"AcceptedPlayerId\": \"CD803BF233CE76CC\",\r\n        \"AcceptedInventoryInstanceIds\": [\r\n          \"2DDD0187\",\r\n          \"35D2A00\"\r\n        ],\r\n        \"OpenedAt\": \"2015-05-01T11:45:19Z\",\r\n        \"FilledAt\": \"2015-05-01T15:07:34Z\"\r\n      }\r\n    ]\r\n  }\r\n}",
+      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"OpenedTrades\": [\r\n      {\r\n        \"Status\": \"Filled\",\r\n        \"TradeId\": \"D819CEC225EA9948C351\",\r\n        \"OfferingPlayerId\": \"CD803BF233CE76CC\",\r\n        \"OfferedInventoryInstanceIds\": [\r\n          \"1359447\",\r\n          \"635691\"\r\n        ],\r\n        \"OfferedCatalogItemIds\": [\r\n          \"gun_1\",\r\n          \"skin_3\"\r\n        ],\r\n        \"RequestedCatalogItemIds\": [\r\n          \"rare_hat_7\"\r\n        ],\r\n        \"AcceptedPlayerId\": \"461535E1EF4150A86889\",\r\n        \"AcceptedInventoryInstanceIds\": [\r\n          \"95C1797ADDAC24DC0383\",\r\n          \"0F7793DF55CCEAF21B84\"\r\n        ],\r\n        \"OpenedAt\": \"2015-04-07T02:04:28Z\",\r\n        \"FilledAt\": \"2015-04-07T02:20:53Z\"\r\n      }\r\n    ],\r\n    \"AcceptedTrades\": [\r\n      {\r\n        \"Status\": \"Filled\",\r\n        \"TradeId\": \"20BC5A5DCD966_D4935E795ABAE6\",\r\n        \"OfferingPlayerId\": \"20BC5A5DCD966\",\r\n        \"OfferedInventoryInstanceIds\": [\r\n          \"23BDCB\"\r\n        ],\r\n        \"OfferedCatalogItemIds\": [\r\n          \"boost_10\"\r\n        ],\r\n        \"RequestedCatalogItemIds\": [\r\n          \"gem_5\",\r\n          \"card_3\"\r\n        ],\r\n        \"AcceptedPlayerId\": \"CD803BF233CE76CC\",\r\n        \"AcceptedInventoryInstanceIds\": [\r\n          \"2DDD0187\",\r\n          \"35D2A00\"\r\n        ],\r\n        \"OpenedAt\": \"2015-05-01T04:45:19Z\",\r\n        \"FilledAt\": \"2015-05-01T08:07:34Z\"\r\n      }\r\n    ]\r\n  }\r\n}",
       "seeAlso": [
         "Client/AcceptTrade",
         "Client/CancelTrade",
@@ -14832,10 +14813,7 @@
       "request": "GetPlayFabIDsFromFacebookInstantGamesIdsRequest",
       "requestExample": "{\r\n  \"FacebookInstantGamesIds\": [\r\n    \"1114685845316172\",\r\n    \"1114685845316173\"\r\n  ]\r\n}",
       "result": "GetPlayFabIDsFromFacebookInstantGamesIdsResult",
-      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"Data\": [\r\n      {\r\n        \"FacebookInstantGamesId\": \"1114685845316172\",\r\n        \"PlayFabId\": \"5a446c83645201\"\r\n      },\r\n      {\r\n        \"FacebookInstantGamesId\": \"1114685845316173\",\r\n        \"PlayFabId\": \"6345cd25a6c7cc\"\r\n      }\r\n    ]\r\n  }\r\n}",
-      "errors": [
-        "AccountNotFound"
-      ]
+      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"Data\": [\r\n      {\r\n        \"FacebookInstantGamesId\": \"1114685845316172\",\r\n        \"PlayFabId\": \"5a446c83645201\"\r\n      },\r\n      {\r\n        \"FacebookInstantGamesId\": \"1114685845316173\",\r\n        \"PlayFabId\": \"6345cd25a6c7cc\"\r\n      }\r\n    ]\r\n  }\r\n}"
     },
     {
       "name": "GetPlayFabIDsFromGameCenterIDs",
@@ -14909,10 +14887,7 @@
       "request": "GetPlayFabIDsFromNintendoSwitchDeviceIdsRequest",
       "requestExample": "{\r\n  \"NintendoSwitchDeviceIds\": [\r\n    \"526f79204261747478\",\r\n    \"526f79204261747479\"\r\n  ]\r\n}",
       "result": "GetPlayFabIDsFromNintendoSwitchDeviceIdsResult",
-      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"Data\": [\r\n      {\r\n        \"NintendoSwitchDeviceId\": \"526f79204261747478\",\r\n        \"PlayFabId\": \"5a446c83645201\"\r\n      },\r\n      {\r\n        \"NintendoSwitchDeviceId\": \"526f79204261747479\",\r\n        \"PlayFabId\": \"6345cd25a6c7cc\"\r\n      }\r\n    ]\r\n  }\r\n}",
-      "errors": [
-        "AccountNotFound"
-      ]
+      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"Data\": [\r\n      {\r\n        \"NintendoSwitchDeviceId\": \"526f79204261747478\",\r\n        \"PlayFabId\": \"5a446c83645201\"\r\n      },\r\n      {\r\n        \"NintendoSwitchDeviceId\": \"526f79204261747479\",\r\n        \"PlayFabId\": \"6345cd25a6c7cc\"\r\n      }\r\n    ]\r\n  }\r\n}"
     },
     {
       "name": "GetPlayFabIDsFromPSNAccountIDs",
@@ -15113,7 +15088,7 @@
       "request": "GetTradeStatusRequest",
       "requestExample": "{\r\n  \"OfferingPlayerId\": \"CD803BF233CE76CC\",\r\n  \"TradeId\": \"D819CEC225EA9948C351\"\r\n}",
       "result": "GetTradeStatusResponse",
-      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"Trade\": {\r\n      \"Status\": \"Open\",\r\n      \"TradeId\": \"D819CEC225EA9948C351\",\r\n      \"OfferingPlayerId\": \"CD803BF233CE76CC\",\r\n      \"OfferedInventoryInstanceIds\": [\r\n        \"1359447\",\r\n        \"635691\"\r\n      ],\r\n      \"RequestedCatalogItemIds\": [\r\n        \"rare_hat_7\"\r\n      ],\r\n      \"OpenedAt\": \"2015-04-07T09:04:28Z\"\r\n    }\r\n  }\r\n}",
+      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"Trade\": {\r\n      \"Status\": \"Open\",\r\n      \"TradeId\": \"D819CEC225EA9948C351\",\r\n      \"OfferingPlayerId\": \"CD803BF233CE76CC\",\r\n      \"OfferedInventoryInstanceIds\": [\r\n        \"1359447\",\r\n        \"635691\"\r\n      ],\r\n      \"RequestedCatalogItemIds\": [\r\n        \"rare_hat_7\"\r\n      ],\r\n      \"OpenedAt\": \"2015-04-07T02:04:28Z\"\r\n    }\r\n  }\r\n}",
       "seeAlso": [
         "Client/AcceptTrade",
         "Client/CancelTrade",
@@ -15145,9 +15120,6 @@
       "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"PlayFabId\": \"10931252888739651331\",\r\n    \"AccountInfo\": {\r\n      \"PlayFabId\": \"10931252888739651331\",\r\n      \"Created\": \"2013-04-07T09:04:28Z\",\r\n      \"Username\": \"accountname\",\r\n      \"TitleInfo\": {\r\n        \"Origination\": \"IOS\",\r\n        \"Created\": \"2014-01-08T11:03:18Z\",\r\n        \"LastLogin\": \"2014-04-07T09:04:28Z\",\r\n        \"FirstLogin\": \"2014-01-08T11:03:18Z\",\r\n        \"TitlePlayerAccount\": {\r\n          \"Id\": \"174812abf712\",\r\n          \"Type\": \"title_player_account\",\r\n          \"TypeString\": \"title_player_account\"\r\n        }\r\n      },\r\n      \"FacebookInfo\": {\r\n        \"FacebookId\": \"23525445454\"\r\n      },\r\n      \"SteamInfo\": {\r\n        \"SteamCountry\": \"US\",\r\n        \"SteamCurrency\": \"USD\"\r\n      },\r\n      \"GameCenterInfo\": {\r\n        \"GameCenterId\": \"someone\"\r\n      }\r\n    },\r\n    \"VirtualCurrency\": {\r\n      \"GC\": 15\r\n    },\r\n    \"VirtualCurrencyRechargeTimes\": {\r\n      \"GC\": {\r\n        \"SecondsToRecharge\": 3600,\r\n        \"RechargeTime\": \"2014-01-01T12:00:00Z\",\r\n        \"RechargeMax\": 50\r\n      }\r\n    },\r\n    \"Data\": {\r\n      \"preferences\": {\r\n        \"Value\": \"alpha\",\r\n        \"LastUpdated\": \"2014-08-20T12:30:45Z\",\r\n        \"Permission\": \"Public\"\r\n      },\r\n      \"progress\": {\r\n        \"Value\": \"level_twenty\",\r\n        \"LastUpdated\": \"2014-09-01T10:12:30Z\",\r\n        \"Permission\": \"Private\"\r\n      }\r\n    },\r\n    \"DataVersion\": 12,\r\n    \"ReadOnlyDataVersion\": 0\r\n  }\r\n}",
       "seeAlso": [
         "Client/GetPlayerCombinedInfo"
-      ],
-      "errors": [
-        "AccountNotFound"
       ]
     },
     {
@@ -15286,10 +15258,6 @@
       "seeAlso": [
         "Client/LoginWithWindowsHello",
         "Client/RegisterWithWindowsHello"
-      ],
-      "errors": [
-        "AccountNotFound",
-        "InvalidRequest"
       ]
     },
     {
@@ -15306,7 +15274,6 @@
       "result": "GrantCharacterToUserResult",
       "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"CharacterId\": \"98765432\",\r\n    \"CharacterType\": \"Blue Warrior\",\r\n    \"Result\": true\r\n  }\r\n}",
       "errors": [
-        "InternalServerError",
         "InvalidItemProperties",
         "ItemNotOwned"
       ]
@@ -15546,7 +15513,6 @@
         "InvalidPSNAuthCode",
         "InvalidPSNAuthCode",
         "InvalidPSNIssuerId",
-        "InvalidPublisherId",
         "LinkedAccountAlreadyClaimed",
         "PSNInaccessible"
       ]
@@ -15592,7 +15558,6 @@
         "Client/UnlinkTwitch"
       ],
       "errors": [
-        "DownstreamServiceUnavailable",
         "FeatureNotConfiguredForTitle",
         "InvalidTwitchToken",
         "LinkedAccountAlreadyClaimed",
@@ -15620,8 +15585,7 @@
       ],
       "errors": [
         "AccountAlreadyLinked",
-        "InvalidPublicKey",
-        "InvalidRequest"
+        "InvalidPublicKey"
       ]
     },
     {
@@ -15669,7 +15633,6 @@
       "errors": [
         "BodyTooLarge",
         "CustomAnalyticsEventsNotEnabledForTitle",
-        "InvalidRequest",
         "InvalidTypeInBody",
         "ReservedEventName",
         "ReservedWordInBody"
@@ -15694,10 +15657,8 @@
         "Client/UnlinkAndroidDeviceID"
       ],
       "errors": [
-        "AccountNotFound",
         "InvalidSignature",
         "InvalidSignatureTime",
-        "InvalidTitleId",
         "PlayerSecretAlreadyConfigured",
         "PlayerSecretNotConfigured",
         "RequestViewConstraintParamsNotAllowed"
@@ -15721,10 +15682,8 @@
         "Client/UnlinkCustomID"
       ],
       "errors": [
-        "AccountNotFound",
         "InvalidSignature",
         "InvalidSignatureTime",
-        "InvalidTitleId",
         "PlayerSecretAlreadyConfigured",
         "PlayerSecretNotConfigured",
         "RequestViewConstraintParamsNotAllowed",
@@ -15749,9 +15708,7 @@
         "Client/RegisterPlayFabUser"
       ],
       "errors": [
-        "AccountNotFound",
         "InvalidEmailOrPassword",
-        "InvalidTitleId",
         "RequestViewConstraintParamsNotAllowed"
       ]
     },
@@ -15773,10 +15730,8 @@
         "Client/UnlinkFacebookAccount"
       ],
       "errors": [
-        "AccountNotFound",
         "FacebookAPIError",
         "InvalidFacebookToken",
-        "InvalidTitleId",
         "PlayerSecretAlreadyConfigured",
         "RequestViewConstraintParamsNotAllowed"
       ]
@@ -15798,12 +15753,10 @@
         "Client/UnlinkFacebookInstantGamesId"
       ],
       "errors": [
-        "AccountNotFound",
         "FacebookInstantGamesAuthNotConfiguredForTitle",
         "InvalidFacebookInstantGamesSignature",
         "InvalidSignature",
         "InvalidSignatureTime",
-        "InvalidTitleId",
         "PlayerSecretAlreadyConfigured",
         "PlayerSecretNotConfigured",
         "RequestViewConstraintParamsNotAllowed"
@@ -15826,9 +15779,7 @@
         "Client/LoginWithIOSDeviceID"
       ],
       "errors": [
-        "AccountNotFound",
         "GameCenterAuthenticationFailed",
-        "InvalidTitleId",
         "RequestViewConstraintParamsNotAllowed"
       ]
     },
@@ -15846,7 +15797,6 @@
       "result": "LoginResult",
       "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"SessionTicket\": \"50DF92E291CCD4C3---A54F-8D3909FF54DEE10-B7817722BC94E536.A6DCCFE1C9709ABB\",\r\n    \"PlayFabId\": \"50DF92E291CCD4C3\",\r\n    \"NewlyCreated\": false\r\n  }\r\n}",
       "errors": [
-        "AccountNotFound",
         "GoogleOAuthError",
         "GoogleOAuthNoIdTokenIncludedInResponse",
         "GoogleOAuthNotConfiguredForTitle",
@@ -15872,10 +15822,8 @@
         "Client/UnlinkIOSDeviceID"
       ],
       "errors": [
-        "AccountNotFound",
         "InvalidSignature",
         "InvalidSignatureTime",
-        "InvalidTitleId",
         "PlayerSecretAlreadyConfigured",
         "PlayerSecretNotConfigured",
         "RequestViewConstraintParamsNotAllowed",
@@ -15900,10 +15848,8 @@
         "Client/UnlinkKongregate"
       ],
       "errors": [
-        "AccountNotFound",
         "FeatureNotConfiguredForTitle",
         "InvalidKongregateToken",
-        "InvalidTitleId",
         "RequestViewConstraintParamsNotAllowed"
       ]
     },
@@ -15924,10 +15870,8 @@
         "Client/UnlinkNintendoSwitchDeviceId"
       ],
       "errors": [
-        "AccountNotFound",
         "InvalidSignature",
         "InvalidSignatureTime",
-        "InvalidTitleId",
         "PlayerSecretAlreadyConfigured",
         "PlayerSecretNotConfigured",
         "RequestViewConstraintParamsNotAllowed"
@@ -15950,11 +15894,9 @@
         "Client/UnlinkOpenIdConnect"
       ],
       "errors": [
-        "AccountNotFound",
         "InvalidIdentityProviderId",
         "InvalidSignature",
         "InvalidSignatureTime",
-        "InvalidTitleId",
         "PlayerSecretAlreadyConfigured",
         "PlayerSecretNotConfigured",
         "RequestViewConstraintParamsNotAllowed"
@@ -15979,8 +15921,6 @@
         "Client/RegisterPlayFabUser"
       ],
       "errors": [
-        "AccountNotFound",
-        "InvalidTitleId",
         "InvalidUsernameOrPassword",
         "RequestViewConstraintParamsNotAllowed"
       ]
@@ -16003,10 +15943,8 @@
         "Client/UnlinkPSNAccount"
       ],
       "errors": [
-        "AccountNotFound",
         "InvalidPSNAuthCode",
         "InvalidPSNIssuerId",
-        "InvalidTitleId",
         "PSNInaccessible",
         "RequestViewConstraintParamsNotAllowed"
       ]
@@ -16029,12 +15967,9 @@
         "Client/UnlinkSteamAccount"
       ],
       "errors": [
-        "AccountNotFound",
         "InvalidSteamTicket",
-        "InvalidTitleId",
         "RequestViewConstraintParamsNotAllowed",
-        "SteamNotEnabledForTitle",
-        "UnknownError"
+        "SteamNotEnabledForTitle"
       ]
     },
     {
@@ -16055,10 +15990,7 @@
         "Client/UnlinkTwitch"
       ],
       "errors": [
-        "AccountNotFound",
-        "DownstreamServiceUnavailable",
         "FeatureNotConfiguredForTitle",
-        "InvalidTitleId",
         "InvalidTwitchToken",
         "RequestViewConstraintParamsNotAllowed",
         "TwitchResponseError"
@@ -16082,8 +16014,6 @@
         "Client/RegisterWithWindowsHello"
       ],
       "errors": [
-        "AccountNotFound",
-        "InvalidRequest",
         "RequestViewConstraintParamsNotAllowed"
       ]
     },
@@ -16105,9 +16035,7 @@
         "Client/UnlinkXboxAccount"
       ],
       "errors": [
-        "AccountNotFound",
         "ExpiredXboxLiveToken",
-        "InvalidTitleId",
         "InvalidXboxLiveToken",
         "RequestViewConstraintParamsNotAllowed",
         "XboxInaccessible",
@@ -16150,7 +16078,7 @@
       "request": "OpenTradeRequest",
       "requestExample": "{\r\n  \"OfferedInventoryInstanceIds\": [\r\n    \"1359447\",\r\n    \"635691\"\r\n  ],\r\n  \"RequestedCatalogItemIds\": [\r\n    \"rare_hat_7\"\r\n  ]\r\n}",
       "result": "OpenTradeResponse",
-      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"Trade\": {\r\n      \"Status\": \"Opening\",\r\n      \"TradeId\": \"D819CEC225EA9948C351\",\r\n      \"OfferingPlayerId\": \"CD803BF233CE76CC\",\r\n      \"OfferedInventoryInstanceIds\": [\r\n        \"1359447\",\r\n        \"635691\"\r\n      ],\r\n      \"RequestedCatalogItemIds\": [\r\n        \"rare_hat_7\"\r\n      ],\r\n      \"OpenedAt\": \"2015-04-07T09:04:28Z\"\r\n    }\r\n  }\r\n}",
+      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"Trade\": {\r\n      \"Status\": \"Opening\",\r\n      \"TradeId\": \"D819CEC225EA9948C351\",\r\n      \"OfferingPlayerId\": \"CD803BF233CE76CC\",\r\n      \"OfferedInventoryInstanceIds\": [\r\n        \"1359447\",\r\n        \"635691\"\r\n      ],\r\n      \"RequestedCatalogItemIds\": [\r\n        \"rare_hat_7\"\r\n      ],\r\n      \"OpenedAt\": \"2015-04-07T02:04:28Z\"\r\n    }\r\n  }\r\n}",
       "seeAlso": [
         "Client/AcceptTrade",
         "Client/CancelTrade",
@@ -16159,6 +16087,7 @@
       ],
       "errors": [
         "TradeAcceptedCatalogItemInvalid",
+        "TradeAcceptedCatalogItemIsNotTradable",
         "TradeAllowedUsersInvalid",
         "TradeInventoryItemDoesNotExist",
         "TradeInventoryItemExpired",
@@ -16275,7 +16204,8 @@
       "result": "RegisterForIOSPushNotificationResult",
       "resultExample": "",
       "errors": [
-        "NoPushNotificationARNForTitle"
+        "NoPushNotificationARNForTitle",
+        "PushServiceError"
       ]
     },
     {
@@ -16300,7 +16230,6 @@
         "InvalidEmailAddress",
         "InvalidPartnerResponse",
         "InvalidPassword",
-        "InvalidTitleId",
         "InvalidUsername",
         "NameNotAvailable",
         "ProfaneDisplayName",
@@ -16326,8 +16255,7 @@
       ],
       "errors": [
         "AccountAlreadyLinked",
-        "InvalidPublicKey",
-        "InvalidRequest"
+        "InvalidPublicKey"
       ]
     },
     {
@@ -16359,9 +16287,6 @@
       "seeAlso": [
         "Client/AddFriend",
         "Client/SetFriendTags"
-      ],
-      "errors": [
-        "AccountNotFound"
       ]
     },
     {
@@ -16415,8 +16340,7 @@
         "Beta"
       ],
       "errors": [
-        "InvalidAdPlacementAndReward",
-        "InvalidRequest"
+        "InvalidAdPlacementAndReward"
       ]
     },
     {
@@ -16433,8 +16357,7 @@
       "result": "EmptyResponse",
       "resultExample": "",
       "errors": [
-        "BodyTooLarge",
-        "NotAuthorizedByTitle"
+        "BodyTooLarge"
       ]
     },
     {
@@ -16466,7 +16389,6 @@
       "result": "RestoreIOSPurchasesResult",
       "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"Fulfillments\": [\r\n      {\r\n        \"FulfilledItems\": [\r\n          {\r\n            \"ItemId\": \"shield_level_5\",\r\n            \"ItemInstanceId\": \"A1437F80BE99D3E8\",\r\n            \"ItemClass\": \"shields\",\r\n            \"PurchaseDate\": \"2019-03-07T00:00:00Z\",\r\n            \"Expiration\": \"2020-10-01T00:00:00Z\",\r\n            \"RemainingUses\": 10,\r\n            \"CatalogVersion\": \"5\",\r\n            \"UnitPrice\": 0\r\n          }\r\n        ]\r\n      }\r\n    ]\r\n  }\r\n}",
       "errors": [
-        "DownstreamServiceUnavailable",
         "InvalidBundleID",
         "InvalidCurrencyCode",
         "InvalidReceipt",
@@ -16495,8 +16417,7 @@
       ],
       "errors": [
         "AllAdPlacementViewsAlreadyConsumed",
-        "InvalidAdPlacementAndReward",
-        "InvalidRequest"
+        "InvalidAdPlacementAndReward"
       ]
     },
     {
@@ -16523,7 +16444,6 @@
         "Client/GetCloudScriptUrl"
       ],
       "errors": [
-        "APIConcurrentRequestLimitExceeded",
         "CloudScriptNotFound",
         "JavascriptException"
       ]
@@ -16542,7 +16462,6 @@
       "result": "SendAccountRecoveryEmailResult",
       "resultExample": "",
       "errors": [
-        "AccountNotFound",
         "EmailRecipientBlacklisted",
         "InvalidEmailAddress",
         "NoContactEmailAddressFound",
@@ -16565,9 +16484,6 @@
       "seeAlso": [
         "Client/AddFriend",
         "Client/RemoveFriend"
-      ],
-      "errors": [
-        "AccountNotFound"
       ]
     },
     {
@@ -16931,8 +16847,7 @@
         "Client/RegisterWithWindowsHello"
       ],
       "errors": [
-        "AccountAlreadyLinked",
-        "InvalidRequest"
+        "AccountAlreadyLinked"
       ]
     },
     {
@@ -17031,7 +16946,6 @@
         "Client/GetUserData"
       ],
       "errors": [
-        "AccountNotFound",
         "CharacterNotFound"
       ]
     },
@@ -17079,7 +16993,6 @@
         "Admin/UpdatePlayerStatisticDefinition"
       ],
       "errors": [
-        "AccountNotFound",
         "APINotEnabledForGameClientAccess",
         "DuplicateStatisticName",
         "StatisticCountLimitExceeded",
@@ -17102,10 +17015,7 @@
       "request": "UpdateSharedGroupDataRequest",
       "requestExample": "{\r\n  \"SharedGroupId\": \"Clan Data\",\r\n  \"Data\": {\r\n    \"ClanKills\": \"34\",\r\n    \"LastClanUpdate\": \"2014-10-03T09:21:14Z\"\r\n  },\r\n  \"Permission\": \"Public\"\r\n}",
       "result": "UpdateSharedGroupDataResult",
-      "resultExample": "",
-      "errors": [
-        "NotAuthorized"
-      ]
+      "resultExample": ""
     },
     {
       "name": "UpdateUserData",
@@ -17172,7 +17082,6 @@
         "Client/GetUserStatistics"
       ],
       "errors": [
-        "AccountNotFound",
         "APINotEnabledForGameClientAccess",
         "InvalidUserStatistics",
         "StatisticCountLimitExceeded",
@@ -17214,7 +17123,6 @@
       "errors": [
         "AmazonValidationError",
         "InvalidReceipt",
-        "InvalidTitleId",
         "MissingAmazonSharedKey",
         "NoMatchingCatalogItemForReceipt",
         "ReceiptAlreadyUsed"
@@ -17262,7 +17170,6 @@
       "result": "ValidateIOSReceiptResult",
       "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"Fulfillments\": [\r\n      {\r\n        \"RecordedTransactionCurrency\": \"GBP\",\r\n        \"RecordedTransactionTotal\": 199,\r\n        \"FulfilledItems\": [\r\n          {\r\n            \"ItemId\": \"shield_level_5\",\r\n            \"ItemInstanceId\": \"A1437F80BE99D3E8\",\r\n            \"ItemClass\": \"shields\",\r\n            \"PurchaseDate\": \"2019-03-07T00:00:00Z\",\r\n            \"Expiration\": \"2020-10-01T00:00:00Z\",\r\n            \"RemainingUses\": 10,\r\n            \"CatalogVersion\": \"5\",\r\n            \"UnitPrice\": 0\r\n          }\r\n        ]\r\n      }\r\n    ]\r\n  }\r\n}",
       "errors": [
-        "DownstreamServiceUnavailable",
         "InvalidBundleID",
         "InvalidCurrencyCode",
         "InvalidEnvironmentForReceipt",
@@ -17291,7 +17198,6 @@
       "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"Fulfillments\": [\r\n      {\r\n        \"FulfilledItems\": [\r\n          {\r\n            \"ItemId\": \"shield_level_5\",\r\n            \"ItemInstanceId\": \"A1437F80BE99D3E8\",\r\n            \"ItemClass\": \"shields\",\r\n            \"PurchaseDate\": \"2019-03-07T00:00:00Z\",\r\n            \"Expiration\": \"2020-10-01T00:00:00Z\",\r\n            \"RemainingUses\": 10,\r\n            \"CatalogVersion\": \"5\",\r\n            \"UnitPrice\": 0\r\n          }\r\n        ]\r\n      }\r\n    ]\r\n  }\r\n}",
       "errors": [
         "InvalidReceipt",
-        "InvalidTitleId",
         "MissingAmazonSharedKey",
         "NoMatchingCatalogItemForReceipt",
         "ReceiptAlreadyUsed"
@@ -17313,7 +17219,6 @@
       "errors": [
         "CharacterNotFound",
         "InvalidEventField",
-        "InvalidRequest",
         "NoWritePermissionsForEvent"
       ]
     },
@@ -17332,7 +17237,6 @@
       "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"EventId\": \"0f8fad5bd9cb469fa16570867728950e\"\r\n  }\r\n}",
       "errors": [
         "InvalidEventField",
-        "InvalidRequest",
         "NoWritePermissionsForEvent"
       ]
     },
@@ -17351,7 +17255,6 @@
       "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"EventId\": \"0f8fad5bd9cb469fa16570867728950e\"\r\n  }\r\n}",
       "errors": [
         "InvalidEventField",
-        "InvalidRequest",
         "NoWritePermissionsForEvent"
       ]
     }
@@ -19277,6 +19180,10 @@
       "id": 1490,
       "name": "EvaluationModePlayerCountExceeded"
     },
+    "GetPlayersInSegmentRateLimitExceeded": {
+      "id": 1491,
+      "name": "GetPlayersInSegmentRateLimitExceeded"
+    },
     "MatchmakingEntityInvalid": {
       "id": 2001,
       "name": "MatchmakingEntityInvalid"
@@ -19536,6 +19443,10 @@
     "ExperimentationNoScorecard": {
       "id": 7009,
       "name": "ExperimentationNoScorecard"
+    },
+    "ExperimentationTreatmentAssignmentFailed": {
+      "id": 7010,
+      "name": "ExperimentationTreatmentAssignmentFailed"
     },
     "MaxActionDepthExceeded": {
       "id": 8000,
@@ -20027,6 +19938,7 @@
     "InsightsManagementGetOperationStatusInvalidParameter",
     "DuplicatePurchaseTransactionId",
     "EvaluationModePlayerCountExceeded",
+    "GetPlayersInSegmentRateLimitExceeded",
     "MatchmakingEntityInvalid",
     "MatchmakingPlayerAttributesInvalid",
     "MatchmakingQueueNotFound",
@@ -20092,6 +20004,7 @@
     "ExperimentationExceededMaxVariantLength",
     "ExperimentInvalidId",
     "ExperimentationNoScorecard",
+    "ExperimentationTreatmentAssignmentFailed",
     "MaxActionDepthExceeded",
     "SnapshotNotFound"
   ]

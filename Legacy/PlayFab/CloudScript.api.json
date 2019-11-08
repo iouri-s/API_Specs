@@ -351,6 +351,36 @@
       ],
       "properties": [
         {
+          "name": "FunctionAddress",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": true
+        },
+        {
+          "name": "FunctionName",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": true
+        },
+        {
+          "name": "TriggerType",
+          "jsontype": "String",
+          "actualtype": "String",
+          "isenum": false,
+          "optional": true
+        }
+      ]
+    },
+    "HttpFunctionModel": {
+      "name": "HttpFunctionModel",
+      "className": "HttpFunctionModel",
+      "classNameSpace": "PlayFab.CloudScript.Models",
+      "assembly": "PlayFab.CloudScript.Models",
+      "AnyInclusiveFlags": [
+        "Beta"
+      ],
+      "properties": [
+        {
           "name": "FunctionName",
           "jsontype": "String",
           "actualtype": "String",
@@ -374,16 +404,7 @@
       ],
       "description": "A title can have many functions, ListFunctions will return a list of all the currently registered functions for a given title.",
       "isRequest": true,
-      "properties": [
-        {
-          "name": "Entity",
-          "description": "The entity to perform this action on.",
-          "jsontype": "Object",
-          "actualtype": "EntityKey",
-          "isclass": true,
-          "optional": true
-        }
-      ]
+      "properties": []
     },
     "ListFunctionsResult": {
       "name": "ListFunctionsResult",
@@ -400,6 +421,46 @@
           "collection": "array",
           "jsontype": "Object",
           "actualtype": "FunctionModel",
+          "isclass": true,
+          "optional": true
+        }
+      ]
+    },
+    "ListHttpFunctionsResult": {
+      "name": "ListHttpFunctionsResult",
+      "className": "ListHttpFunctionsResult",
+      "classNameSpace": "PlayFab.CloudScript.Models",
+      "assembly": "PlayFab.CloudScript.Models",
+      "AnyInclusiveFlags": [
+        "Beta"
+      ],
+      "isResult": true,
+      "properties": [
+        {
+          "name": "Functions",
+          "collection": "array",
+          "jsontype": "Object",
+          "actualtype": "HttpFunctionModel",
+          "isclass": true,
+          "optional": true
+        }
+      ]
+    },
+    "ListQueuedFunctionsResult": {
+      "name": "ListQueuedFunctionsResult",
+      "className": "ListQueuedFunctionsResult",
+      "classNameSpace": "PlayFab.CloudScript.Models",
+      "assembly": "PlayFab.CloudScript.Models",
+      "AnyInclusiveFlags": [
+        "Beta"
+      ],
+      "isResult": true,
+      "properties": [
+        {
+          "name": "Functions",
+          "collection": "array",
+          "jsontype": "Object",
+          "actualtype": "QueuedFunctionModel",
           "isclass": true,
           "optional": true
         }
@@ -433,6 +494,35 @@
         }
       ]
     },
+    "QueuedFunctionModel": {
+      "name": "QueuedFunctionModel",
+      "className": "QueuedFunctionModel",
+      "classNameSpace": "PlayFab.CloudScript.Models",
+      "assembly": "PlayFab.CloudScript.Models",
+      "AnyInclusiveFlags": [
+        "Beta"
+      ],
+      "properties": [
+        {
+          "name": "ConnectionString",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": true
+        },
+        {
+          "name": "FunctionName",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": true
+        },
+        {
+          "name": "QueueName",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": true
+        }
+      ]
+    },
     "RegisterHttpFunctionRequest": {
       "name": "RegisterHttpFunctionRequest",
       "className": "RegisterHttpFunctionRequest",
@@ -441,17 +531,8 @@
       "AnyInclusiveFlags": [
         "Beta"
       ],
-      "description": "A title can have many functions, RegisterFunction associates a function name to a URL that can be invoked by CloudScript.ExecuteFunction or in response to a PlayStream event or as part of a Task.",
       "isRequest": true,
       "properties": [
-        {
-          "name": "Entity",
-          "description": "The entity to perform this action on.",
-          "jsontype": "Object",
-          "actualtype": "EntityKey",
-          "isclass": true,
-          "optional": true
-        },
         {
           "name": "FunctionName",
           "description": "The name of the function to register",
@@ -462,6 +543,40 @@
         {
           "name": "FunctionUrl",
           "description": "Full URL for Azure Function that implements the function.",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": false
+        }
+      ]
+    },
+    "RegisterQueuedFunctionRequest": {
+      "name": "RegisterQueuedFunctionRequest",
+      "className": "RegisterQueuedFunctionRequest",
+      "classNameSpace": "PlayFab.CloudScript.Models",
+      "assembly": "PlayFab.CloudScript.Models",
+      "AnyInclusiveFlags": [
+        "Beta"
+      ],
+      "description": "A title can have many functions, RegisterQueuedFunction associates a function name with a queue name and connection string.",
+      "isRequest": true,
+      "properties": [
+        {
+          "name": "ConnectionString",
+          "description": "A connection string for the storage account that hosts the queue for the Azure Function.",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": false
+        },
+        {
+          "name": "FunctionName",
+          "description": "The name of the function to register",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": false
+        },
+        {
+          "name": "QueueName",
+          "description": "The name of the queue for the Azure Function.",
           "jsontype": "String",
           "actualtype": "String",
           "optional": false
@@ -497,6 +612,24 @@
         }
       ]
     },
+    "TriggerType": {
+      "name": "TriggerType",
+      "className": "TriggerType",
+      "classNameSpace": "PlayFab.CloudScript.Models",
+      "assembly": "PlayFab.CloudScript.Models",
+      "AnyInclusiveFlags": [
+        "Beta"
+      ],
+      "isenum": true,
+      "enumvalues": [
+        {
+          "name": "HTTP"
+        },
+        {
+          "name": "Queue"
+        }
+      ]
+    },
     "UnregisterFunctionRequest": {
       "name": "UnregisterFunctionRequest",
       "className": "UnregisterFunctionRequest",
@@ -505,17 +638,8 @@
       "AnyInclusiveFlags": [
         "Beta"
       ],
-      "description": "A title can have many functions, UnregisterFunction disassociates a previously registered function from the title.",
       "isRequest": true,
       "properties": [
-        {
-          "name": "Entity",
-          "description": "The entity to perform this action on.",
-          "jsontype": "Object",
-          "actualtype": "EntityKey",
-          "isclass": true,
-          "optional": true
-        },
         {
           "name": "FunctionName",
           "description": "The name of the function to unregister",
@@ -533,7 +657,10 @@
         "ExecuteEntityCloudScript",
         "ExecuteFunction",
         "ListFunctions",
+        "ListHttpFunctions",
+        "ListQueuedFunctions",
         "RegisterHttpFunction",
+        "RegisterQueuedFunction",
         "UnregisterFunction"
       ]
     }
@@ -558,7 +685,8 @@
         "CloudScriptFunctionArgumentSizeExceeded",
         "CloudScriptHTTPRequestError",
         "CloudScriptNotFound",
-        "JavascriptException"
+        "JavascriptException",
+        "SecretKeyNotFound"
       ]
     },
     {
@@ -577,6 +705,10 @@
       "AnyInclusiveFlags": [
         "Beta"
       ],
+      "seeAlso": [
+        "CloudScript/RegisterHttpFunction",
+        "CloudScript/RegisterQueuedFunction"
+      ],
       "errors": [
         "CloudScriptAzureFunctionsArgumentSizeExceeded",
         "CloudScriptAzureFunctionsExecutionTimeLimitExceeded",
@@ -589,7 +721,6 @@
     {
       "name": "ListFunctions",
       "summary": "Lists all currently registered Azure Functions for a given title.",
-      "requestDetails": "A title can have many functions, ListFunctions will return a list of all the currently registered functions for a given title.",
       "subgroup": "Server-Side Cloud Script",
       "titleTiers": null,
       "url": "/CloudScript/ListFunctions",
@@ -601,12 +732,54 @@
       "resultExample": "",
       "AnyInclusiveFlags": [
         "Beta"
+      ],
+      "seeAlso": [
+        "CloudScript/RegisterHttpFunction",
+        "CloudScript/RegisterQueuedFunction"
+      ]
+    },
+    {
+      "name": "ListHttpFunctions",
+      "summary": "Lists all currently registered Azure Functions for a given title.",
+      "requestDetails": "A title can have many functions, ListFunctions will return a list of all the currently registered functions for a given title.",
+      "subgroup": "Server-Side Cloud Script",
+      "titleTiers": null,
+      "url": "/CloudScript/ListHttpFunctions",
+      "auth": "EntityToken",
+      "method": "POST",
+      "request": "ListFunctionsRequest",
+      "requestExample": "",
+      "result": "ListHttpFunctionsResult",
+      "resultExample": "",
+      "AnyInclusiveFlags": [
+        "Beta"
+      ],
+      "seeAlso": [
+        "CloudScript/RegisterHttpFunction"
+      ]
+    },
+    {
+      "name": "ListQueuedFunctions",
+      "summary": "Lists all currently registered Azure Functions for a given title.",
+      "subgroup": "Server-Side Cloud Script",
+      "titleTiers": null,
+      "url": "/CloudScript/ListQueuedFunctions",
+      "auth": "EntityToken",
+      "method": "POST",
+      "request": "ListFunctionsRequest",
+      "requestExample": "",
+      "result": "ListQueuedFunctionsResult",
+      "resultExample": "",
+      "AnyInclusiveFlags": [
+        "Beta"
+      ],
+      "seeAlso": [
+        "CloudScript/RegisterQueuedFunction"
       ]
     },
     {
       "name": "RegisterHttpFunction",
-      "summary": "Registers an Azure function with a title.",
-      "requestDetails": "A title can have many functions, RegisterFunction associates a function name to a URL that can be invoked by CloudScript.ExecuteFunction or in response to a PlayStream event or as part of a Task.",
+      "summary": "Registers an HTTP triggered Azure function with a title.",
       "subgroup": "Server-Side Cloud Script",
       "titleTiers": null,
       "url": "/CloudScript/RegisterHttpFunction",
@@ -618,12 +791,38 @@
       "resultExample": "",
       "AnyInclusiveFlags": [
         "Beta"
+      ],
+      "seeAlso": [
+        "CloudScript/ExecuteFunction",
+        "CloudScript/RegisterQueuedFunction",
+        "CloudScript/UnregisterFunction"
+      ]
+    },
+    {
+      "name": "RegisterQueuedFunction",
+      "summary": "Registers a queue triggered Azure Function with a title.",
+      "requestDetails": "A title can have many functions, RegisterQueuedFunction associates a function name with a queue name and connection string.",
+      "subgroup": "Server-Side Cloud Script",
+      "titleTiers": null,
+      "url": "/CloudScript/RegisterQueuedFunction",
+      "auth": "EntityToken",
+      "method": "POST",
+      "request": "RegisterQueuedFunctionRequest",
+      "requestExample": "{\r\n  \"FunctionName\": \"functionName\",\r\n  \"QueueName\": \"fn-queue\",\r\n  \"ConnectionString\": \"SampleConnectionString\"\r\n}",
+      "result": "EmptyResult",
+      "resultExample": "",
+      "AnyInclusiveFlags": [
+        "Beta"
+      ],
+      "seeAlso": [
+        "CloudScript/ExecuteFunction",
+        "CloudScript/RegisterQueuedFunction",
+        "CloudScript/UnregisterFunction"
       ]
     },
     {
       "name": "UnregisterFunction",
-      "summary": "Unregisters an Azure function with a title.",
-      "requestDetails": "A title can have many functions, UnregisterFunction disassociates a previously registered function from the title.",
+      "summary": "Unregisters an Azure Function with a title.",
       "subgroup": "Server-Side Cloud Script",
       "titleTiers": null,
       "url": "/CloudScript/UnregisterFunction",
@@ -635,6 +834,10 @@
       "resultExample": "",
       "AnyInclusiveFlags": [
         "Beta"
+      ],
+      "seeAlso": [
+        "CloudScript/RegisterHttpFunction",
+        "CloudScript/RegisterQueuedFunction"
       ],
       "errors": [
         "CloudScriptNotFound"
@@ -2562,6 +2765,10 @@
       "id": 1490,
       "name": "EvaluationModePlayerCountExceeded"
     },
+    "GetPlayersInSegmentRateLimitExceeded": {
+      "id": 1491,
+      "name": "GetPlayersInSegmentRateLimitExceeded"
+    },
     "MatchmakingEntityInvalid": {
       "id": 2001,
       "name": "MatchmakingEntityInvalid"
@@ -2821,6 +3028,10 @@
     "ExperimentationNoScorecard": {
       "id": 7009,
       "name": "ExperimentationNoScorecard"
+    },
+    "ExperimentationTreatmentAssignmentFailed": {
+      "id": 7010,
+      "name": "ExperimentationTreatmentAssignmentFailed"
     },
     "MaxActionDepthExceeded": {
       "id": 8000,
@@ -3312,6 +3523,7 @@
     "InsightsManagementGetOperationStatusInvalidParameter",
     "DuplicatePurchaseTransactionId",
     "EvaluationModePlayerCountExceeded",
+    "GetPlayersInSegmentRateLimitExceeded",
     "MatchmakingEntityInvalid",
     "MatchmakingPlayerAttributesInvalid",
     "MatchmakingQueueNotFound",
@@ -3377,6 +3589,7 @@
     "ExperimentationExceededMaxVariantLength",
     "ExperimentInvalidId",
     "ExperimentationNoScorecard",
+    "ExperimentationTreatmentAssignmentFailed",
     "MaxActionDepthExceeded",
     "SnapshotNotFound"
   ]

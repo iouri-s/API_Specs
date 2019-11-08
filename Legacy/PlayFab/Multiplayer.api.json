@@ -6284,8 +6284,7 @@
         "CSharpOnly"
       ],
       "errors": [
-        "MatchmakingQueueNotFound",
-        "NotAuthorized"
+        "MatchmakingQueueNotFound"
       ]
     },
     {
@@ -6383,8 +6382,7 @@
         "MatchmakingEntityInvalid",
         "MatchmakingQueueNotFound",
         "MatchmakingRateLimitExceeded",
-        "MatchmakingUnauthorized",
-        "NotAuthorized"
+        "MatchmakingUnauthorized"
       ]
     },
     {
@@ -6721,9 +6719,6 @@
       "resultExample": "",
       "AnyInclusiveFlags": [
         "CSharpOnly"
-      ],
-      "errors": [
-        "NotAuthorized"
       ]
     },
     {
@@ -6893,8 +6888,7 @@
         "CSharpOnly"
       ],
       "errors": [
-        "MatchmakingQueueNotFound",
-        "NotAuthorized"
+        "MatchmakingQueueNotFound"
       ]
     },
     {
@@ -6995,8 +6989,7 @@
       ],
       "errors": [
         "MatchmakingQueueConfigInvalid",
-        "MatchmakingQueueLimitExceeded",
-        "NotAuthorized"
+        "MatchmakingQueueLimitExceeded"
       ]
     },
     {
@@ -9029,6 +9022,10 @@
       "id": 1490,
       "name": "EvaluationModePlayerCountExceeded"
     },
+    "GetPlayersInSegmentRateLimitExceeded": {
+      "id": 1491,
+      "name": "GetPlayersInSegmentRateLimitExceeded"
+    },
     "MatchmakingEntityInvalid": {
       "id": 2001,
       "name": "MatchmakingEntityInvalid"
@@ -9288,6 +9285,10 @@
     "ExperimentationNoScorecard": {
       "id": 7009,
       "name": "ExperimentationNoScorecard"
+    },
+    "ExperimentationTreatmentAssignmentFailed": {
+      "id": 7010,
+      "name": "ExperimentationTreatmentAssignmentFailed"
     },
     "MaxActionDepthExceeded": {
       "id": 8000,
@@ -9779,6 +9780,7 @@
     "InsightsManagementGetOperationStatusInvalidParameter",
     "DuplicatePurchaseTransactionId",
     "EvaluationModePlayerCountExceeded",
+    "GetPlayersInSegmentRateLimitExceeded",
     "MatchmakingEntityInvalid",
     "MatchmakingPlayerAttributesInvalid",
     "MatchmakingQueueNotFound",
@@ -9844,6 +9846,7 @@
     "ExperimentationExceededMaxVariantLength",
     "ExperimentInvalidId",
     "ExperimentationNoScorecard",
+    "ExperimentationTreatmentAssignmentFailed",
     "MaxActionDepthExceeded",
     "SnapshotNotFound"
   ]

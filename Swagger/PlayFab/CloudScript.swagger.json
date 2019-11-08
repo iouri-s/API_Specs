@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "version": "191029",
+    "version": "191108",
     "title": "PlayFab CloudScript API",
     "description": "API methods for executing CloudScript using an Entity Profile",
     "termsOfService": "https://playfab.com/terms/",
@@ -59,7 +59,8 @@
           "CloudScriptFunctionArgumentSizeExceeded",
           "CloudScriptHTTPRequestError",
           "CloudScriptNotFound",
-          "JavascriptException"
+          "JavascriptException",
+          "SecretKeyNotFound"
         ]
       }
     }
@@ -2316,6 +2317,10 @@
       "id": 1490,
       "name": "EvaluationModePlayerCountExceeded"
     },
+    "GetPlayersInSegmentRateLimitExceeded": {
+      "id": 1491,
+      "name": "GetPlayersInSegmentRateLimitExceeded"
+    },
     "MatchmakingEntityInvalid": {
       "id": 2001,
       "name": "MatchmakingEntityInvalid"
@@ -2575,6 +2580,10 @@
     "ExperimentationNoScorecard": {
       "id": 7009,
       "name": "ExperimentationNoScorecard"
+    },
+    "ExperimentationTreatmentAssignmentFailed": {
+      "id": 7010,
+      "name": "ExperimentationTreatmentAssignmentFailed"
     },
     "MaxActionDepthExceeded": {
       "id": 8000,
