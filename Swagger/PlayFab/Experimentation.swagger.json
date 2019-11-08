@@ -25,15 +25,13 @@
   ],
   "paths": {},
   "definitions": {
-    "ApiErrorWrapper": {
+    "ApiError": {
       "description": "The basic wrapper around every failed API response",
       "type": "object",
       "properties": {
         "code": {
           "description": "Numerical HTTP code",
-          "type": "number",
-          "format": "int32",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "status": {
           "description": "String HTTP code",
@@ -45,9 +43,7 @@
         },
         "errorCode": {
           "description": "Numerical Playfab error code",
-          "type": "number",
-          "format": "int32",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "errorMessage": {
           "description": "Description for the Playfab errorCode",
@@ -57,15 +53,19 @@
           "description": "Detailed description of individual issues with the request object",
           "type": "object"
         }
-      }
+      },
+      "required": [
+        "code",
+        "errorCode"
+      ]
     }
   },
   "parameters": {},
   "responses": {
-    "ApiErrorWrapper": {
-      "description": "This is the outer-wrapper for all responses with errors",
+    "ApiError": {
+      "description": "This is the outer wrapper for all responses with errors",
       "schema": {
-        "$ref": "#/definitions/ApiErrorWrapper"
+        "$ref": "#/definitions/ApiError"
       }
     }
   },

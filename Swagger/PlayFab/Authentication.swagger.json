@@ -48,8 +48,8 @@
           "200": {
             "$ref": "#/responses/GetEntityTokenResponse"
           },
-          "400": {
-            "$ref": "#/responses/ApiErrorWrapper"
+          "default": {
+            "$ref": "#/responses/ApiError"
           }
         },
         "x-requestDetails": "This API must be called with X-SecretKey, X-Authentication or X-EntityToken headers. An optional EntityKey may be included to attempt to set the resulting EntityToken to a specific entity, however the entity must be a relation of the caller, such as the master_player_account of a character. If sending X-EntityToken the account will be marked as freshly logged in and will issue a new token. If using X-Authentication or X-EntityToken the header must still be valid and cannot be expired or revoked.",
@@ -84,8 +84,8 @@
           "200": {
             "$ref": "#/responses/ValidateEntityTokenResponse"
           },
-          "400": {
-            "$ref": "#/responses/ApiErrorWrapper"
+          "default": {
+            "$ref": "#/responses/ApiError"
           }
         },
         "x-requestDetails": "Given an entity token, validates that it hasn't exipired or been revoked and will return details of the owner.",
@@ -96,15 +96,13 @@
     }
   },
   "definitions": {
-    "ApiErrorWrapper": {
+    "ApiError": {
       "description": "The basic wrapper around every failed API response",
       "type": "object",
       "properties": {
         "code": {
           "description": "Numerical HTTP code",
-          "type": "number",
-          "format": "int32",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "status": {
           "description": "String HTTP code",
@@ -116,9 +114,7 @@
         },
         "errorCode": {
           "description": "Numerical Playfab error code",
-          "type": "number",
-          "format": "int32",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "errorMessage": {
           "description": "Description for the Playfab errorCode",
@@ -128,7 +124,11 @@
           "description": "Detailed description of individual issues with the request object",
           "type": "object"
         }
-      }
+      },
+      "required": [
+        "code",
+        "errorCode"
+      ]
     },
     "EntityKey": {
       "description": "Combined entity type and ID structure which uniquely identifies a single entity.",
@@ -317,10 +317,10 @@
     }
   },
   "responses": {
-    "ApiErrorWrapper": {
-      "description": "This is the outer-wrapper for all responses with errors",
+    "ApiError": {
+      "description": "This is the outer wrapper for all responses with errors",
       "schema": {
-        "$ref": "#/definitions/ApiErrorWrapper"
+        "$ref": "#/definitions/ApiError"
       }
     },
     "GetEntityTokenResponse": {

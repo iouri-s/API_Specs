@@ -48,8 +48,8 @@
           "200": {
             "$ref": "#/responses/CancelAllMatchmakingTicketsForPlayerResult"
           },
-          "400": {
-            "$ref": "#/responses/ApiErrorWrapper"
+          "default": {
+            "$ref": "#/responses/ApiError"
           }
         },
         "x-requestDetails": "Cancels all tickets of which the player is a member in a given queue that are not cancelled or matched. This API is useful if you lose track of what tickets the player is a member of (if the title crashes for instance) and want to \"reset\". The Entity field is optional if the caller is a player and defaults to that player. Players may not cancel tickets for other people. The Entity field is required if the caller is a server (authenticated as the title).",
@@ -84,8 +84,8 @@
           "200": {
             "$ref": "#/responses/CancelMatchmakingTicketResult"
           },
-          "400": {
-            "$ref": "#/responses/ApiErrorWrapper"
+          "default": {
+            "$ref": "#/responses/ApiError"
           }
         },
         "x-requestDetails": "Only servers and ticket members can cancel a ticket. The ticket can be in five different states when it is cancelled. 1: the ticket is waiting for members to join it, and it has not started matching. If the ticket is cancelled at this stage, it will never match. 2: the ticket is matching. If the ticket is cancelled, it will stop matching. 3: the ticket is matched. A matched ticket cannot be cancelled. 4: the ticket is already cancelled and nothing happens. 5: the ticket is waiting for a server. If the ticket is cancelled, server allocation will be stopped. A server may still be allocated due to a race condition, but that will not be reflected in the ticket. There may be race conditions between the ticket getting matched and the client making a cancellation request. The client must handle the possibility that the cancel request fails if a match is found before the cancellation request is processed. We do not allow resubmitting a cancelled ticket because players must consent to enter matchmaking again. Create a new ticket instead.",
@@ -123,8 +123,8 @@
           "200": {
             "$ref": "#/responses/CreateMatchmakingTicketResult"
           },
-          "400": {
-            "$ref": "#/responses/ApiErrorWrapper"
+          "default": {
+            "$ref": "#/responses/ApiError"
           }
         },
         "x-requestDetails": "The client specifies the creator's attributes and optionally a list of other users to match with.",
@@ -165,8 +165,8 @@
           "200": {
             "$ref": "#/responses/CreateMatchmakingTicketResult"
           },
-          "400": {
-            "$ref": "#/responses/ApiErrorWrapper"
+          "default": {
+            "$ref": "#/responses/ApiError"
           }
         },
         "x-requestDetails": "The server specifies all the members and their attributes.",
@@ -208,8 +208,8 @@
           "200": {
             "$ref": "#/responses/GetMatchResult"
           },
-          "400": {
-            "$ref": "#/responses/ApiErrorWrapper"
+          "default": {
+            "$ref": "#/responses/ApiError"
           }
         },
         "x-requestDetails": "When matchmaking has successfully matched together a collection of tickets, it produces a 'match' with an Id. The match contains all of the players that were matched together, and their team assigments. Only servers and ticket members can get the match.",
@@ -246,8 +246,8 @@
           "200": {
             "$ref": "#/responses/GetMatchmakingTicketResult"
           },
-          "400": {
-            "$ref": "#/responses/ApiErrorWrapper"
+          "default": {
+            "$ref": "#/responses/ApiError"
           }
         },
         "x-requestDetails": "The ticket includes the invited players, their attributes if they have joined, the ticket status, the match Id when applicable, etc. Only servers, the ticket creator and the invited players can get the ticket.",
@@ -284,8 +284,8 @@
           "200": {
             "$ref": "#/responses/GetQueueStatisticsResult"
           },
-          "400": {
-            "$ref": "#/responses/ApiErrorWrapper"
+          "default": {
+            "$ref": "#/responses/ApiError"
           }
         },
         "x-requestDetails": "Returns the matchmaking statistics for a queue. These include the number of players matching and the statistics related to the time to match statistics in seconds (average and percentiles). Statistics are refreshed once every 5 minutes. Servers can access all statistics no matter what the ClientStatisticsVisibility is configured to. Clients can access statistics according to the ClientStatisticsVisibility. Client requests are forbidden if all visibility fields are false.",
@@ -321,8 +321,8 @@
           "200": {
             "$ref": "#/responses/JoinMatchmakingTicketResult"
           },
-          "400": {
-            "$ref": "#/responses/ApiErrorWrapper"
+          "default": {
+            "$ref": "#/responses/ApiError"
           }
         },
         "x-requestDetails": "Add the player to a matchmaking ticket and specify all of its matchmaking attributes. Players can join a ticket if and only if their EntityKeys are already listed in the ticket's Members list. The matchmaking service automatically starts matching the ticket against other matchmaking tickets once all players have joined the ticket. It is not possible to join a ticket once it has started matching.",
@@ -366,8 +366,8 @@
           "200": {
             "$ref": "#/responses/ListMatchmakingTicketsForPlayerResult"
           },
-          "400": {
-            "$ref": "#/responses/ApiErrorWrapper"
+          "default": {
+            "$ref": "#/responses/ApiError"
           }
         },
         "x-requestDetails": "If the caller is a title, the EntityKey in the request is required. If the caller is a player, then it is optional. If it is provided it must match the caller's entity.",
@@ -403,8 +403,8 @@
           "200": {
             "$ref": "#/responses/BuildAliasDetailsResponse"
           },
-          "400": {
-            "$ref": "#/responses/ApiErrorWrapper"
+          "default": {
+            "$ref": "#/responses/ApiError"
           }
         },
         "x-requestDetails": "Creates a multiplayer server build alias and returns the created alias.",
@@ -447,8 +447,8 @@
           "200": {
             "$ref": "#/responses/CreateBuildWithCustomContainerResponse"
           },
-          "400": {
-            "$ref": "#/responses/ApiErrorWrapper"
+          "default": {
+            "$ref": "#/responses/ApiError"
           }
         },
         "x-requestDetails": "Creates a multiplayer server build with a custom container and returns information about the build creation request.",
@@ -491,8 +491,8 @@
           "200": {
             "$ref": "#/responses/CreateBuildWithManagedContainerResponse"
           },
-          "400": {
-            "$ref": "#/responses/ApiErrorWrapper"
+          "default": {
+            "$ref": "#/responses/ApiError"
           }
         },
         "x-requestDetails": "Creates a multiplayer server build with a managed container and returns information about the build creation request.",
@@ -534,8 +534,8 @@
           "200": {
             "$ref": "#/responses/CreateRemoteUserResponse"
           },
-          "400": {
-            "$ref": "#/responses/ApiErrorWrapper"
+          "default": {
+            "$ref": "#/responses/ApiError"
           }
         },
         "x-requestDetails": "Creates a remote user to log on to a VM for a multiplayer server build in a specific region. Returns user credential information necessary to log on.",
@@ -580,8 +580,8 @@
           "200": {
             "$ref": "#/responses/EmptyResponse"
           },
-          "400": {
-            "$ref": "#/responses/ApiErrorWrapper"
+          "default": {
+            "$ref": "#/responses/ApiError"
           }
         },
         "x-requestDetails": "Deletes a multiplayer server game asset for a title.",
@@ -626,8 +626,8 @@
           "200": {
             "$ref": "#/responses/EmptyResponse"
           },
-          "400": {
-            "$ref": "#/responses/ApiErrorWrapper"
+          "default": {
+            "$ref": "#/responses/ApiError"
           }
         },
         "x-requestDetails": "Deletes a multiplayer server build.",
@@ -670,8 +670,8 @@
           "200": {
             "$ref": "#/responses/EmptyResponse"
           },
-          "400": {
-            "$ref": "#/responses/ApiErrorWrapper"
+          "default": {
+            "$ref": "#/responses/ApiError"
           }
         },
         "x-requestDetails": "Deletes a multiplayer server build alias.",
@@ -714,8 +714,8 @@
           "200": {
             "$ref": "#/responses/EmptyResponse"
           },
-          "400": {
-            "$ref": "#/responses/ApiErrorWrapper"
+          "default": {
+            "$ref": "#/responses/ApiError"
           }
         },
         "x-requestDetails": "Deletes a multiplayer server game certificate.",
@@ -760,8 +760,8 @@
           "200": {
             "$ref": "#/responses/EmptyResponse"
           },
-          "400": {
-            "$ref": "#/responses/ApiErrorWrapper"
+          "default": {
+            "$ref": "#/responses/ApiError"
           }
         },
         "x-requestDetails": "Deletes a remote user to log on to a VM for a multiplayer server build in a specific region. Returns user credential information necessary to log on.",
@@ -806,8 +806,8 @@
           "200": {
             "$ref": "#/responses/EnableMultiplayerServersForTitleResponse"
           },
-          "400": {
-            "$ref": "#/responses/ApiErrorWrapper"
+          "default": {
+            "$ref": "#/responses/ApiError"
           }
         },
         "x-requestDetails": "Enables the multiplayer server feature for a title and returns the enabled status. The enabled status can be Initializing, Enabled, and Disabled. It can up to 20 minutes or more for the title to be enabled for the feature. On average, it can take up to 20 minutes for the title to be enabled for the feature.",
@@ -847,8 +847,8 @@
           "200": {
             "$ref": "#/responses/GetAssetUploadUrlResponse"
           },
-          "400": {
-            "$ref": "#/responses/ApiErrorWrapper"
+          "default": {
+            "$ref": "#/responses/ApiError"
           }
         },
         "x-requestDetails": "Gets the URL to upload assets to.",
@@ -894,8 +894,8 @@
           "200": {
             "$ref": "#/responses/GetBuildResponse"
           },
-          "400": {
-            "$ref": "#/responses/ApiErrorWrapper"
+          "default": {
+            "$ref": "#/responses/ApiError"
           }
         },
         "x-requestDetails": "Returns the details about a multiplayer server build.",
@@ -938,8 +938,8 @@
           "200": {
             "$ref": "#/responses/BuildAliasDetailsResponse"
           },
-          "400": {
-            "$ref": "#/responses/ApiErrorWrapper"
+          "default": {
+            "$ref": "#/responses/ApiError"
           }
         },
         "x-requestDetails": "Returns the details about a multiplayer server build alias.",
@@ -982,8 +982,8 @@
           "200": {
             "$ref": "#/responses/GetContainerRegistryCredentialsResponse"
           },
-          "400": {
-            "$ref": "#/responses/ApiErrorWrapper"
+          "default": {
+            "$ref": "#/responses/ApiError"
           }
         },
         "x-requestDetails": "Gets credentials to the container registry where game developers can upload custom container images to before creating a new build.",
@@ -1028,8 +1028,8 @@
           "200": {
             "$ref": "#/responses/GetMultiplayerServerDetailsResponse"
           },
-          "400": {
-            "$ref": "#/responses/ApiErrorWrapper"
+          "default": {
+            "$ref": "#/responses/ApiError"
           }
         },
         "x-requestDetails": "Gets multiplayer server session details for a build in a specific region.",
@@ -1070,8 +1070,8 @@
           "200": {
             "$ref": "#/responses/GetRemoteLoginEndpointResponse"
           },
-          "400": {
-            "$ref": "#/responses/ApiErrorWrapper"
+          "default": {
+            "$ref": "#/responses/ApiError"
           }
         },
         "x-requestDetails": "Gets a remote login endpoint to a VM that is hosting a multiplayer server build in a specific region.",
@@ -1115,8 +1115,8 @@
           "200": {
             "$ref": "#/responses/GetTitleEnabledForMultiplayerServersStatusResponse"
           },
-          "400": {
-            "$ref": "#/responses/ApiErrorWrapper"
+          "default": {
+            "$ref": "#/responses/ApiError"
           }
         },
         "x-requestDetails": "Gets the status of whether a title is enabled for the multiplayer server feature. The enabled status can be Initializing, Enabled, and Disabled.",
@@ -1156,8 +1156,8 @@
           "200": {
             "$ref": "#/responses/GetTitleMultiplayerServersQuotasResponse"
           },
-          "400": {
-            "$ref": "#/responses/ApiErrorWrapper"
+          "default": {
+            "$ref": "#/responses/ApiError"
           }
         },
         "x-requestDetails": "Gets the quotas for a title in relation to multiplayer servers.",
@@ -1194,8 +1194,8 @@
           "200": {
             "$ref": "#/responses/ListMultiplayerServersResponse"
           },
-          "400": {
-            "$ref": "#/responses/ApiErrorWrapper"
+          "default": {
+            "$ref": "#/responses/ApiError"
           }
         },
         "x-requestDetails": "Returns a list of archived multiplayer servers for a build in a specific region.",
@@ -1236,8 +1236,8 @@
           "200": {
             "$ref": "#/responses/ListAssetSummariesResponse"
           },
-          "400": {
-            "$ref": "#/responses/ApiErrorWrapper"
+          "default": {
+            "$ref": "#/responses/ApiError"
           }
         },
         "x-requestDetails": "Returns a list of multiplayer server game asset summaries for a title.",
@@ -1283,8 +1283,8 @@
           "200": {
             "$ref": "#/responses/ListBuildAliasesForTitleResponse"
           },
-          "400": {
-            "$ref": "#/responses/ApiErrorWrapper"
+          "default": {
+            "$ref": "#/responses/ApiError"
           }
         },
         "x-requestDetails": "Returns a list of summarized details of all multiplayer server builds for a title.",
@@ -1326,8 +1326,8 @@
           "200": {
             "$ref": "#/responses/ListBuildSummariesResponse"
           },
-          "400": {
-            "$ref": "#/responses/ApiErrorWrapper"
+          "default": {
+            "$ref": "#/responses/ApiError"
           }
         },
         "x-requestDetails": "Returns a list of summarized details of all multiplayer server builds for a title.",
@@ -1369,8 +1369,8 @@
           "200": {
             "$ref": "#/responses/ListCertificateSummariesResponse"
           },
-          "400": {
-            "$ref": "#/responses/ApiErrorWrapper"
+          "default": {
+            "$ref": "#/responses/ApiError"
           }
         },
         "x-requestDetails": "Returns a list of multiplayer server game certificates for a title.",
@@ -1415,8 +1415,8 @@
           "200": {
             "$ref": "#/responses/ListContainerImagesResponse"
           },
-          "400": {
-            "$ref": "#/responses/ApiErrorWrapper"
+          "default": {
+            "$ref": "#/responses/ApiError"
           }
         },
         "x-requestDetails": "Returns a list of the container images that have been uploaded to the container registry for a title.",
@@ -1461,8 +1461,8 @@
           "200": {
             "$ref": "#/responses/ListContainerImageTagsResponse"
           },
-          "400": {
-            "$ref": "#/responses/ApiErrorWrapper"
+          "default": {
+            "$ref": "#/responses/ApiError"
           }
         },
         "x-requestDetails": "Returns a list of the tags for a particular container image that exists in the container registry for a title.",
@@ -1506,8 +1506,8 @@
           "200": {
             "$ref": "#/responses/ListMultiplayerServersResponse"
           },
-          "400": {
-            "$ref": "#/responses/ApiErrorWrapper"
+          "default": {
+            "$ref": "#/responses/ApiError"
           }
         },
         "x-requestDetails": "Returns a list of multiplayer servers for a build in a specific region.",
@@ -1548,8 +1548,8 @@
           "200": {
             "$ref": "#/responses/ListPartyQosServersResponse"
           },
-          "400": {
-            "$ref": "#/responses/ApiErrorWrapper"
+          "default": {
+            "$ref": "#/responses/ApiError"
           }
         },
         "x-requestDetails": "Returns a list of quality of service servers for party.",
@@ -1585,8 +1585,8 @@
           "200": {
             "$ref": "#/responses/ListQosServersResponse"
           },
-          "400": {
-            "$ref": "#/responses/ApiErrorWrapper"
+          "default": {
+            "$ref": "#/responses/ApiError"
           }
         },
         "x-requestDetails": "Returns a list of quality of service servers.",
@@ -1622,8 +1622,8 @@
           "200": {
             "$ref": "#/responses/ListQosServersForTitleResponse"
           },
-          "400": {
-            "$ref": "#/responses/ApiErrorWrapper"
+          "default": {
+            "$ref": "#/responses/ApiError"
           }
         },
         "x-requestDetails": "Returns a list of quality of service servers for a title.",
@@ -1659,8 +1659,8 @@
           "200": {
             "$ref": "#/responses/ListVirtualMachineSummariesResponse"
           },
-          "400": {
-            "$ref": "#/responses/ApiErrorWrapper"
+          "default": {
+            "$ref": "#/responses/ApiError"
           }
         },
         "x-requestDetails": "Returns a list of virtual machines for a title.",
@@ -1698,8 +1698,8 @@
           "200": {
             "$ref": "#/responses/RequestMultiplayerServerResponse"
           },
-          "400": {
-            "$ref": "#/responses/ApiErrorWrapper"
+          "default": {
+            "$ref": "#/responses/ApiError"
           }
         },
         "x-requestDetails": "Requests a multiplayer server session from a particular build in any of the given preferred regions.",
@@ -1742,8 +1742,8 @@
           "200": {
             "$ref": "#/responses/RolloverContainerRegistryCredentialsResponse"
           },
-          "400": {
-            "$ref": "#/responses/ApiErrorWrapper"
+          "default": {
+            "$ref": "#/responses/ApiError"
           }
         },
         "x-requestDetails": "Gets new credentials to the container registry where game developers can upload custom container images to before creating a new build.",
@@ -1787,8 +1787,8 @@
           "200": {
             "$ref": "#/responses/EmptyResponse"
           },
-          "400": {
-            "$ref": "#/responses/ApiErrorWrapper"
+          "default": {
+            "$ref": "#/responses/ApiError"
           }
         },
         "x-requestDetails": "Executes the shutdown callback from the GSDK and terminates the multiplayer server session. The callback in the GSDK will allow for graceful shutdown with a 15 minute timeoutIf graceful shutdown has not been completed before 15 minutes have elapsed, the multiplayer server session will be forcefully terminated on it's own.",
@@ -1830,8 +1830,8 @@
           "200": {
             "$ref": "#/responses/BuildAliasDetailsResponse"
           },
-          "400": {
-            "$ref": "#/responses/ApiErrorWrapper"
+          "default": {
+            "$ref": "#/responses/ApiError"
           }
         },
         "x-requestDetails": "Creates a multiplayer server build alias and returns the created alias.",
@@ -1874,8 +1874,8 @@
           "200": {
             "$ref": "#/responses/EmptyResponse"
           },
-          "400": {
-            "$ref": "#/responses/ApiErrorWrapper"
+          "default": {
+            "$ref": "#/responses/ApiError"
           }
         },
         "x-requestDetails": "Updates a multiplayer server build's regions.",
@@ -1917,8 +1917,8 @@
           "200": {
             "$ref": "#/responses/EmptyResponse"
           },
-          "400": {
-            "$ref": "#/responses/ApiErrorWrapper"
+          "default": {
+            "$ref": "#/responses/ApiError"
           }
         },
         "x-requestDetails": "Uploads a multiplayer server game certificate.",
@@ -1941,15 +1941,13 @@
     }
   },
   "definitions": {
-    "ApiErrorWrapper": {
+    "ApiError": {
       "description": "The basic wrapper around every failed API response",
       "type": "object",
       "properties": {
         "code": {
           "description": "Numerical HTTP code",
-          "type": "number",
-          "format": "int32",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "status": {
           "description": "String HTTP code",
@@ -1961,9 +1959,7 @@
         },
         "errorCode": {
           "description": "Numerical Playfab error code",
-          "type": "number",
-          "format": "int32",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "errorMessage": {
           "description": "Description for the Playfab errorCode",
@@ -1973,7 +1969,11 @@
           "description": "Detailed description of individual issues with the request object",
           "type": "object"
         }
-      }
+      },
+      "required": [
+        "code",
+        "errorCode"
+      ]
     },
     "AssetReference": {
       "type": "object",
@@ -5597,10 +5597,10 @@
     }
   },
   "responses": {
-    "ApiErrorWrapper": {
-      "description": "This is the outer-wrapper for all responses with errors",
+    "ApiError": {
+      "description": "This is the outer wrapper for all responses with errors",
       "schema": {
-        "$ref": "#/definitions/ApiErrorWrapper"
+        "$ref": "#/definitions/ApiError"
       }
     },
     "BuildAliasDetailsResponse": {
