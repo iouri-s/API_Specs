@@ -1947,8 +1947,7 @@
       "properties": {
         "code": {
           "description": "Numerical HTTP code",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "status": {
           "description": "String HTTP code",
@@ -1960,8 +1959,7 @@
         },
         "errorCode": {
           "description": "Numerical Playfab error code",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "errorMessage": {
           "description": "Description for the Playfab errorCode",
@@ -1971,7 +1969,11 @@
           "description": "Detailed description of individual issues with the request object",
           "type": "object"
         }
-      }
+      },
+      "required": [
+        "code",
+        "errorCode"
+      ]
     },
     "AssetReference": {
       "type": "object",
@@ -5578,7 +5580,7 @@
   },
   "responses": {
     "ApiErrorWrapper": {
-      "description": "This is the outer-wrapper for all responses with errors",
+      "description": "This is the outer wrapper for all responses with errors",
       "schema": {
         "$ref": "#/definitions/ApiErrorWrapper"
       }

@@ -216,8 +216,7 @@
       "properties": {
         "code": {
           "description": "Numerical HTTP code",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "status": {
           "description": "String HTTP code",
@@ -229,8 +228,7 @@
         },
         "errorCode": {
           "description": "Numerical Playfab error code",
-          "type": "number",
-          "x-actualtype": "int32"
+          "type": "integer"
         },
         "errorMessage": {
           "description": "Description for the Playfab errorCode",
@@ -240,7 +238,11 @@
           "description": "Detailed description of individual issues with the request object",
           "type": "object"
         }
-      }
+      },
+      "required": [
+        "code",
+        "errorCode"
+      ]
     },
     "AuthUserRequest": {
       "description": "This API allows the external match-making service to confirm that the user has a valid Session Ticket for the title, in order to securely enable match-making. The client passes the user's Session Ticket to the external match-making service, which then passes the Session Ticket in as the AuthorizationTicket in this call.",
@@ -673,7 +675,7 @@
   },
   "responses": {
     "ApiErrorWrapper": {
-      "description": "This is the outer-wrapper for all responses with errors",
+      "description": "This is the outer wrapper for all responses with errors",
       "schema": {
         "$ref": "#/definitions/ApiErrorWrapper"
       }
